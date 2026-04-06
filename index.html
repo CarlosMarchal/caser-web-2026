@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seguro de Salud Caser - Coberturas flexibles y atención médica 24/7. Hasta 30% de descuento + 1 mes gratis. Más de 45.000 profesionales y 13.000 centros.">
+  <title>SEGURO DE SALUD CASER | Hasta 30% dto. y 1 mes gratis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">Agente exclusivo Marchal Aseguradores</div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo">
+          <svg width="160" height="52" viewBox="0 0 160 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Caser Grupo Helvetia">
+            <g>
+              <path d="M22 10 C14 10 8 16 8 24 C8 32 14 38 22 38 C27 38 31.5 35.5 34 31.5 L29 28.5 C27.5 31 25 32.5 22 32.5 C17 32.5 13.5 28.8 13.5 24 C13.5 19.2 17 15.5 22 15.5 C25 15.5 27.5 17 29 19.5 L34 16.5 C31.5 12.5 27 10 22 10 Z" fill="#007363"/>
+              <rect x="7" y="6" width="7" height="7" rx="2" fill="#EC7A08"/>
+            </g>
+            <text x="42" y="29" font-family="Lato, Arial, sans-serif" font-size="24" font-weight="900" fill="#007363" letter-spacing="-0.5">caser</text>
+            <text x="42" y="43" font-family="Lato, Arial, sans-serif" font-size="10" font-weight="400" fill="#53565A" letter-spacing="1">Grupo Helvetia</text>
+          </svg>
+        </a>
+        <div class="header-phones">
+          <a href="tel:910052270" class="phone-cta">
+            <div>
+              <span class="label">Nuevas contrataciones</span>
+              <span class="number">91 005 22 70</span>
+            </div>
+          </a>
+          <div class="phone-secondary">
+            <span class="label">Atención al cliente</span>
+            <a href="tel:911553472" class="number">91 155 34 72</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVEGACIÓN -->
+  <nav class="main-nav" role="navigation" aria-label="Navegación principal">
+    <div class="container">
+      <button class="nav-toggle" aria-label="Abrir menú" onclick="toggleNav()">☰</button>
+      <div class="nav-inner" id="mainNav">
+        <a href="particulares.html">Particulares</a>
+        <a href="familiar.html">Familiar</a>
+        <a href="embarazo.html">Embarazo</a>
+        <a href="mayores.html">Mayores</a>
+        <a href="autonomos.html">Autónomos</a>
+        <a href="calcular.html" class="nav-cta">Calcula tu seguro</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">SEGURO DE SALUD CASER</p>
+        <h1>Coberturas flexibles y atención médica 24/7 para cuidarte en cada momento.</h1>
+        <div class="hero-badge">30% Dto. Directo</div>
+        <br><br>
+        <span class="hero-descuento">✦ Hasta 10% de descuento adicional por nº de asegurados</span>
+      </div>
+      <div class="hero-form-card">
+        <h3>Solicita más información</h3>
+        <form action="calcular.html" method="get" onsubmit="return false;">
+          <div class="form-group">
+            <div class="phone-input-wrap">
+              <div class="phone-prefix">
+                <span class="flag">🇪🇸</span>
+                <span>+34</span>
+              </div>
+              <input type="tel" name="telefono" placeholder="Escribe tu teléfono" aria-label="Teléfono">
+            </div>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="terminos" checked>
+            <label for="terminos">Acepto <a href="#">términos y condiciones</a></label>
+          </div>
+          <button type="submit" class="btn btn-cta">Solicitar llamada</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA BAR -->
+  <div class="oferta-bar">OFERTA: 30% de DESCUENTO en nuestros seguros médicos</div>
+
+  <!-- POR QUÉ CASER -->
+  <section class="why-section">
+    <div class="container">
+      <h2 class="section-title">¿Por qué elegir un seguro de salud Caser?</h2>
+      <p class="section-subtitle">Con Caser podrás tener un seguro médico pensado para tu día a día, con servicios digitales, amplias coberturas y un cuadro médico de referencia en toda España.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="52" height="52" rx="12" fill="#e8f4f2"/>
+            <path d="M16 26h20M26 16v20" stroke="#007363" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="26" cy="26" r="12" stroke="#007363" stroke-width="2.2"/>
+            <path d="M20 32c1.5-2 3-3 6-3s4.5 1 6 3" stroke="#007363" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <h3>Extenso Cuadro Médico</h3>
+          <p>Más de 45.000 profesionales y 13.000 centros concertados en toda España. Atención presencial u online con la máxima comodidad.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="52" height="52" rx="12" fill="#e8f4f2"/>
+            <path d="M14 20h24M14 26h16M14 32h20" stroke="#007363" stroke-width="2.2" stroke-linecap="round"/>
+            <rect x="12" y="13" width="28" height="26" rx="4" stroke="#007363" stroke-width="2.2"/>
+          </svg>
+          <h3>Coberturas flexibles</h3>
+          <p>Accede a especialistas, pruebas diagnósticas, consultas programadas y servicios complementarios incluidos según tu modalidad.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="52" height="52" rx="12" fill="#e8f4f2"/>
+            <circle cx="26" cy="24" r="8" stroke="#007363" stroke-width="2.2"/>
+            <path d="M20 36c1.5-3 3-4 6-4s4.5 1 6 4" stroke="#007363" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M34 18l4-4M18 18l-4-4" stroke="#007363" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <h3>Confianza y ahorro</h3>
+          <p>Los seguros privados de Caser están especialmente diseñados para adaptarse a tus necesidades, para que solo pagues por lo que necesitas.</p>
+        </div>
+        <div class="feature-card">
+          <svg class="feature-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="52" height="52" rx="12" fill="#e8f4f2"/>
+            <circle cx="26" cy="26" r="13" stroke="#007363" stroke-width="2.2"/>
+            <path d="M26 19v7l4 4" stroke="#007363" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="17" y="23" font-size="7" fill="#007363" font-weight="700">24</text>
+          </svg>
+          <h3>Seguro médico 24h</h3>
+          <p>Todas nuestras pólizas incluyen asistencia telefónica y online 24 horas todos los días de la semana, para resolver consultas médicas estés donde estés.</p>
+        </div>
+      </div>
+
+      <div class="why-cta">
+        <a href="calcular.html" class="btn btn-cta btn-lg">Solicitar llamada</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA PRECIO -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>¿Cuánto cuesta un seguro de salud de Caser?</h2>
+      <p>Cuéntanos tus necesidades y te mostraremos el seguro de salud Caser que mejor encaja con tu presupuesto.</p>
+      <a href="calcular.html" class="btn btn-cta btn-lg">Calcular mi tarifa</a>
+    </div>
+  </section>
+
+  <!-- SEGUROS A MEDIDA -->
+  <section class="products-section">
+    <div class="container">
+      <h2 class="section-title">Encuentra tu seguro de salud Caser a medida</h2>
+      <p class="section-subtitle">Caser te ofrece soluciones flexibles para cada etapa y situación personal. Elige la opción que mejor se adapte a tus necesidades.</p>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-card-img embarazadas" style="display:flex;align-items:center;justify-content:center;">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="26" r="12" fill="rgba(255,255,255,0.6)"/><ellipse cx="40" cy="54" rx="16" ry="12" fill="rgba(255,255,255,0.6)"/><ellipse cx="40" cy="50" rx="9" ry="10" fill="rgba(255,255,255,0.4)"/></svg>
+          </div>
+          <div class="product-card-header">Para embarazadas</div>
+          <div class="product-card-body">
+            <ul>
+              <li>Consultas obstetricia y ginecología</li>
+              <li>Ecografías incluidas según modalidad</li>
+              <li>Preparación al parto</li>
+              <li>Rehabilitación suelo pélvico</li>
+              <li>Test prenatales no invasivos</li>
+              <li>Hospitalización individual para el parto</li>
+            </ul>
+            <a href="embarazo.html" class="btn btn-cta">Más información</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img familias" style="display:flex;align-items:center;justify-content:center;">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="30" cy="24" r="9" fill="rgba(255,255,255,0.6)"/><circle cx="50" cy="24" r="9" fill="rgba(255,255,255,0.6)"/><circle cx="40" cy="52" r="7" fill="rgba(255,255,255,0.6)"/><path d="M18 58c2-8 6-12 12-12s10 4 12 12" fill="rgba(255,255,255,0.4)"/><path d="M38 58c2-8 6-10 10-10" stroke="rgba(255,255,255,0.6)" stroke-width="2"/></svg>
+          </div>
+          <div class="product-card-header">Para familias</div>
+          <div class="product-card-body">
+            <ul>
+              <li>Urgencias generales y pediátricas 24 horas</li>
+              <li>Acceso a especialistas</li>
+              <li>Psicología con sesiones incluidas</li>
+              <li>Descuentos por múltiples asegurados</li>
+              <li>Condiciones ventajosas para familias</li>
+            </ul>
+            <a href="familiar.html" class="btn btn-cta">Más información</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img mayores" style="display:flex;align-items:center;justify-content:center;">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="28" r="13" fill="rgba(255,255,255,0.6)"/><path d="M24 62c2-10 7-14 16-14s14 4 16 14" fill="rgba(255,255,255,0.5)"/><line x1="35" y1="50" x2="32" y2="62" stroke="rgba(255,255,255,0.7)" stroke-width="2.5"/></svg>
+          </div>
+          <div class="product-card-header">Para mayores</div>
+          <div class="product-card-body">
+            <ul>
+              <li>Urgencias 24 horas</li>
+              <li>Revisiones con especialistas</li>
+              <li>Rehabilitación y fisioterapia</li>
+              <li>Chequeo médico anual</li>
+              <li>Sin límite de edad ni cuestionario previo</li>
+              <li>Ingresos hospitalarios según póliza</li>
+            </ul>
+            <a href="mayores.html" class="btn btn-cta">Más información</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card-img autonomos" style="display:flex;align-items:center;justify-content:center;">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><rect x="22" y="28" width="36" height="26" rx="4" fill="rgba(255,255,255,0.6)"/><path d="M32 28v-6a8 8 0 0116 0v6" stroke="rgba(255,255,255,0.8)" stroke-width="2.5"/><circle cx="40" cy="42" r="5" fill="rgba(255,255,255,0.8)"/></svg>
+          </div>
+          <div class="product-card-header">Para autónomos</div>
+          <div class="product-card-body">
+            <ul>
+              <li>Acceso a especialistas desde el primer día</li>
+              <li>Urgencias ambulatorias y hospitalarias</li>
+              <li>Pruebas diagnósticas</li>
+              <li>Revisiones médicas y seguimiento</li>
+              <li>Intervenciones ambulatorias u hospitalarias</li>
+            </ul>
+            <a href="autonomos.html" class="btn btn-cta">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">Lo que opinan nuestros asegurados</h2>
+      <p class="section-subtitle">La opinión de quienes ya confían en Caser es la mejor referencia. Conoce cómo valoran su experiencia, el proceso de contratación y la atención recibida.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>«El proceso fue muy sencillo. Me explicaron todas las opciones y contraté en pocos minutos. Estoy tranquila sabiendo que tengo un buen respaldo.»</p>
+          <div class="testimonial-author">
+            <strong>María L.</strong>
+            <span>42 años – Zaragoza</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>«Necesitaba un seguro flexible y con atención digital. La app me permite resolver consultas rápido y sin desplazamientos. Muy cómodo.»</p>
+          <div class="testimonial-author">
+            <strong>Javier M.</strong>
+            <span>36 años – Valencia</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>«Buscábamos una opción familiar y nos ayudaron a elegir la modalidad adecuada. El trato fue claro, cercano y sin complicaciones.»</p>
+          <div class="testimonial-author">
+            <strong>Carmen y Luis</strong>
+            <span>Padres de 2 niños – Sevilla</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES / PRICING -->
+  <section class="plans-section">
+    <div class="container">
+      <h2 class="section-title">Elige el seguro de salud Caser que mejor se adapta a ti</h2>
+      <p class="section-subtitle">Descubre las modalidades de salud Caser pensadas para ofrecerte diferentes niveles de cobertura, para que puedas contratar exactamente lo que necesitas.</p>
+
+      <div class="plans-grid">
+        <!-- MÉDICA -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <h3>MÉDICA</h3>
+            <div class="plan-type">AMBULATORIO</div>
+            <div class="plan-copago">CON o SIN copago, desde:</div>
+          </div>
+          <div class="plan-price">
+            <p class="from">Desde</p>
+            <p class="amount">15<sup>€</sup></p>
+            <p class="period">Mensual</p>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li><span class="plan-flag-cta"></span> CON y SIN Copago</li>
+              <li><span class="icon-check">✔</span> Medicina general</li>
+              <li><span class="icon-check">✔</span> Especialistas</li>
+              <li><span class="icon-check">✔</span> Pruebas diagnósticas y análisis</li>
+              <li><span class="icon-cross">✗</span> Urgencias hospitalarias</li>
+              <li><span class="icon-cross">✗</span> Hospitalización médica y quirúrgica</li>
+              <li><span class="icon-cross">✗</span> Intervenciones quirúrgicas</li>
+              <li><span class="icon-check">✔</span> Rehabilitación y fisioterapia</li>
+              <li><span class="icon-check">✔</span> Videoconsultas y chat médico</li>
+              <li><span class="icon-cross">✗</span> Asistencia sanitaria en viaje</li>
+              <li><span class="icon-cross">✗</span> Dental</li>
+            </ul>
+          </div>
+          <div class="plan-footer">
+            <a href="calcular.html" class="btn btn-cta">Más información</a>
+            <p class="descuento-note">Hasta 10% de DESCUENTO por nº asegurados.</p>
+          </div>
+        </div>
+
+        <!-- ADAPTA -->
+        <div class="plan-card featured">
+          <div class="plan-header">
+            <span class="plan-badge">Más popular</span>
+            <h3>ADAPTA</h3>
+            <div class="plan-type">COMPLETO + DENTAL</div>
+            <div class="plan-copago">SIN copagos, desde:</div>
+          </div>
+          <div class="plan-price">
+            <p class="from">Desde</p>
+            <p class="amount">56<sup>€</sup></p>
+            <p class="period">Mensual</p>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li><span class="plan-flag-primary"></span> Sin copago</li>
+              <li><span class="icon-check">✔</span> Medicina general</li>
+              <li><span class="icon-check">✔</span> Especialistas</li>
+              <li><span class="icon-check">✔</span> Pruebas diagnósticas y análisis</li>
+              <li><span class="icon-check">✔</span> Urgencias hospitalarias</li>
+              <li><span class="icon-check">✔</span> Hospitalización médica y quirúrgica</li>
+              <li><span class="icon-check">✔</span> Intervenciones quirúrgicas</li>
+              <li><span class="icon-check">✔</span> Rehabilitación y fisioterapia</li>
+              <li><span class="icon-check">✔</span> Videoconsultas y chat médico</li>
+              <li><span class="icon-check">✔</span> Asistencia sanitaria en viaje</li>
+              <li><span class="icon-check">✔</span> Dental</li>
+            </ul>
+          </div>
+          <div class="plan-footer">
+            <a href="calcular.html" class="btn btn-cta">Más información</a>
+          </div>
+        </div>
+
+        <!-- PRESTIGIO -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <h3>PRESTIGIO</h3>
+            <div class="plan-type">COMPLETO + REEMBOLSO</div>
+            <div class="plan-copago">SIN copagos, desde:</div>
+          </div>
+          <div class="plan-price">
+            <p class="from">Desde</p>
+            <p class="amount">108<sup>€</sup></p>
+            <p class="period">Mensual</p>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li><span class="plan-flag-cta"></span> SIN Copago + Reembolso de gastos</li>
+              <li><span class="icon-check">✔</span> Medicina general</li>
+              <li><span class="icon-check">✔</span> Especialistas</li>
+              <li><span class="icon-check">✔</span> Pruebas diagnósticas y análisis</li>
+              <li><span class="icon-check">✔</span> Urgencias hospitalarias</li>
+              <li><span class="icon-check">✔</span> Hospitalización médica y quirúrgica</li>
+              <li><span class="icon-check">✔</span> Intervenciones quirúrgicas</li>
+              <li><span class="icon-check">✔</span> Rehabilitación y fisioterapia</li>
+              <li><span class="icon-check">✔</span> Videoconsultas y chat médico</li>
+              <li><span class="icon-check">✔</span> Asistencia sanitaria en viaje</li>
+              <li><span class="icon-cross">✗</span> Dental</li>
+              <li><span class="icon-check">✔</span> Reembolso gastos médicos (España y extranjero)</li>
+              <li><span class="icon-check">✔</span> Reembolsos extra (farmacia, óptica, DIU)</li>
+            </ul>
+          </div>
+          <div class="plan-footer">
+            <a href="calcular.html" class="btn btn-cta">Más información</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title">Preguntas frecuentes</h2>
+      <p class="section-subtitle">Resolvemos las dudas más frecuentes sobre los seguros de salud Caser.</p>
+
+      <div class="faq-grid">
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            ¿Qué seguros de salud ofrece Caser?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">Caser ofrece tres modalidades principales: Médica (ambulatorio con o sin copago), Adapta (completo + dental, sin copago) y Prestigio (completo + reembolso de gastos, sin copago). También dispone de coberturas especiales para embarazadas, familias, mayores y autónomos.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            ¿Puedo elegir el médico que yo quiera?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">Sí. Con el seguro Caser tienes acceso a más de 45.000 médicos y especialistas en toda España. Con la modalidad Prestigio también puedes acudir a médicos fuera del cuadro médico y solicitar reembolso de los gastos.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            ¿Qué centros incluye el cuadro médico de Caser?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">El cuadro médico de Caser incluye más de 13.000 centros concertados en toda España, entre clínicas, hospitales y consultas especializadas. Puedes consultar el cuadro médico completo en la web oficial de Caser.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            ¿Existen descuentos por contratar seguros con Caser?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">Sí. Actualmente dispones de un 30% de descuento directo más 1 mes gratis. Además, puedes obtener hasta un 10% adicional de descuento en función del número de asegurados que incluyas en tu póliza.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            Tengo un seguro con otra compañía, ¿puedo cambiarme a Caser?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">Por supuesto. Puedes cambiar tu seguro médico a Caser en cualquier momento. Nuestros asesores te guiarán en el proceso para que el cambio sea sencillo y sin interrupciones en tu cobertura.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            ¿Cuántos beneficiarios puedo incluir en un seguro Caser?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">Puedes incluir todos los miembros de tu familia o grupo que desees. A mayor número de asegurados, mayor descuento obtendrás, hasta un 10% adicional sobre el precio de la póliza.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            ¿Incluyen asistencia en el extranjero los seguros de Caser?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">Las modalidades Adapta y Prestigio incluyen asistencia sanitaria en viaje al extranjero. Con el seguro Prestigio, además, puedes obtener reembolso de gastos médicos incurridos tanto en España como en el extranjero.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            ¿Puedo añadir cobertura dental a mi seguro de salud Caser?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">La modalidad Adapta incluye cobertura dental de serie. Si contratas la modalidad Médica, puedes consultar con nuestros asesores las opciones para añadir cobertura dental complementaria.</div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            ¿Cómo puedo solicitar más información o contratar un seguro de salud Caser?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">Puedes solicitar información llamando al 91 005 22 70 (nuevas contrataciones), rellenando el formulario de esta página o calculando tu tarifa directamente en nuestra sección "Calcula tu seguro". Uno de nuestros asesores te contactará sin compromiso.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="logo-wrap">
+            <svg width="140" height="46" viewBox="0 0 140 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 8C11 8 6 13.5 6 20.5C6 27.5 11 33 18 33C22.5 33 26.5 30.8 29 27.5L24.5 24.8C23 27 21 28.3 18 28.3C13.5 28.3 10.5 25 10.5 20.5C10.5 16 13.5 12.7 18 12.7C21 12.7 23 14 24.5 16.2L29 13.5C26.5 10.2 22.5 8 18 8Z" fill="#007363"/>
+              <rect x="5" y="4" width="6" height="6" rx="1.5" fill="#EC7A08"/>
+              <text x="36" y="26" font-family="Lato, Arial, sans-serif" font-size="22" font-weight="900" fill="#007363" letter-spacing="-0.5">caser</text>
+              <text x="36" y="40" font-family="Lato, Arial, sans-serif" font-size="9" font-weight="400" fill="#53565A" letter-spacing="1">Grupo Helvetia</text>
+            </svg>
+          </div>
+          <p>Somos Agente Exclusivo Caser, especialistas en Seguros de Salud.</p>
+          <div class="footer-phone">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#007363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.31 9.9 19.79 19.79 0 01.22 1.28 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>Llámanos: <a href="tel:910052270">91 005 22 70</a></span>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>Seguros Médicos</h4>
+          <ul>
+            <li><a href="particulares.html">Particulares</a></li>
+            <li><a href="familiar.html">Familias</a></li>
+            <li><a href="embarazo.html">Embarazadas</a></li>
+            <li><a href="mayores.html">Mayores</a></li>
+            <li><a href="autonomos.html">Autónomos</a></li>
+            <li><a href="calcular.html">Calcula tu seguro</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © Insursalud 2025.</p>
+        <div class="footer-legal">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos y condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
