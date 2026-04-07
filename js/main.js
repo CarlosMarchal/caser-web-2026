@@ -200,6 +200,35 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// ---- MODAL DE LLAMADA ----
+function openCallModal(planName) {
+  var modal = document.getElementById('callModal');
+  var planEl = document.getElementById('callModalPlanName');
+  if (!modal) return;
+  if (planEl) planEl.textContent = planName || '';
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCallModal() {
+  var modal = document.getElementById('callModal');
+  if (modal) modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  var overlay = document.getElementById('callModal');
+  if (overlay) {
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeCallModal();
+    });
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeCallModal();
+  });
+});
+
+
 // ---- SMOOTH SCROLL para anclas ----
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {

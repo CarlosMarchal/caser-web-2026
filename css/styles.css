@@ -1452,189 +1452,155 @@ h1, h2, h3, h4, h5 {
 .planes-grid-3 { grid-template-columns: repeat(3, 1fr); }
 .planes-grid-4 { grid-template-columns: repeat(4, 1fr); }
 
-/* Tarjeta de plan */
+/* =============================================
+   TARJETAS DE PLANES — nuevo diseño (Adeslas-style)
+   ============================================= */
+
+/* Base */
 .pc {
   background: var(--color-white);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 3px 14px rgba(0,0,0,0.10);
+  border-radius: 14px;
+  overflow: visible;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
   transition: box-shadow 0.25s, transform 0.25s;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .pc:hover {
-  box-shadow: 0 8px 28px rgba(0,0,0,0.17);
-  transform: translateY(-4px);
+  box-shadow: 0 10px 32px rgba(0,0,0,0.16);
+  transform: translateY(-5px);
 }
 .pc.pc-featured {
-  box-shadow: 0 4px 22px rgba(0,115,99,0.22);
+  box-shadow: 0 6px 28px rgba(0,115,99,0.20);
+  border: 2px solid var(--color-primary);
 }
 
-/* Cabecera de la tarjeta */
-.pc-header {
-  background: var(--color-primary);
-  color: var(--color-white);
-  padding: 22px 18px 18px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Badge triangular 30% esquina superior derecha */
+/* Badge 30% */
 .pc-badge {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
+  top: 0; right: 0;
+  width: 0; height: 0;
   border-style: solid;
   border-width: 0 72px 72px 0;
   border-color: transparent var(--color-cta) transparent transparent;
+  border-radius: 0 14px 0 0;
+  z-index: 2;
 }
 .pc-badge span {
   position: absolute;
-  top: 9px;
-  right: -64px;
-  color: white;
-  font-size: 12px;
-  font-weight: 900;
-  transform: rotate(45deg);
-  white-space: nowrap;
+  top: 9px; right: -64px;
+  color: #fff; font-size: 12px; font-weight: 900;
+  transform: rotate(45deg); white-space: nowrap;
 }
 
-/* Nombre del plan */
-.pc-name {
-  font-size: 1.35rem;
-  font-weight: 900;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  line-height: 1.1;
-  margin-bottom: 5px;
-}
-
-/* Subtítulo (tipo) */
-.pc-type {
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  opacity: 0.82;
-  margin-bottom: 6px;
-}
-
-/* Descripción copago */
-.pc-copago-desc {
-  font-size: 12px;
-  opacity: 0.78;
-}
-
-/* Bloque de precio */
-.pc-price-block {
-  padding: 22px 16px 16px;
+/* Parte superior */
+.pc-top {
+  padding: 30px 22px 20px;
   text-align: center;
   border-bottom: 1px solid #f0f0f0;
-  background: var(--color-white);
 }
 
+/* Icono */
+.pc-icon-box {
+  width: 56px; height: 56px;
+  background: var(--color-primary-light);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+}
+.pc-icon-box svg { width: 28px; height: 28px; }
+
+/* Nombre */
+.pc-name {
+  font-size: 1.25rem; font-weight: 900;
+  letter-spacing: 1px; text-transform: uppercase;
+  color: var(--color-text); margin-bottom: 14px;
+}
+
+/* Precio */
 .pc-price {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 2px;
-  line-height: 1;
+  display: flex; align-items: baseline;
+  justify-content: center; gap: 2px;
+  margin-bottom: 14px; flex-wrap: wrap;
 }
-
+.pc-price-from {
+  font-size: 14px; color: var(--color-text-medium);
+  font-weight: 400; margin-right: 3px;
+}
 .pc-price-num {
-  font-size: 4rem;
-  font-weight: 900;
-  color: var(--color-text);
-  line-height: 0.95;
+  font-size: 3.6rem; font-weight: 900;
+  color: var(--color-text); line-height: 1;
 }
-
 .pc-price-currency {
-  font-size: 1.7rem;
-  font-weight: 700;
+  font-size: 1.6rem; font-weight: 700;
   color: var(--color-text);
-  padding-top: 6px;
+  align-self: flex-start; padding-top: 4px;
 }
-
 .pc-price-period {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--color-primary);
-  margin-top: 6px;
+  font-size: 14px; font-weight: 700;
+  color: var(--color-text-medium);
+  align-self: flex-end; padding-bottom: 4px;
 }
-
 .pc-price-consult {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.4rem; font-weight: 900;
   color: var(--color-primary);
-  margin: 8px 0 4px;
+  display: block; text-align: center; margin-bottom: 4px;
+}
+.pc-price-sub {
+  font-size: 13px; color: var(--color-text-medium);
+  display: block; text-align: center;
 }
 
-/* Lista de coberturas */
+/* Tags */
+.pc-tags {
+  display: flex; flex-wrap: wrap;
+  gap: 6px; justify-content: center; margin-top: 2px;
+}
+.pc-tag {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: 20px; font-size: 12px;
+  font-weight: 700; padding: 4px 12px;
+  display: inline-block;
+}
+
+/* Features */
 .pc-features {
-  padding: 14px 18px;
-  flex: 1;
-  list-style: none;
+  padding: 16px 20px;
+  flex: 1; list-style: none;
 }
-
 .pc-features li {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  padding: 7px 0;
+  display: flex; align-items: center;
+  gap: 9px; padding: 7px 0;
   border-bottom: 1px solid #f2f2f2;
-  font-size: 13.5px;
-  color: var(--color-text);
-  line-height: 1.4;
+  font-size: 13.5px; color: var(--color-text); line-height: 1.4;
 }
 .pc-features li:last-child { border-bottom: none; }
+.pc-icon { width: 18px; height: 18px; flex-shrink: 0; }
 
-/* Iconos SVG */
-.pc-icon {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-}
-
-/* CTA al pie de la tarjeta */
-.pc-footer {
-  padding: 16px 18px 22px;
-  background: #f8f8f7;
-  text-align: center;
-}
-
+/* Footer */
+.pc-footer { padding: 16px 20px 22px; text-align: center; }
 .pc-btn {
-  display: block;
-  width: 100%;
-  background: var(--color-cta);
-  color: var(--color-white);
-  padding: 13px 20px;
-  border-radius: 6px;
-  font-size: 15px;
-  font-weight: 700;
-  text-align: center;
+  display: block; width: 100%;
+  background: var(--color-cta); color: var(--color-white);
+  padding: 14px 20px; border-radius: 8px;
+  font-size: 15px; font-weight: 700; text-align: center;
   margin-bottom: 10px;
   transition: background 0.2s, transform 0.2s;
-  cursor: pointer;
-  border: none;
+  cursor: pointer; border: none;
   font-family: var(--font-main);
 }
 .pc-btn:hover {
   background: var(--color-cta-hover);
-  transform: translateY(-1px);
-  color: var(--color-white);
+  transform: translateY(-1px); color: var(--color-white);
 }
-
 .pc-discount-note {
-  font-size: 12px;
-  color: var(--color-primary);
-  font-weight: 700;
-  line-height: 1.4;
+  font-size: 12px; color: var(--color-primary);
+  font-weight: 700; line-height: 1.4;
 }
 
-/* Responsive planes */
+/* Responsive */
 @media (max-width: 1100px) {
   .planes-grid-4 { grid-template-columns: repeat(2, 1fr); }
 }
@@ -1644,6 +1610,91 @@ h1, h2, h3, h4, h5 {
   .planes-grid-4 { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
   .planes-grid-1 { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
 }
-@media (max-width: 480px) {
-  .pc-price-num { font-size: 3rem; }
+@media (max-width: 480px) { .pc-price-num { font-size: 3rem; } }
+
+/* =============================================
+   MODAL DE LLAMADA
+   ============================================= */
+.call-modal-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 9000; align-items: center;
+  justify-content: center; padding: 20px;
 }
+.call-modal-overlay.active { display: flex; }
+.call-modal {
+  background: var(--color-white);
+  border-radius: 18px; padding: 36px 32px 28px;
+  max-width: 400px; width: 100%;
+  position: relative; text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  animation: modalIn 0.28s ease;
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(0.93) translateY(16px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+.call-modal-close {
+  position: absolute; top: 14px; right: 18px;
+  background: none; border: none; font-size: 22px;
+  color: var(--color-text-medium); cursor: pointer;
+  line-height: 1; padding: 4px;
+}
+.call-modal-close:hover { color: var(--color-text); }
+.call-modal-icon {
+  width: 64px; height: 64px;
+  background: var(--color-primary-light);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 18px;
+}
+.call-modal-icon svg { width: 30px; height: 30px; }
+.call-modal h3 {
+  font-size: 1.4rem; font-weight: 900;
+  color: var(--color-text); margin-bottom: 6px;
+}
+.call-modal-sub {
+  font-size: 14px; color: var(--color-text-medium); margin-bottom: 8px;
+}
+.call-modal-plan-name {
+  display: inline-block;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: 20px; font-size: 13px;
+  font-weight: 700; padding: 4px 14px; margin-bottom: 20px;
+}
+.call-modal-phone {
+  display: flex; align-items: center;
+  border: 1.5px solid #ddd; border-radius: 8px;
+  overflow: hidden; margin-bottom: 14px;
+}
+.call-modal-phone .phone-prefix {
+  display: flex; align-items: center; gap: 6px;
+  padding: 0 12px; background: #f7f7f7;
+  border-right: 1.5px solid #ddd; height: 48px;
+  font-size: 14px; font-weight: 700;
+  color: var(--color-text); white-space: nowrap;
+}
+.call-modal-phone input {
+  flex: 1; border: none; outline: none;
+  padding: 12px 14px; font-size: 15px;
+  font-family: var(--font-main); background: transparent;
+}
+.call-modal-check {
+  display: flex; align-items: flex-start;
+  gap: 8px; text-align: left; margin-bottom: 18px;
+}
+.call-modal-check input { margin-top: 3px; flex-shrink: 0; accent-color: var(--color-primary); }
+.call-modal-check label { font-size: 12px; color: var(--color-text-medium); line-height: 1.5; }
+.call-modal-check a { color: var(--color-primary); text-decoration: underline; }
+.call-modal-submit {
+  display: block; width: 100%;
+  background: var(--color-cta); color: var(--color-white);
+  padding: 14px 20px; border-radius: 8px;
+  font-size: 16px; font-weight: 700;
+  border: none; cursor: pointer;
+  font-family: var(--font-main);
+  transition: background 0.2s; margin-bottom: 12px;
+}
+.call-modal-submit:hover { background: var(--color-cta-hover); }
+.call-modal-footer-note { font-size: 12px; color: var(--color-text-light); }
