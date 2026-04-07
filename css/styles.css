@@ -415,11 +415,57 @@ h1, h2, h3, h4, h5 {
   box-shadow: var(--shadow-hover);
 }
 
+/* Hero form — estilo modal "Te llamamos gratis" */
+.hf-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  color: var(--color-primary);
+}
+
 .hero-form-card h3 {
   color: var(--color-primary);
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 6px;
   text-align: center;
+}
+
+.hf-sub {
+  text-align: center;
+  color: var(--color-text-medium);
+  font-size: 13.5px;
+  margin-bottom: 20px;
+}
+
+.hf-footer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--color-text-light);
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+/* Feature icon wrap (reemplaza SVG inline en index) */
+.feature-icon-wrap {
+  width: 52px;
+  height: 52px;
+  background: var(--color-primary-light);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* SVG icons coloreados con el primary green */
+.svg-icon {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(72%) saturate(400%) hue-rotate(136deg) brightness(90%) contrast(95%);
 }
 
 .form-group {

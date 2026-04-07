@@ -56,24 +56,30 @@
         <span class="hero-descuento">✦ Coberturas especiales para tu embarazo, parto y recién nacido</span>
       </div>
       <div class="hero-form-card">
-        <h3>Solicita más información</h3>
-        <form onsubmit="return false;">
-          <div class="form-group">
-            <div class="phone-input-wrap">
-              <div class="phone-prefix">
-                <span class="flag">🇪🇸</span>
-                <span>+34</span>
-              </div>
-              <input type="tel" name="telefono" placeholder="Escribe tu teléfono" aria-label="Teléfono">
-            </div>
+      <div class="hf-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.31 9.9 19.79 19.79 0 01.22 1.28 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+      <h3>Te llamamos gratis</h3>
+      <p class="hf-sub">Un asesor Caser te contactará en minutos</p>
+      <div class="hf-wrap" id="heroFormWrap">
+        <div class="phone-input-wrap">
+          <div class="phone-prefix">
+            <span class="flag">🇪🇸</span>
+            <span>+34</span>
           </div>
-          <div class="form-check">
-            <input type="checkbox" id="terminos-embarazo" checked>
-            <label for="terminos-embarazo">Acepto <a href="#">términos y condiciones</a></label>
-          </div>
-          <button type="button" class="btn btn-cta" onclick="openCallModal('')" >Solicitar llamada</button>
-        </form>
+          <input type="tel" id="heroPhone" placeholder="600 000 000" onkeydown="if(event.key==='Enter'){submitHeroForm();}">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="heroTerms" checked>
+          <label for="heroTerms">Acepto los <a href="#">términos y condiciones</a> y la política de privacidad</label>
+        </div>
+        <button type="button" class="btn btn-cta" onclick="submitHeroForm()">Te llamamos ahora</button>
+        <p class="hf-footer">Sin compromiso · Datos protegidos</p>
       </div>
+      <div id="heroFormSuccess" style="display:none; text-align:center; padding:10px 0 20px;">
+        <div style="font-size:48px; margin-bottom:12px;">✅</div>
+        <p style="font-size:17px; font-weight:700; color:var(--color-primary); margin-bottom:8px;">¡Recibido!</p>
+        <p style="font-size:14px; color:var(--color-text-medium);">Te llamaremos en los próximos minutos.</p>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -86,42 +92,42 @@
 
       <div class="coberturas-grid">
         <div class="cobertura-card">
-          <div class="cobertura-icon">🤰</div>
+          <div class="cobertura-icon"><img src="images/nurse.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Consultas de obstetricia y ginecología</h4>
             <p>Seguimiento completo del embarazo con los mejores obstetras y ginecólogos de tu zona.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon">🔬</div>
+          <div class="cobertura-icon"><img src="images/stats-report.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Ecografías incluidas según modalidad</h4>
             <p>Ecografías de control durante el embarazo, incluyendo ecografía morfológica y de bienestar fetal.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon">📚</div>
+          <div class="cobertura-icon"><img src="images/checklist.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Preparación al parto</h4>
             <p>Clases de preparación al parto y lactancia materna con matronas especializadas.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon">🧘</div>
+          <div class="cobertura-icon"><img src="images/walking.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Rehabilitación suelo pélvico</h4>
             <p>Sesiones de rehabilitación del suelo pélvico postparto para una recuperación óptima.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon">🧬</div>
+          <div class="cobertura-icon"><img src="images/healthy-check.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Test prenatales no invasivos</h4>
             <p>Test de diagnóstico prenatal no invasivo (DPNI) disponible según la modalidad contratada.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon">🛏️</div>
+          <div class="cobertura-icon"><img src="images/hospital.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Hospitalización individual para el parto</h4>
             <p>Habitación individual en el momento del parto en las pólizas con cobertura completa.</p>

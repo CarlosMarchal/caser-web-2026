@@ -56,24 +56,30 @@
         <span class="hero-descuento">✦ Hasta 10% adicional de descuento por número de asegurados</span>
       </div>
       <div class="hero-form-card">
-        <h3>Solicita más información</h3>
-        <form onsubmit="return false;">
-          <div class="form-group">
-            <div class="phone-input-wrap">
-              <div class="phone-prefix">
-                <span class="flag">🇪🇸</span>
-                <span>+34</span>
-              </div>
-              <input type="tel" name="telefono" placeholder="Escribe tu teléfono" aria-label="Teléfono">
-            </div>
+      <div class="hf-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.31 9.9 19.79 19.79 0 01.22 1.28 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+      <h3>Te llamamos gratis</h3>
+      <p class="hf-sub">Un asesor Caser te contactará en minutos</p>
+      <div class="hf-wrap" id="heroFormWrap">
+        <div class="phone-input-wrap">
+          <div class="phone-prefix">
+            <span class="flag">🇪🇸</span>
+            <span>+34</span>
           </div>
-          <div class="form-check">
-            <input type="checkbox" id="terminos-familiar" checked>
-            <label for="terminos-familiar">Acepto <a href="#">términos y condiciones</a></label>
-          </div>
-          <button type="button" class="btn btn-cta" onclick="openCallModal('')" >Solicitar llamada</button>
-        </form>
+          <input type="tel" id="heroPhone" placeholder="600 000 000" onkeydown="if(event.key==='Enter'){submitHeroForm();}">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="heroTerms" checked>
+          <label for="heroTerms">Acepto los <a href="#">términos y condiciones</a> y la política de privacidad</label>
+        </div>
+        <button type="button" class="btn btn-cta" onclick="submitHeroForm()">Te llamamos ahora</button>
+        <p class="hf-footer">Sin compromiso · Datos protegidos</p>
       </div>
+      <div id="heroFormSuccess" style="display:none; text-align:center; padding:10px 0 20px;">
+        <div style="font-size:48px; margin-bottom:12px;">✅</div>
+        <p style="font-size:17px; font-weight:700; color:var(--color-primary); margin-bottom:8px;">¡Recibido!</p>
+        <p style="font-size:14px; color:var(--color-text-medium);">Te llamaremos en los próximos minutos.</p>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -86,42 +92,42 @@
 
       <div class="coberturas-grid">
         <div class="cobertura-card">
-          <div class="cobertura-icon">👶</div>
+          <div class="cobertura-icon"><img src="images/ambulance.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Urgencias pediátricas 24 horas</h4>
             <p>Atención pediátrica de urgencias disponible las 24 horas todos los días del año para los más pequeños.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon">🏥</div>
+          <div class="cobertura-icon"><img src="images/24hours.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Urgencias generales 24h</h4>
             <p>Todos los asegurados de la póliza familiar tienen acceso a urgencias hospitalarias sin límite de horario.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon">🧠</div>
+          <div class="cobertura-icon"><img src="images/healthy-check.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Psicología con sesiones incluidas</h4>
             <p>Sesiones de psicología incluidas en la póliza para el bienestar emocional de todos los miembros de la familia.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon">🩺</div>
+          <div class="cobertura-icon"><img src="images/nurse.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Acceso a especialistas</h4>
             <p>Consultas con más de 50 especialidades médicas para todos los miembros de la póliza familiar.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon">💰</div>
+          <div class="cobertura-icon"><img src="images/users-plus.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Descuentos por número de asegurados</h4>
             <p>Cuantos más miembros incluyas en tu seguro familiar, mayor descuento obtendrás. Hasta un 10% adicional.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon">💻</div>
+          <div class="cobertura-icon"><img src="images/phone.svg" alt="" width="22" height="22" class="svg-icon"></div>
           <div>
             <h4>Videoconsultas para toda la familia</h4>
             <p>Consulta con tu médico o pediatra desde casa a través de videollamada o chat en la app Caser Salud.</p>

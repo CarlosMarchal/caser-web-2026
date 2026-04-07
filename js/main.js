@@ -305,6 +305,56 @@ function showCallModalSuccess() {
   if (successWrap) successWrap.style.display = 'block';
 }
 
+// ---- FORMULARIO DEL HERO (envío directo, sin modal) ----
+
+function submitHeroForm() {
+  var phoneInput = document.getElementById('heroPhone');
+  var termsInput = document.getElementById('heroTerms');
+  var submitBtn  = document.querySelector('#heroFormWrap .btn-cta');
+  var phone = phoneInput ? phoneInput.value : '';
+  var cleanPhone = phone.replace(/\s/g, '');
+
+  if (!cleanPhone || cleanPhone.length < 9) {
+    if (phoneInput) {
+      phoneInput.style.borderColor = '#c9474a';
+      phoneInput.focus();
+      setTimeout(function () { phoneInput.style.borderColor = ''; }, 2000);
+    }
+    return;
+  }
+  if (termsInput && !termsInput.checked) {
+    alert('Por favor, acepta los términos y condiciones para continuar.');
+    return;
+  }
+  if (submitBtn) { submitBtn.textContent = 'Enviando...'; submitBtn.disabled = true; }
+
+  var fields = [
+    { name: 'phone',        value: '+34' + cleanPhone },
+    { name: 'tarificador',  value: HS_TARIFICADOR },
+    { name: 'casilla_rgpd', value: 'true' }
+  ];
+  var payload = {
+    fields: fields,
+    context: { pageUri: window.location.href, pageName: document.title }
+  };
+
+  function showHeroSuccess() {
+    var wrap    = document.getElementById('heroFormWrap');
+    var success = document.getElementById('heroFormSuccess');
+    if (wrap)    wrap.style.display = 'none';
+    if (success) success.style.display = 'block';
+  }
+
+  if (HS_PORTAL_ID && HS_FORM_ID) {
+    var url = 'https://api.hsforms.com/submissions/v3/integration/submit/' + HS_PORTAL_ID + '/' + HS_FORM_ID;
+    fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
+      .then(function () { showHeroSuccess(); })
+      .catch(function () { showHeroSuccess(); });
+  } else {
+    setTimeout(showHeroSuccess, 800);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   var overlay = document.getElementById('callModal');
   if (overlay) {
