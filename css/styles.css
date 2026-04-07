@@ -1396,3 +1396,235 @@ h1, h2, h3, h4, h5 {
   .hero-badge { font-size: 1rem; }
   .hero-text h1 { font-size: 1.6rem; }
 }
+
+/* ============================================================
+   TARJETAS DE PLANES - Diseño imagen de referencia
+   ============================================================ */
+
+/* Sección de planes rediseñada */
+.planes-section {
+  padding: 70px 0 80px;
+  background: var(--color-off-white);
+}
+
+.planes-section .section-title {
+  font-size: 2rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.planes-section .section-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-medium);
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 50px;
+}
+
+/* Grids de planes */
+.planes-grid {
+  display: grid;
+  gap: 22px;
+  align-items: start;
+}
+.planes-grid-1 { grid-template-columns: minmax(0,400px); justify-content: center; }
+.planes-grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 800px; margin: 0 auto; }
+.planes-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.planes-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Tarjeta de plan */
+.pc {
+  background: var(--color-white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.10);
+  transition: box-shadow 0.25s, transform 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+.pc:hover {
+  box-shadow: 0 8px 28px rgba(0,0,0,0.17);
+  transform: translateY(-4px);
+}
+.pc.pc-featured {
+  box-shadow: 0 4px 22px rgba(0,115,99,0.22);
+}
+
+/* Cabecera de la tarjeta */
+.pc-header {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 22px 18px 18px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Badge triangular 30% esquina superior derecha */
+.pc-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 72px 72px 0;
+  border-color: transparent var(--color-cta) transparent transparent;
+}
+.pc-badge span {
+  position: absolute;
+  top: 9px;
+  right: -64px;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  transform: rotate(45deg);
+  white-space: nowrap;
+}
+
+/* Nombre del plan */
+.pc-name {
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 5px;
+}
+
+/* Subtítulo (tipo) */
+.pc-type {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.82;
+  margin-bottom: 6px;
+}
+
+/* Descripción copago */
+.pc-copago-desc {
+  font-size: 12px;
+  opacity: 0.78;
+}
+
+/* Bloque de precio */
+.pc-price-block {
+  padding: 22px 16px 16px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  background: var(--color-white);
+}
+
+.pc-price {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+  line-height: 1;
+}
+
+.pc-price-num {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--color-text);
+  line-height: 0.95;
+}
+
+.pc-price-currency {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--color-text);
+  padding-top: 6px;
+}
+
+.pc-price-period {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: 6px;
+}
+
+.pc-price-consult {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 8px 0 4px;
+}
+
+/* Lista de coberturas */
+.pc-features {
+  padding: 14px 18px;
+  flex: 1;
+  list-style: none;
+}
+
+.pc-features li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 0;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 13.5px;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+.pc-features li:last-child { border-bottom: none; }
+
+/* Iconos SVG */
+.pc-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* CTA al pie de la tarjeta */
+.pc-footer {
+  padding: 16px 18px 22px;
+  background: #f8f8f7;
+  text-align: center;
+}
+
+.pc-btn {
+  display: block;
+  width: 100%;
+  background: var(--color-cta);
+  color: var(--color-white);
+  padding: 13px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-main);
+}
+.pc-btn:hover {
+  background: var(--color-cta-hover);
+  transform: translateY(-1px);
+  color: var(--color-white);
+}
+
+.pc-discount-note {
+  font-size: 12px;
+  color: var(--color-primary);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Responsive planes */
+@media (max-width: 1100px) {
+  .planes-grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .planes-grid-2,
+  .planes-grid-3,
+  .planes-grid-4 { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+  .planes-grid-1 { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+}
+@media (max-width: 480px) {
+  .pc-price-num { font-size: 3rem; }
+}
