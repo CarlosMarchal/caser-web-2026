@@ -1496,7 +1496,7 @@ h1, h2, h3, h4, h5 {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-text h1 { font-size: 1.8rem; }
   .hero-badge { font-size: 1.1rem; }
-  .hero-form-card { margin-top: 20px; }
+  .hero-form-card { display: none; }
 
   /* ---- HEADER MOBILE: teléfonos en fila ---- */
   .site-header { padding: 10px 0; }
