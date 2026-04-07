@@ -44,7 +44,7 @@
         <a href="embarazo.html">Embarazo</a>
         <a href="mayores.html">Mayores</a>
         <a href="autonomos.html">Autónomos</a>
-        <a href="calcular.html" class="nav-cta">Calcula tu seguro</a>
+        <button type="button" class="nav-cta" onclick="openCallModal('')" style="cursor:pointer;background:none;border:none;font:inherit;">Calcula tu seguro</button>
       </div>
     </div>
   </nav>
@@ -61,7 +61,7 @@
       </div>
       <div class="hero-form-card">
         <h3>Solicita más información</h3>
-        <form action="calcular.html" method="get" onsubmit="return false;">
+        <form onsubmit="return false;">
           <div class="form-group">
             <div class="phone-input-wrap">
               <div class="phone-prefix">
@@ -190,7 +190,7 @@
             <li><svg xmlns="http://www.w3.org/2000/svg" class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="#c9474a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> Dental</li>
           </ul>
           <div class="pc-footer">
-            <a href="calcular.html" class="pc-btn">Más información</a>
+            <button type="button" class="pc-btn" onclick="openCallModal('MÉDICA')">Más información</button>
             <p class="pc-discount-note">Hasta 10% de DESCUENTO por nº asegurados.</p>
           </div>
         </div>
@@ -221,7 +221,7 @@
             <li><svg xmlns="http://www.w3.org/2000/svg" class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="#c9474a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> Dental</li>
           </ul>
           <div class="pc-footer">
-            <a href="calcular.html" class="pc-btn">Más información</a>
+            <button type="button" class="pc-btn" onclick="openCallModal('INTEGRAL')">Más información</button>
             <p class="pc-discount-note">Hasta 10% de DESCUENTO por nº asegurados.</p>
           </div>
         </div>
@@ -252,7 +252,7 @@
             <li><svg xmlns="http://www.w3.org/2000/svg" class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="#007363" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 11 12 14 15 10"/></svg> Dental</li>
           </ul>
           <div class="pc-footer">
-            <a href="calcular.html" class="pc-btn">Más información</a>
+            <button type="button" class="pc-btn" onclick="openCallModal('ADAPTA')">Más información</button>
           </div>
         </div>
 
@@ -284,7 +284,7 @@
             <li><svg xmlns="http://www.w3.org/2000/svg" class="pc-icon" viewBox="0 0 24 24" fill="none" stroke="#007363" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="9 11 12 14 15 10"/></svg> Reembolsos extra (farmacia, óptica, criopreservación, DIU)</li>
           </ul>
           <div class="pc-footer">
-            <a href="calcular.html" class="pc-btn">Más información</a>
+            <button type="button" class="pc-btn" onclick="openCallModal('PRESTIGIO')">Más información</button>
           </div>
         </div>
 
@@ -429,7 +429,7 @@
             <li><a href="embarazo.html">Embarazadas</a></li>
             <li><a href="mayores.html">Mayores</a></li>
             <li><a href="autonomos.html">Autónomos</a></li>
-            <li><a href="calcular.html">Calcula tu seguro</a></li>
+            <li><a href="#" onclick="openCallModal('');return false;">Calcula tu seguro</a></li>
           </ul>
         </div>
       </div>

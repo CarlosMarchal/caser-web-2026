@@ -47,7 +47,7 @@
         <a href="embarazo.html">Embarazo</a>
         <a href="mayores.html">Mayores</a>
         <a href="autonomos.html">Autónomos</a>
-        <a href="calcular.html" class="nav-cta">Calcula tu seguro</a>
+        <button type="button" class="nav-cta" onclick="openCallModal('')" style="cursor:pointer;background:none;border:none;font:inherit;">Calcula tu seguro</button>
       </div>
     </div>
   </nav>
@@ -64,7 +64,7 @@
       </div>
       <div class="hero-form-card">
         <h3>Solicita más información</h3>
-        <form action="calcular.html" method="get" onsubmit="return false;">
+        <form onsubmit="return false;">
           <div class="form-group">
             <div class="phone-input-wrap">
               <div class="phone-prefix">
@@ -146,7 +146,7 @@
     <div class="container">
       <h2>¿Cuánto cuesta un seguro de salud de Caser?</h2>
       <p>Cuéntanos tus necesidades y te mostraremos el seguro de salud Caser que mejor encaja con tu presupuesto.</p>
-      <a href="calcular.html" class="btn btn-cta btn-lg">Calcular mi tarifa</a>
+      <button type="button" class="btn btn-cta btn-lg" onclick="openCallModal('')">Calcular mi tarifa</button>
     </div>
   </section>
 
@@ -455,7 +455,7 @@
             <li><a href="embarazo.html">Embarazadas</a></li>
             <li><a href="mayores.html">Mayores</a></li>
             <li><a href="autonomos.html">Autónomos</a></li>
-            <li><a href="calcular.html">Calcula tu seguro</a></li>
+            <li><a href="#" onclick="openCallModal('');return false;">Calcula tu seguro</a></li>
           </ul>
         </div>
       </div>

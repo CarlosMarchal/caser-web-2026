@@ -41,7 +41,7 @@
         <a href="embarazo.html">Embarazo</a>
         <a href="mayores.html">Mayores</a>
         <a href="autonomos.html">Autónomos</a>
-        <a href="calcular.html" class="nav-cta">Calcula tu seguro</a>
+        <button type="button" class="nav-cta" onclick="openCallModal('')" style="cursor:pointer;background:none;border:none;font:inherit;">Calcula tu seguro</button>
       </div>
     </div>
   </nav>
@@ -57,7 +57,7 @@
       </div>
       <div class="hero-form-card">
         <h3>Solicita más información</h3>
-        <form action="calcular.html" method="get" onsubmit="return false;">
+        <form onsubmit="return false;">
           <div class="form-group">
             <div class="phone-input-wrap">
               <div class="phone-prefix">
@@ -348,7 +348,7 @@
       <h2>Protege a tu familia desde hoy</h2>
       <p>Calcula el precio de tu seguro familiar Caser y descubre cuánto puedes ahorrar con el descuento por número de asegurados.</p>
       <div class="btn-group">
-        <a href="calcular.html" class="btn btn-cta btn-lg">Calcular precio familiar</a>
+        <button type="button" class="btn btn-cta btn-lg" onclick="openCallModal('')">Calcular precio familiar</button>
         <button class="btn btn-outline btn-lg" onclick="openCallModal('')" style="cursor:pointer;">📞 Solicitar llamada gratis</button>
       </div>
     </div>
@@ -375,7 +375,7 @@
             <li><a href="embarazo.html">Embarazadas</a></li>
             <li><a href="mayores.html">Mayores</a></li>
             <li><a href="autonomos.html">Autónomos</a></li>
-            <li><a href="calcular.html">Calcula tu seguro</a></li>
+            <li><a href="#" onclick="openCallModal('');return false;">Calcula tu seguro</a></li>
           </ul>
         </div>
       </div>
