@@ -202,9 +202,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // ---- MODAL DE LLAMADA ----
 
-// ⚠️ HUBSPOT: Rellena con tu Portal ID y Form ID para activar la integración
-var HS_PORTAL_ID = ''; // Ej: '12345678'
-var HS_FORM_ID   = ''; // Ej: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
+// ── HUBSPOT ──────────────────────────────────────────────────────────────────
+var HS_PORTAL_ID   = '6596944';
+var HS_FORM_ID     = '33de33c5-5d4e-48b6-bef8-24d2daf2c8dc';
 var HS_TARIFICADOR = '400';
 
 var _currentPlanName = '';
@@ -263,8 +263,9 @@ function submitCallModal() {
 
   // Construir datos para HubSpot
   var fields = [
-    { name: 'phone',       value: '+34' + cleanPhone },
-    { name: 'tarificador', value: HS_TARIFICADOR }
+    { name: 'phone',         value: '+34' + cleanPhone },
+    { name: 'tarificador',   value: HS_TARIFICADOR },
+    { name: 'casilla_rgpd',  value: 'true' }
   ];
   if (_currentPlanName) {
     fields.push({ name: 'plan_de_interes', value: _currentPlanName });
