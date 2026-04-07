@@ -71,7 +71,7 @@
             <input type="checkbox" id="terminos-embarazo" checked>
             <label for="terminos-embarazo">Acepto <a href="#">términos y condiciones</a></label>
           </div>
-          <button type="submit" class="btn btn-cta">Solicitar llamada</button>
+          <button type="button" class="btn btn-cta" onclick="openCallModal('')" >Solicitar llamada</button>
         </form>
       </div>
     </div>
@@ -288,8 +288,8 @@
       <h2>Cuida tu embarazo con el mejor seguro</h2>
       <p>Solicita información sin compromiso y nuestros asesores te explicarán todas las coberturas disponibles para tu embarazo.</p>
       <div class="btn-group">
-        <a href="calcular.html" class="btn btn-cta btn-lg">Calcular mi tarifa</a>
-        <a href="tel:910052270" class="btn btn-outline btn-lg">91 005 22 70</a>
+        <button class="btn btn-cta btn-lg" onclick="openCallModal(\'\')" style="cursor:pointer;">Solicitar llamada gratis</button>
+        <button class="btn btn-outline btn-lg" onclick="openCallModal('')" style="cursor:pointer;">📞 Solicitar llamada gratis</button>
       </div>
     </div>
   </section>
@@ -329,7 +329,7 @@
     </div>
   </footer>
 
-  <!-- MODAL LLAMADA -->
+  <!-- MODAL TE LLAMAMOS -->
   <div class="call-modal-overlay" id="callModal">
     <div class="call-modal">
       <button class="call-modal-close" onclick="closeCallModal()">&times;</button>
@@ -339,20 +339,34 @@
       <h3>Te llamamos gratis</h3>
       <p class="call-modal-sub">Un asesor Caser te contactará en minutos</p>
       <span class="call-modal-plan-name" id="callModalPlanName"></span>
-      <form onsubmit="return false;">
+
+      <!-- Formulario -->
+      <div class="call-modal-form-wrap">
         <div class="call-modal-phone">
           <div class="phone-prefix"><span>🇪🇸</span><span>+34</span></div>
-          <input type="tel" placeholder="600 000 000" id="callModalPhone">
+          <input type="tel" placeholder="600 000 000" id="callModalPhone" onkeydown="if(event.key==='Enter'){submitCallModal();}">
         </div>
         <div class="call-modal-check">
           <input type="checkbox" id="callModalTerms" checked>
           <label for="callModalTerms">Acepto los <a href="#">términos y condiciones</a> y la política de privacidad</label>
         </div>
-        <button type="submit" class="call-modal-submit">Te llamamos ahora</button>
-      </form>
+        <!-- Campo oculto tarificador para HubSpot -->
+        <input type="hidden" id="callModalTarificador" value="400">
+        <button type="button" class="call-modal-submit" onclick="submitCallModal()">Te llamamos ahora</button>
+      </div>
+
+      <!-- Estado de éxito -->
+      <div id="callModalSuccess" style="display:none; text-align:center; padding: 10px 0 20px;">
+        <div style="font-size:48px; margin-bottom:12px;">✅</div>
+        <p style="font-size:17px; font-weight:700; color:var(--color-primary); margin-bottom:8px;">¡Recibido!</p>
+        <p style="font-size:14px; color:var(--color-text-medium);">Te llamaremos en los próximos minutos.</p>
+        <button onclick="closeCallModal()" style="margin-top:18px; background:var(--color-primary); color:#fff; border:none; border-radius:8px; padding:10px 28px; font-size:14px; font-weight:700; cursor:pointer;">Cerrar</button>
+      </div>
+
       <p class="call-modal-footer-note">Sin compromiso · Datos protegidos</p>
     </div>
   </div>
+
 
   <script src="js/main.js"></script>
 </body>

@@ -1445,12 +1445,15 @@ h1, h2, h3, h4, h5 {
 .planes-grid {
   display: grid;
   gap: 22px;
-  align-items: start;
+  align-items: stretch;
 }
 .planes-grid-1 { grid-template-columns: minmax(0,400px); justify-content: center; }
 .planes-grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 800px; margin: 0 auto; }
 .planes-grid-3 { grid-template-columns: repeat(3, 1fr); }
 .planes-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Forzar mismo alto en todas las tarjetas del grid */
+.planes-grid .pc { height: 100%; }
 
 /* =============================================
    TARJETAS DE PLANES — nuevo diseño (Adeslas-style)

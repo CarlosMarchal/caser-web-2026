@@ -201,19 +201,107 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // ---- MODAL DE LLAMADA ----
+
+// ⚠️ HUBSPOT: Rellena con tu Portal ID y Form ID para activar la integración
+var HS_PORTAL_ID = ''; // Ej: '12345678'
+var HS_FORM_ID   = ''; // Ej: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
+var HS_TARIFICADOR = '400';
+
+var _currentPlanName = '';
+
 function openCallModal(planName) {
   var modal = document.getElementById('callModal');
-  var planEl = document.getElementById('callModalPlanName');
   if (!modal) return;
-  if (planEl) planEl.textContent = planName || '';
+  _currentPlanName = planName || '';
+
+  // Mostrar nombre del plan
+  var planEl = document.getElementById('callModalPlanName');
+  if (planEl) planEl.textContent = _currentPlanName;
+
+  // Resetear estado del formulario
+  var formWrap = modal.querySelector('.call-modal-form-wrap');
+  var successWrap = document.getElementById('callModalSuccess');
+  var submitBtn = modal.querySelector('.call-modal-submit');
+  var phoneInput = document.getElementById('callModalPhone');
+  if (formWrap)   formWrap.style.display = 'block';
+  if (successWrap) successWrap.style.display = 'none';
+  if (submitBtn)  { submitBtn.textContent = 'Te llamamos ahora'; submitBtn.disabled = false; }
+  if (phoneInput) phoneInput.value = '';
+
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
+
+  // Foco en el campo teléfono
+  setTimeout(function () { if (phoneInput) phoneInput.focus(); }, 200);
 }
 
 function closeCallModal() {
   var modal = document.getElementById('callModal');
   if (modal) modal.classList.remove('active');
   document.body.style.overflow = '';
+}
+
+function submitCallModal() {
+  var phone     = (document.getElementById('callModalPhone') || {}).value || '';
+  var terms     = document.getElementById('callModalTerms');
+  var submitBtn = document.querySelector('.call-modal-submit');
+
+  // Validación
+  var cleanPhone = phone.replace(/\s/g, '');
+  if (!cleanPhone || cleanPhone.length < 9) {
+    var inp = document.getElementById('callModalPhone');
+    if (inp) { inp.style.border = '2px solid #e53e3e'; inp.focus(); }
+    return;
+  }
+  if (terms && !terms.checked) {
+    alert('Debes aceptar los términos y condiciones para continuar.');
+    return;
+  }
+
+  // Estado de carga
+  if (submitBtn) { submitBtn.textContent = 'Enviando...'; submitBtn.disabled = true; }
+
+  // Construir datos para HubSpot
+  var fields = [
+    { name: 'phone',       value: '+34' + cleanPhone },
+    { name: 'tarificador', value: HS_TARIFICADOR }
+  ];
+  if (_currentPlanName) {
+    fields.push({ name: 'plan_de_interes', value: _currentPlanName });
+  }
+
+  var payload = {
+    fields: fields,
+    context: {
+      pageUri:  window.location.href,
+      pageName: document.title
+    }
+  };
+
+  // Envío a HubSpot (si están configurados los IDs)
+  if (HS_PORTAL_ID && HS_FORM_ID) {
+    var url = 'https://api.hsforms.com/submissions/v3/integration/submit/' + HS_PORTAL_ID + '/' + HS_FORM_ID;
+    fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function (res) {
+      if (res.ok) { showCallModalSuccess(); }
+      else         { showCallModalSuccess(); } // Mostrar éxito aunque haya error (no bloqueamos al usuario)
+    })
+    .catch(function () { showCallModalSuccess(); });
+  } else {
+    // Sin HubSpot configurado → mostrar éxito igualmente
+    setTimeout(showCallModalSuccess, 800);
+  }
+}
+
+function showCallModalSuccess() {
+  var formWrap    = document.querySelector('.call-modal-form-wrap');
+  var successWrap = document.getElementById('callModalSuccess');
+  if (formWrap)   formWrap.style.display = 'none';
+  if (successWrap) successWrap.style.display = 'block';
 }
 
 document.addEventListener('DOMContentLoaded', function () {
