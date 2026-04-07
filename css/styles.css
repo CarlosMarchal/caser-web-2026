@@ -285,16 +285,16 @@ h1, h2, h3, h4, h5 {
 
 .nav-inner a.nav-cta,
 .nav-inner button.nav-cta {
-  background: var(--color-cta);
+  background: var(--color-cta) !important;
   font-weight: 700;
   border-radius: 0;
-  color: inherit;
+  color: var(--color-white) !important;
   text-decoration: none;
 }
 
 .nav-inner a.nav-cta:hover,
 .nav-inner button.nav-cta:hover {
-  background: var(--color-cta-hover);
+  background: var(--color-cta-hover) !important;
 }
 
 /* Hamburger menu */
@@ -1511,25 +1511,38 @@ h1, h2, h3, h4, h5 {
   .phone-secondary .label { font-size: 9.5px; }
   .phone-secondary .number { font-size: 13.5px; }
 
-  .nav-inner {
-    display: none;
-    flex-direction: column;
-    padding: 0;
-  }
-  .nav-inner.open {
-    display: flex;
-  }
-  .nav-inner a {
-    padding: 14px 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    width: 100%;
-  }
-  .nav-toggle { display: block; }
+  .main-nav { position: relative; }
   .main-nav .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
+  .nav-inner {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: var(--color-primary);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+  }
+  .nav-inner.open {
+    display: flex;
+  }
+  .nav-inner a,
+  .nav-inner button.nav-cta {
+    padding: 15px 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 0 !important;
+  }
+  .nav-toggle { display: block; }
 
   .features-grid { grid-template-columns: 1fr; }
   .products-grid { grid-template-columns: 1fr; }
