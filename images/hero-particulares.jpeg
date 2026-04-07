@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='noindex, follow' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO Premium plugin v25.7 (Yoast SEO v25.7) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Page not found - Caser</title>
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:title" content="Page not found - Caser" />
+	<meta property="og:site_name" content="Caser" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://caser.ofertaseguromedico.es/#website","url":"https://caser.ofertaseguromedico.es/","name":"Caser","description":"Seguro de Salud","publisher":{"@id":"https://caser.ofertaseguromedico.es/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://caser.ofertaseguromedico.es/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"es"},{"@type":"Organization","@id":"https://caser.ofertaseguromedico.es/#organization","name":"Caser","url":"https://caser.ofertaseguromedico.es/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://caser.ofertaseguromedico.es/#/schema/logo/image/","url":"https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/cropped-Logo-Caser.png","contentUrl":"https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/cropped-Logo-Caser.png","width":480,"height":223,"caption":"Caser"},"image":{"@id":"https://caser.ofertaseguromedico.es/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="Caser &raquo; Feed" href="https://caser.ofertaseguromedico.es/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Caser &raquo; Feed de los comentarios" href="https://caser.ofertaseguromedico.es/comments/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/caser.ofertaseguromedico.es\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.5"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://caser.ofertaseguromedico.es/wp-includes/css/dist/block-library/style.min.css?ver=6.8.5' media='all' />
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='hello-elementor-css' href='https://caser.ofertaseguromedico.es/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.4.4' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://caser.ofertaseguromedico.es/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.4' media='all' />
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://caser.ofertaseguromedico.es/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.4' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.33.5' media='all' />
+<link rel='stylesheet' id='elementor-post-5-css' href='https://caser.ofertaseguromedico.es/wp-content/uploads/elementor/css/post-5.css?ver=1766002937' media='all' />
+<link rel='stylesheet' id='e-sticky-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.33.5' media='all' />
+<link rel='stylesheet' id='e-animation-fadeIn-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.33.5' media='all' />
+<link rel='stylesheet' id='widget-mega-menu-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.33.5' media='all' />
+<link rel='stylesheet' id='widget-icon-box-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.33.5' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.33.5' media='all' />
+<link rel='stylesheet' id='e-popup-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.31.2' media='all' />
+<link rel='stylesheet' id='elementor-post-26-css' href='https://caser.ofertaseguromedico.es/wp-content/uploads/elementor/css/post-26.css?ver=1775475658' media='all' />
+<link rel='stylesheet' id='elementor-post-641-css' href='https://caser.ofertaseguromedico.es/wp-content/uploads/elementor/css/post-641.css?ver=1775475658' media='all' />
+<link rel='stylesheet' id='elementor-post-245-css' href='https://caser.ofertaseguromedico.es/wp-content/uploads/elementor/css/post-245.css?ver=1766002938' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-lato-css' href='https://caser.ofertaseguromedico.es/wp-content/uploads/elementor/google-fonts/css/lato.css?ver=1755876649' media='all' />
+<link rel='stylesheet' id='elementor-gf-nunito-css' href='https://fonts.googleapis.com/css?family=Nunito:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://caser.ofertaseguromedico.es/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1755274351' media='all' />
+<script src="https://caser.ofertaseguromedico.es/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://caser.ofertaseguromedico.es/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://caser.ofertaseguromedico.es/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.5" />
+<meta name="generator" content="Elementor 3.33.5; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-ND9JDL5D');</script>
+<!-- End Google Tag Manager -->
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/cropped-Sin-titulo-2-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/cropped-Sin-titulo-2-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/cropped-Sin-titulo-2-180x180.png" />
+<meta name="msapplication-TileImage" content="https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/cropped-Sin-titulo-2-270x270.png" />
+</head>
+<body class="error404 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor piotnetforms-edit hello-elementor-default elementor-default elementor-kit-5">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND9JDL5D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="skip-link screen-reader-text" href="#content">Ir al contenido</a>
+
+		<header data-elementor-type="header" data-elementor-id="26" class="elementor elementor-26 elementor-location-header" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-49f2b7cd e-flex e-con-boxed e-con e-parent" data-id="49f2b7cd" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-56bc471a elementor-widget elementor-widget-text-editor" data-id="56bc471a" data-element_type="widget" data-widget_type="text-editor.default">
+									Agente exclusivo Marchal Aseguradores 								</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-c2cfadc elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con e-parent" data-id="c2cfadc" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;position&quot;:&quot;absolute&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-1eab001 e-con-full e-flex e-con e-child" data-id="1eab001" data-element_type="container">
+				<div class="elementor-element elementor-element-9cdba48 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-text-editor" data-id="9cdba48" data-element_type="widget" data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;tablet&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}" data-widget_type="text-editor.default">
+									<p>AHORA: 1 MES GRATIS + 30% DE DESCUENTO</p>								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6c0bd887 e-flex e-con-boxed e-con e-parent" data-id="6c0bd887" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_offset_mobile&quot;:44,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-7a186ff2 e-con-full e-flex e-con e-child" data-id="7a186ff2" data-element_type="container">
+				<div class="elementor-element elementor-element-3cd1fdcb elementor-widget elementor-widget-image" data-id="3cd1fdcb" data-element_type="widget" data-widget_type="image.default">
+																<a href="https://caser.ofertaseguromedico.es">
+							<img fetchpriority="high" width="480" height="223" src="https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/cropped-Logo-Caser.png" class="attachment-large size-large wp-image-267" alt="" srcset="https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/cropped-Logo-Caser.png 480w, https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/cropped-Logo-Caser-300x139.png 300w" sizes="(max-width: 480px) 100vw, 480px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-18d97a6d e-con-full e-flex e-con e-child" data-id="18d97a6d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_offset_mobile&quot;:0,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+				<div class="elementor-element elementor-element-291b0b9 e-n-menu-mobile elementor-widget__width-initial e-n-menu-layout-dropdown elementor-hidden-desktop elementor-hidden-tablet e-full_width elementor-widget elementor-widget-n-menu" data-id="291b0b9" data-element_type="widget" data-settings="{&quot;menu_items&quot;:[{&quot;item_title&quot;:&quot;Individual&quot;,&quot;_id&quot;:&quot;f07b541&quot;,&quot;item_dropdown_content&quot;:&quot;&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;db419a0\&quot; name=\&quot;internal-url\&quot; settings=\&quot;%7B%22type%22%3A%22post%22%2C%22post_id%22%3A%22417%22%7D\&quot;]&quot;},&quot;item_link&quot;:{&quot;url&quot;:&quot;https:\/\/caser.ofertaseguromedico.es\/seguro-salud-caser-particulares\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;},{&quot;item_title&quot;:&quot;Familiar&quot;,&quot;_id&quot;:&quot;164a3a0&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;a80c6d8\&quot; name=\&quot;internal-url\&quot; settings=\&quot;%7B%22type%22%3A%22post%22%2C%22post_id%22%3A%22575%22%7D\&quot;]&quot;},&quot;item_link&quot;:{&quot;url&quot;:&quot;https:\/\/caser.ofertaseguromedico.es\/seguros-salud-familias\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_dropdown_content&quot;:&quot;no&quot;,&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;},{&quot;item_title&quot;:&quot;Embarazadas&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;a80c6d8\&quot; name=\&quot;internal-url\&quot; settings=\&quot;%7B%22type%22%3A%22post%22%2C%22post_id%22%3A%22575%22%7D\&quot;]&quot;},&quot;_id&quot;:&quot;3495689&quot;,&quot;item_link&quot;:{&quot;url&quot;:&quot;https:\/\/caser.ofertaseguromedico.es\/seguros-salud-familias\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_dropdown_content&quot;:&quot;no&quot;,&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;},{&quot;item_title&quot;:&quot;Aut\u00f3nomos&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;a80c6d8\&quot; name=\&quot;internal-url\&quot; settings=\&quot;%7B%22type%22%3A%22post%22%2C%22post_id%22%3A%22525%22%7D\&quot;]&quot;},&quot;_id&quot;:&quot;4fa7da1&quot;,&quot;item_link&quot;:{&quot;url&quot;:&quot;https:\/\/caser.ofertaseguromedico.es\/seguro-salud-autonomos-caser\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_dropdown_content&quot;:&quot;no&quot;,&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;},{&quot;item_title&quot;:&quot;Empresas&quot;,&quot;_id&quot;:&quot;493db3f&quot;,&quot;item_dropdown_content&quot;:&quot;&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;fdb0d4f\&quot; name=\&quot;internal-url\&quot; settings=\&quot;%7B%22type%22%3A%22post%22%2C%22post_id%22%3A%22556%22%7D\&quot;]&quot;},&quot;item_link&quot;:{&quot;url&quot;:&quot;https:\/\/caser.ofertaseguromedico.es\/seguro-salud-empresas-caser\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;},{&quot;_id&quot;:&quot;17e7669&quot;,&quot;item_title&quot;:&quot;Calcula tu seguro&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;8c7804e\&quot; name=\&quot;popup\&quot; settings=\&quot;%7B%22popup%22%3A%22245%22%7D\&quot;]&quot;},&quot;item_link&quot;:{&quot;url&quot;:&quot;#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjI0NSIsInRvZ2dsZSI6ZmFsc2V9&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_dropdown_content&quot;:&quot;no&quot;,&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;}],&quot;breakpoint_selector&quot;:&quot;mobile&quot;,&quot;menu_item_title_distance_from_content_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;item_layout&quot;:&quot;dropdown&quot;,&quot;open_animation&quot;:&quot;fadeIn&quot;,&quot;menu_item_title_distance_from_content_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:18,&quot;sizes&quot;:[]},&quot;content_width&quot;:&quot;full_width&quot;,&quot;menu_item_title_distance_from_content&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]}}" data-widget_type="mega-menu.default">
+							<nav class="e-n-menu" data-widget-number="431" aria-label="Menú">
+					<button class="e-n-menu-toggle" id="menu-toggle-431" aria-haspopup="true" aria-expanded="false" aria-controls="menubar-431" aria-label="Menu Toggle">
+			<span class="e-n-menu-toggle-icon e-open">
+				<svg class="e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg>			</span>
+			<span class="e-n-menu-toggle-icon e-close">
+				<svg class="e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>			</span>
+		</button>
+					<div class="e-n-menu-wrapper" id="menubar-431" aria-labelledby="menu-toggle-431">
+				<ul class="e-n-menu-heading">
+								<li class="e-n-menu-item">
+				<div id="e-n-menu-title-4311" class="e-n-menu-title">
+					<a class="e-n-menu-title-container e-focus e-link" href="https://caser.ofertaseguromedico.es/seguro-salud-caser-particulares/">												<span class="e-n-menu-title-text">
+							Individual						</span>
+					</a>									</div>
+							</li>
+					<li class="e-n-menu-item">
+				<div id="e-n-menu-title-4312" class="e-n-menu-title">
+					<a class="e-n-menu-title-container e-focus e-link" href="https://caser.ofertaseguromedico.es/seguros-salud-familias/">												<span class="e-n-menu-title-text">
+							Familiar						</span>
+					</a>									</div>
+							</li>
+					<li class="e-n-menu-item">
+				<div id="e-n-menu-title-4313" class="e-n-menu-title">
+					<a class="e-n-menu-title-container e-focus e-link" href="https://caser.ofertaseguromedico.es/seguros-salud-familias/">												<span class="e-n-menu-title-text">
+							Embarazadas						</span>
+					</a>									</div>
+							</li>
+					<li class="e-n-menu-item">
+				<div id="e-n-menu-title-4314" class="e-n-menu-title">
+					<a class="e-n-menu-title-container e-focus e-link" href="https://caser.ofertaseguromedico.es/seguro-salud-autonomos-caser/">												<span class="e-n-menu-title-text">
+							Autónomos						</span>
+					</a>									</div>
+							</li>
+					<li class="e-n-menu-item">
+				<div id="e-n-menu-title-4315" class="e-n-menu-title">
+					<a class="e-n-menu-title-container e-focus e-link" href="https://caser.ofertaseguromedico.es/seguro-salud-empresas-caser/">												<span class="e-n-menu-title-text">
+							Empresas						</span>
+					</a>									</div>
+							</li>
+					<li class="e-n-menu-item">
+				<div id="e-n-menu-title-4316" class="e-n-menu-title e-anchor">
+					<a class="e-n-menu-title-container e-focus e-link" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjI0NSIsInRvZ2dsZSI6ZmFsc2V9" aria-current="page">												<span class="e-n-menu-title-text">
+							Calcula tu seguro						</span>
+					</a>									</div>
+							</li>
+						</ul>
+			</div>
+		</nav>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-5928c88c e-con-full elementor-hidden-mobile e-flex e-con e-child" data-id="5928c88c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-1cbbf8b7 elementor-widget elementor-widget-heading" data-id="1cbbf8b7" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default">Nuevas contrataciones</div>				</div>
+				<div class="elementor-element elementor-element-40b686ea elementor-widget elementor-widget-heading" data-id="40b686ea" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default"><a href="tel:+34910052270">91 005 22 70</a></div>				</div>
+				</div>
+		<div class="elementor-element elementor-element-5ab99939 e-con-full elementor-hidden-mobile e-flex e-con e-child" data-id="5ab99939" data-element_type="container">
+				<div class="elementor-element elementor-element-6e30b78d elementor-widget elementor-widget-heading" data-id="6e30b78d" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default">Atención al cliente</div>				</div>
+				<div class="elementor-element elementor-element-10e96f12 elementor-widget elementor-widget-heading" data-id="10e96f12" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-heading-title elementor-size-default"><a href="tel:+34911553472">91 155 34 72</a></div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-119e64c elementor-hidden-mobile e-flex e-con-boxed e-con e-parent" data-id="119e64c" data-element_type="container" data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_offset&quot;:104,&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-65e80c9c e-n-menu-mobile e-fit_to_content elementor-widget__width-initial e-n-menu-layout-horizontal elementor-widget elementor-widget-n-menu" data-id="65e80c9c" data-element_type="widget" data-settings="{&quot;menu_items&quot;:[{&quot;item_title&quot;:&quot;Particulares&quot;,&quot;_id&quot;:&quot;f07b541&quot;,&quot;item_dropdown_content&quot;:&quot;&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;dea57ea\&quot; name=\&quot;internal-url\&quot; settings=\&quot;%7B%22type%22%3A%22post%22%2C%22post_id%22%3A%22417%22%7D\&quot;]&quot;},&quot;item_link&quot;:{&quot;url&quot;:&quot;https:\/\/caser.ofertaseguromedico.es\/seguro-salud-caser-particulares\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;},{&quot;item_title&quot;:&quot;Familiar&quot;,&quot;item_dropdown_content&quot;:&quot;&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;dea57ea\&quot; name=\&quot;internal-url\&quot; settings=\&quot;%7B%22type%22%3A%22post%22%2C%22post_id%22%3A%22575%22%7D\&quot;]&quot;},&quot;_id&quot;:&quot;e0bbda5&quot;,&quot;item_link&quot;:{&quot;url&quot;:&quot;https:\/\/caser.ofertaseguromedico.es\/seguros-salud-familias\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;},{&quot;item_title&quot;:&quot;Embarazo&quot;,&quot;item_dropdown_content&quot;:&quot;&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;dea57ea\&quot; name=\&quot;internal-url\&quot; settings=\&quot;%7B%22type%22%3A%22post%22%2C%22post_id%22%3A%22613%22%7D\&quot;]&quot;},&quot;_id&quot;:&quot;3eebaa8&quot;,&quot;item_link&quot;:{&quot;url&quot;:&quot;https:\/\/caser.ofertaseguromedico.es\/seguro-salud-embarazo\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;},{&quot;item_title&quot;:&quot;Mayores&quot;,&quot;_id&quot;:&quot;493db3f&quot;,&quot;item_dropdown_content&quot;:&quot;&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;fdb0d4f\&quot; name=\&quot;internal-url\&quot; settings=\&quot;%7B%22type%22%3A%22post%22%2C%22post_id%22%3A%22961%22%7D\&quot;]&quot;},&quot;item_link&quot;:{&quot;url&quot;:&quot;https:\/\/caser.ofertaseguromedico.es\/seguro-salud-mayores\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;},{&quot;item_title&quot;:&quot;Aut\u00f3nomos&quot;,&quot;_id&quot;:&quot;164a3a0&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;a80c6d8\&quot; name=\&quot;internal-url\&quot; settings=\&quot;%7B%22type%22%3A%22post%22%2C%22post_id%22%3A%22525%22%7D\&quot;]&quot;},&quot;item_link&quot;:{&quot;url&quot;:&quot;https:\/\/caser.ofertaseguromedico.es\/seguro-salud-autonomos-caser\/&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_dropdown_content&quot;:&quot;no&quot;,&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;},{&quot;_id&quot;:&quot;17e7669&quot;,&quot;item_title&quot;:&quot;Calcula tu seguro&quot;,&quot;__dynamic__&quot;:{&quot;item_link&quot;:&quot;[elementor-tag id=\&quot;8c7804e\&quot; name=\&quot;popup\&quot; settings=\&quot;%7B%22popup%22%3A%22245%22%7D\&quot;]&quot;},&quot;item_link&quot;:{&quot;url&quot;:&quot;#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjI0NSIsInRvZ2dsZSI6ZmFsc2V9&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;item_dropdown_content&quot;:&quot;no&quot;,&quot;item_icon&quot;:{&quot;value&quot;:&quot;&quot;,&quot;library&quot;:&quot;&quot;},&quot;item_icon_active&quot;:null,&quot;element_id&quot;:&quot;&quot;}],&quot;item_position_horizontal&quot;:&quot;center&quot;,&quot;breakpoint_selector&quot;:&quot;mobile&quot;,&quot;menu_item_title_distance_from_content_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;content_width&quot;:&quot;fit_to_content&quot;,&quot;content_horizontal_position&quot;:&quot;center&quot;,&quot;item_layout&quot;:&quot;horizontal&quot;,&quot;open_on&quot;:&quot;hover&quot;,&quot;horizontal_scroll&quot;:&quot;disable&quot;,&quot;menu_item_title_distance_from_content&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;menu_item_title_distance_from_content_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="mega-menu.default">
+							<nav class="e-n-menu" data-widget-number="170" aria-label="Menú">
+					<button class="e-n-menu-toggle" id="menu-toggle-170" aria-haspopup="true" aria-expanded="false" aria-controls="menubar-170" aria-label="Menu Toggle">
+			<span class="e-n-menu-toggle-icon e-open">
+				<svg class="e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg>			</span>
+			<span class="e-n-menu-toggle-icon e-close">
+				<svg class="e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>			</span>
+		</button>
+					<div class="e-n-menu-wrapper" id="menubar-170" aria-labelledby="menu-toggle-170">
+				<ul class="e-n-menu-heading">
+								<li class="e-n-menu-item">
+				<div id="e-n-menu-title-1701" class="e-n-menu-title">
+					<a class="e-n-menu-title-container e-focus e-link" href="https://caser.ofertaseguromedico.es/seguro-salud-caser-particulares/">												<span class="e-n-menu-title-text">
+							Particulares						</span>
+					</a>									</div>
+							</li>
+					<li class="e-n-menu-item">
+				<div id="e-n-menu-title-1702" class="e-n-menu-title">
+					<a class="e-n-menu-title-container e-focus e-link" href="https://caser.ofertaseguromedico.es/seguros-salud-familias/">												<span class="e-n-menu-title-text">
+							Familiar						</span>
+					</a>									</div>
+							</li>
+					<li class="e-n-menu-item">
+				<div id="e-n-menu-title-1703" class="e-n-menu-title">
+					<a class="e-n-menu-title-container e-focus e-link" href="https://caser.ofertaseguromedico.es/seguro-salud-embarazo/">												<span class="e-n-menu-title-text">
+							Embarazo						</span>
+					</a>									</div>
+							</li>
+					<li class="e-n-menu-item">
+				<div id="e-n-menu-title-1704" class="e-n-menu-title">
+					<a class="e-n-menu-title-container e-focus e-link" href="https://caser.ofertaseguromedico.es/seguro-salud-mayores/">												<span class="e-n-menu-title-text">
+							Mayores						</span>
+					</a>									</div>
+							</li>
+					<li class="e-n-menu-item">
+				<div id="e-n-menu-title-1705" class="e-n-menu-title">
+					<a class="e-n-menu-title-container e-focus e-link" href="https://caser.ofertaseguromedico.es/seguro-salud-autonomos-caser/">												<span class="e-n-menu-title-text">
+							Autónomos						</span>
+					</a>									</div>
+							</li>
+					<li class="e-n-menu-item">
+				<div id="e-n-menu-title-1706" class="e-n-menu-title e-anchor">
+					<a class="e-n-menu-title-container e-focus e-link" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjI0NSIsInRvZ2dsZSI6ZmFsc2V9" aria-current="page">												<span class="e-n-menu-title-text">
+							Calcula tu seguro						</span>
+					</a>									</div>
+							</li>
+						</ul>
+			</div>
+		</nav>
+						</div>
+					</div>
+				</div>
+				</header>
+		<main id="content" class="site-main">
+
+			<div class="page-header">
+			<h1 class="entry-title">No se ha podido encontrar la página.</h1>
+		</div>
+	
+	<div class="page-content">
+		<p>Parece que no se ha encontrado nada en esta ubicación.</p>
+	</div>
+
+</main>
+		<footer data-elementor-type="footer" data-elementor-id="641" class="elementor elementor-641 elementor-location-footer" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-6359cbf3 e-con-full elementor-hidden-tablet elementor-hidden-mobile e-flex e-con e-parent" data-id="6359cbf3" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;bottom&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+				<div class="elementor-element elementor-element-1e2af822 elementor-widget elementor-widget-text-editor" data-id="1e2af822" data-element_type="widget" data-widget_type="text-editor.default">
+									<p>OFERTA: 30% de DESCUENTO en nuestros seguros médicos</p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-36df273 elementor-hidden-desktop elementor-hidden-tablet e-con-full e-flex e-con e-parent" data-id="36df273" data-element_type="container" data-settings="{&quot;sticky&quot;:&quot;bottom&quot;,&quot;sticky_on&quot;:[&quot;mobile&quot;],&quot;sticky_offset_mobile&quot;:0,&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+		<div class="elementor-element elementor-element-e179750 e-con-full e-flex e-con e-child" data-id="e179750" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-2c1585f elementor-view-stacked elementor-mobile-position-left elementor-widget-mobile__width-auto elementor-shape-circle elementor-position-top elementor-widget elementor-widget-icon-box" data-id="2c1585f" data-element_type="widget" data-widget_type="icon-box.default">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="tel:+3491" class="elementor-icon" tabindex="-1" aria-label="91 600 00 00 ">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-phone-alt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<a href="tel:+3491" >
+							91 600 00 00 						</a>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-a2dae8d e-con-full e-flex e-con e-child" data-id="a2dae8d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-8ae9ec0 elementor-view-stacked elementor-mobile-position-left elementor-widget-mobile__width-auto elementor-shape-circle elementor-position-top elementor-widget elementor-widget-icon-box" data-id="8ae9ec0" data-element_type="widget" data-widget_type="icon-box.default">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3NTg4IiwidG9nZ2xlIjpmYWxzZX0%3D" class="elementor-icon" tabindex="-1" aria-label="Calcular precio">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-calculator" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M400 0H48C22.4 0 0 22.4 0 48v416c0 25.6 22.4 48 48 48h352c25.6 0 48-22.4 48-48V48c0-25.6-22.4-48-48-48zM128 435.2c0 6.4-6.4 12.8-12.8 12.8H76.8c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm0-128c0 6.4-6.4 12.8-12.8 12.8H76.8c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm128 128c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm0-128c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8v-38.4c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v38.4zm128 128c0 6.4-6.4 12.8-12.8 12.8h-38.4c-6.4 0-12.8-6.4-12.8-12.8V268.8c0-6.4 6.4-12.8 12.8-12.8h38.4c6.4 0 12.8 6.4 12.8 12.8v166.4zm0-256c0 6.4-6.4 12.8-12.8 12.8H76.8c-6.4 0-12.8-6.4-12.8-12.8V76.8C64 70.4 70.4 64 76.8 64h294.4c6.4 0 12.8 6.4 12.8 12.8v102.4z"></path></svg>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjE3NTg4IiwidG9nZ2xlIjpmYWxzZX0%3D" >
+							Calcular precio						</a>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-45e21d47 e-flex e-con-boxed e-con e-parent" data-id="45e21d47" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-2ca5c818 e-con-full e-flex e-con e-child" data-id="2ca5c818" data-element_type="container">
+		<div class="elementor-element elementor-element-5b984988 e-con-full e-flex e-con e-child" data-id="5b984988" data-element_type="container">
+				<div class="elementor-element elementor-element-586c42b5 elementor-widget elementor-widget-image" data-id="586c42b5" data-element_type="widget" data-widget_type="image.default">
+															<img width="480" height="223" src="https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/Caser-blanco.png" class="attachment-large size-large wp-image-320" alt="" srcset="https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/Caser-blanco.png 480w, https://caser.ofertaseguromedico.es/wp-content/uploads/2025/08/Caser-blanco-300x139.png 300w" sizes="(max-width: 480px) 100vw, 480px" />															</div>
+				<div class="elementor-element elementor-element-90769c2 elementor-widget elementor-widget-text-editor" data-id="90769c2" data-element_type="widget" data-widget_type="text-editor.default">
+									<p>Somos Agente Exclusivo Caser, especialistas en Seguros de Salud.</p>								</div>
+				<div class="elementor-element elementor-element-3e8fecc4 elementor-position-left elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="3e8fecc4" data-element_type="widget" data-widget_type="icon-box.default">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-headset" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							<b>Llámanos:</b> 91 005 22 70						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-74d15d7a e-con-full e-flex e-con e-child" data-id="74d15d7a" data-element_type="container">
+				<div class="elementor-element elementor-element-7fc854cf elementor-widget elementor-widget-heading" data-id="7fc854cf" data-element_type="widget" data-widget_type="heading.default">
+					<h4 class="elementor-heading-title elementor-size-default">Seguros Médicos</h4>				</div>
+				<div class="elementor-element elementor-element-1351bb36 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="1351bb36" data-element_type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://caser.ofertaseguromedico.es/">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Particulares</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://caser.ofertaseguromedico.es/seguros-salud-familias/">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Familias</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://caser.ofertaseguromedico.es/seguro-salud-embarazo/">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Embarazadas</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://caser.ofertaseguromedico.es/seguro-salud-autonomos-caser/">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Autónomos</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://caser.ofertaseguromedico.es/seguro-salud-empresas-caser/">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Empresas</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjI0NSIsInRvZ2dsZSI6ZmFsc2V9">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Calcula tu seguro</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-654f10d7 e-con-full e-flex e-con e-child" data-id="654f10d7" data-element_type="container">
+		<div class="elementor-element elementor-element-59203c62 e-con-full e-flex e-con e-child" data-id="59203c62" data-element_type="container">
+				<div class="elementor-element elementor-element-184c6bb0 elementor-widget elementor-widget-text-editor" data-id="184c6bb0" data-element_type="widget" data-widget_type="text-editor.default">
+									<p>Copyright © Insursalud 2025.</p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-ddf609b e-con-full e-flex e-con e-child" data-id="ddf609b" data-element_type="container">
+				<div class="elementor-element elementor-element-b79db9b elementor-widget elementor-widget-text-editor" data-id="b79db9b" data-element_type="widget" data-widget_type="text-editor.default">
+									Política de privacidad | Términos y condiciones								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</footer>
+		
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/hello-elementor\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<div data-elementor-type="popup" data-elementor-id="245" class="elementor elementor-245 elementor-location-popup" data-elementor-settings="{&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;triggers&quot;:[],&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-770b239 e-flex e-con-boxed e-con e-parent" data-id="770b239" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-aef49de elementor-widget elementor-widget-heading" data-id="aef49de" data-element_type="widget" data-widget_type="heading.default">
+					<h3 class="elementor-heading-title elementor-size-default">Solicita más información</h3>				</div>
+				<div class="elementor-element elementor-element-5a4d1e3 elementor-widget__width-inherit elementor-widget elementor-widget-piotnetforms" data-id="5a4d1e3" data-element_type="widget" data-widget_type="piotnetforms.default">
+				<div class="elementor-widget-container">
+					<div ><div id="piotnetforms" class="piotnetforms piotnetforms-119" data-piotnetforms-shortcode-id="119"><form id="119" class="piotnetforms__form" onsubmit="return false"><div class="piotnet-section p15374597">						<div class="piotnet-section__container"
+		>
+		<div class="piotnet-column p33353331">						<div class="piotnet-column__inner"
+			>
+				
+		<div class="p28547818 piotnetforms-fields-wrapper piotnetforms-labels-above">
+			<div class="piotnetforms-field-type-tel piotnetforms-field-group piotnetforms-column  piotnetforms-field-group-numero_movil piotnetforms-col-100 piotnetforms-field-required">
+				<label style="display:none" for="form-field-numero_movil" class="piotnetforms-field-label">Móvil</label><div data-piotnetforms-required></div><div class="piotnetforms-field-container"><input size="1" class="piotnetforms-field piotnetforms-size-" type="tel" name="form_fields[numero_movil]" id="form-field-numero_movil" placeholder="Escribe tu teléfono" maxlength="9" minlength="9" data-mask="000 000 000" oninvalid="this.setCustomValidity(&#039;Por favor, introduce exactamente 9 dígitos numéricos.&#039;)" onchange="this.setCustomValidity(&#039;&#039;)" autocomplete="on" data-piotnetforms-default-value="" required="required" aria-required="true" data-piotnetforms-id="119" pattern="^(?:\s*\d){9}\s*$" title="Only numbers and phone characters (#, -, *, etc) are accepted." data-piotnetforms-tel-field=""></div>			</div>
+		</div>
+			
+		<div class="p89719501 piotnetforms-fields-wrapper piotnetforms-labels-above">
+			<div class="piotnetforms-field-type-acceptance piotnetforms-field-group piotnetforms-column  piotnetforms-field-group-p89719501 piotnetforms-col-100 piotnetforms-field-required">
+				<label style="display:none" for="form-field-p89719501" class="piotnetforms-field-label">Términos y condiciones</label><div data-piotnetforms-required></div><div class="piotnetforms-field-container"><div class="piotnetforms-field-subgroup piotnetforms-field-subgroup--native "><span class="piotnetforms-field-option"><input class="piotnetforms-field piotnetforms-size- piotnetforms-acceptance-field" type="checkbox" name="form_fields[p89719501]" id="form-field-p89719501" autocomplete="on" data-piotnetforms-default-value="" required="required" aria-required="true" data-piotnetforms-id="119" value="yes" checked="checked"> <label for="form-field-p89719501">Acepto <a href="https://sitioweburl/">términos y condiciones</a>
+</label></span></div></div>			</div>
+		</div>
+			
+		<div class="p77555151 piotnetforms-fields-wrapper piotnetforms-labels-above">
+			<div class="piotnetforms-field-type-hidden piotnetforms-field-group piotnetforms-column  piotnetforms-field-group-url piotnetforms-col-100">
+				<label for="form-field-url" class="piotnetforms-field-label">url</label><div data-piotnetforms-required></div><div class="piotnetforms-field-container"><input size="1" class="piotnetforms-field piotnetforms-size-" type="hidden" name="form_fields[url]" id="form-field-url" autocomplete="on" data-piotnetforms-default-value="https://caser.ofertaseguromedico.es/hello-world/" value="https://caser.ofertaseguromedico.es/hello-world/" data-piotnetforms-value="https://caser.ofertaseguromedico.es/hello-world/" data-piotnetforms-id="119"></div>			</div>
+		</div>
+			
+		<div class="p71999969 piotnetforms-fields-wrapper piotnetforms-labels-above">
+			<div class="piotnetforms-field-type-hidden piotnetforms-field-group piotnetforms-column  piotnetforms-field-group-hs_google_click_id piotnetforms-col-100">
+				<label for="form-field-hs_google_click_id" class="piotnetforms-field-label">gclid</label><div data-piotnetforms-required></div><div class="piotnetforms-field-container"><input size="1" class="piotnetforms-field piotnetforms-size-" type="hidden" name="form_fields[hs_google_click_id]" id="form-field-hs_google_click_id" autocomplete="on" data-piotnetforms-default-value="" data-piotnetforms-id="119"></div>			</div>
+		</div>
+			
+		<div class="p55959897 piotnetforms-fields-wrapper piotnetforms-labels-above">
+			<div class="piotnetforms-field-type-hidden piotnetforms-field-group piotnetforms-column  piotnetforms-field-group-tipo_poliza piotnetforms-col-100">
+				<label for="form-field-tipo_poliza" class="piotnetforms-field-label">Tipo de poliza</label><div data-piotnetforms-required></div><div class="piotnetforms-field-container"><input size="1" class="piotnetforms-field piotnetforms-size-" type="hidden" name="form_fields[tipo_poliza]" id="form-field-tipo_poliza" autocomplete="on" data-piotnetforms-default-value="400" value="400" data-piotnetforms-value="400" data-piotnetforms-id="119"></div>			</div>
+		</div>
+			
+		<div class="p51774777 piotnetforms-hidden-desktop piotnetforms-hidden-tablet piotnetforms-hidden-phone piotnetforms-fields-wrapper piotnetforms-labels-above">
+			<div class="piotnetforms-field-type-time piotnetforms-field-group piotnetforms-column  piotnetforms-field-group-hora piotnetforms-col-100">
+				<div data-piotnetforms-required></div><div class="piotnetforms-field-container"><input class="piotnetforms-field piotnetforms-size- piotnetforms-field-textual piotnetforms-time-field" type="time" name="form_fields[hora]" id="form-field-hora" autocomplete="on" data-piotnetforms-default-value="H&#039;07:44&#039;" value="H&#039;07:44&#039;" data-piotnetforms-value="H&#039;07:44&#039;" data-piotnetforms-id="119" data-time-format="H" data-time-minute-increment="5" data-piotnetforms-time-24hr=""></div>			</div>
+		</div>
+	<script>jQuery(document).ready(function( $ ) {					$('head').append('<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">');
+					})</script>
+		<div class="p56349613 piotnetforms-submit piotnetforms-button-wrapper">
+
+				<input type="hidden" name="post_id" value="119" data-piotnetforms-hidden-form-id="119"/>
+		<input type="hidden" name="form_id" value="p56349613" data-piotnetforms-hidden-form-id="119"/>
+		<input type="hidden" name="remote_ip" value="188.78.4.31" data-piotnetforms-hidden-form-id="119"/>
+
+					<input type="hidden" name="redirect" value="https://caser.ofertaseguromedico.es/pagina-de-agradecimiento/" data-piotnetforms-hidden-form-id="119" data-piotnetforms-open-new-tab=""/>
+		
+		
+		
+		
+		<button class="piotnetforms-button" type="submit" role="button" data-piotnetforms-required-text="Debes completar este campo." data-piotnetforms-submit-form-id="119" data-piotnetforms-submit-keyboard="false" data-piotnetforms-submit-hide="true">
+					<span class="piotnetforms-button-content-wrapper">
+			<span class="piotnetforms-button-text piotnetforms-spinner"><span class="icon-spinner-of-dots"></span></span>
+						<span class="piotnetforms-button-text">Solicitar llamada</span>
+		</span>
+				</button>
+		
+		        		        		
+		
+		
+        
+            		<div id="piotnetforms-trigger-success-119" data-piotnetforms-trigger-success="119" style="display: none"></div>
+		<div id="piotnetforms-trigger-failed-119" data-piotnetforms-trigger-failed="119" style="display: none"></div>
+		<div class="piotnetforms-alert piotnetforms-alert--mail">
+			<div class="piotnetforms-message piotnetforms-message-success" role="alert" data-piotnetforms-message="Te llamaremos ahora mismo.">Te llamaremos ahora mismo.</div>
+			<div class="piotnetforms-message piotnetforms-message-danger" role="alert" data-piotnetforms-message="Ha ocurrido un error.">Ha ocurrido un error.</div>
+			<!-- <div class="piotnetforms-message piotnetforms-help-inline" role="alert">Server error. Form not sent.</div> -->
+		</div>
+				</div>
+					</div>
+		</div>			</div>
+		</div><link rel="stylesheet" href="https://caser.ofertaseguromedico.es/wp-content/uploads/piotnetforms/css/119.css?ver=29" media="all"></form></div><div data-piotnetforms-ajax-url="https://caser.ofertaseguromedico.es/wp-admin/admin-ajax.php"></div><div data-piotnetforms-plugin-url="https://caser.ofertaseguromedico.es/wp-content/plugins"></div><div data-piotnetforms-tinymce-upload="https://caser.ofertaseguromedico.es/wp-content/plugins/piotnetforms-pro/inc/forms/tinymce/tinymce-upload.php"></div><div data-piotnetforms-stripe-key=""></div><div class="piotnetforms-break-point" data-piotnetforms-break-point-md="1025" data-piotnetforms-break-point-lg="767"></div>			</div>				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+					<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='piotnetforms-intl-tel-input-style-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/piotnetforms-pro/assets/css/minify/intl-tel-input.min.css?ver=2.1.37' media='all' />
+<link rel='stylesheet' id='piotnetforms-flatpickr-style-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/piotnetforms-pro/assets/css/minify/flatpickr.min.css?ver=2.1.37' media='all' />
+<link rel='stylesheet' id='piotnetforms-style-css' href='https://caser.ofertaseguromedico.es/wp-content/plugins/piotnetforms-pro/assets/css/minify/frontend.min.css?ver=2.1.37' media='all' />
+<script src="https://caser.ofertaseguromedico.es/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.4" id="hello-theme-frontend-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.33.5" id="elementor-webpack-runtime-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.33.5" id="elementor-frontend-modules-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Pinear","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir v\u00eddeo","previous":"Anterior","next":"Siguiente","close":"Cerrar","a11yCarouselPrevSlideMessage":"Diapositiva anterior","a11yCarouselNextSlideMessage":"Diapositiva siguiente","a11yCarouselFirstSlideMessage":"Esta es la primera diapositiva","a11yCarouselLastSlideMessage":"Esta es la \u00faltima diapositiva","a11yCarouselPaginationBulletMessage":"Ir a la diapositiva"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"M\u00f3vil vertical","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"M\u00f3vil horizontal","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tableta vertical","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tableta horizontal","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.33.5","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"import-export-customization":true,"mega-menu":true},"urls":{"assets":"https:\/\/caser.ofertaseguromedico.es\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/caser.ofertaseguromedico.es\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/caser.ofertaseguromedico.es\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"e3c398fb5b"},"swiperClass":"swiper","settings":{"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":0,"title":"Page not found - Caser","excerpt":""}};
+</script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.33.5" id="elementor-frontend-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.31.2" id="e-sticky-js"></script>
+<script id="piotnetforms-script-js-extra">
+var js_data = {"ajax_url":"https:\/\/caser.ofertaseguromedico.es\/wp-admin\/admin-ajax.php","plugin_dir":"https:\/\/caser.ofertaseguromedico.es\/wp-content\/plugins\/piotnetforms-pro\/"};
+</script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/piotnetforms-pro/assets/js/minify/frontend.min.js?ver=2.1.37" id="piotnetforms-script-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/piotnetforms-pro/assets/js/minify/frontend/jquery-mask.min.js?ver=2.1.37" id="piotnetforms-jquery-mask-script-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/piotnetforms-pro/assets/js/minify/frontend/intlTelInput-jquery.min.js?ver=2.1.37" id="piotnetforms-intl-tel-script-js"></script>
+<script id="piotnetforms-advanced2-script-js-extra">
+var piotnetforms_pro_advanced2_nonce_obj = {"nonce":"f0537d392e"};
+</script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/piotnetforms-pro/assets/js/minify/frontend/advanced2.min.js?ver=2.1.37" id="piotnetforms-advanced2-script-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/piotnetforms-pro/assets/js/minify/frontend/flatpickr.min.js?ver=2.1.37" id="piotnetforms-flatpickr-script-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/piotnetforms-pro/assets/js/minify/frontend/date-time.min.js?ver=2.1.37" id="piotnetforms-date-time-script-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.31.2" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/caser.ofertaseguromedico.es\/wp-admin\/admin-ajax.php","nonce":"f4eaf4cb85","urls":{"assets":"https:\/\/caser.ofertaseguromedico.es\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/caser.ofertaseguromedico.es\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"es_ES","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/caser.ofertaseguromedico.es\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.31.2" id="elementor-pro-frontend-js"></script>
+<script src="https://caser.ofertaseguromedico.es/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.31.2" id="pro-elements-handlers-js"></script>
+
+</body>
+</html>
+
+
+<!-- Page cached by LiteSpeed Cache 7.6.2 on 2026-04-07 07:44:23 -->

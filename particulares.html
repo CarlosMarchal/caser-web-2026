@@ -17,12 +17,7 @@
     <div class="container">
       <div class="header-inner">
         <a href="index.html" class="site-logo">
-          <svg width="160" height="52" viewBox="0 0 160 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22 10 C14 10 8 16 8 24 C8 32 14 38 22 38 C27 38 31.5 35.5 34 31.5 L29 28.5 C27.5 31 25 32.5 22 32.5 C17 32.5 13.5 28.8 13.5 24 C13.5 19.2 17 15.5 22 15.5 C25 15.5 27.5 17 29 19.5 L34 16.5 C31.5 12.5 27 10 22 10 Z" fill="#007363"/>
-            <rect x="7" y="6" width="7" height="7" rx="2" fill="#EC7A08"/>
-            <text x="42" y="29" font-family="Lato, Arial, sans-serif" font-size="24" font-weight="900" fill="#007363" letter-spacing="-0.5">caser</text>
-            <text x="42" y="43" font-family="Lato, Arial, sans-serif" font-size="10" font-weight="400" fill="#53565A" letter-spacing="1">Grupo Helvetia</text>
-          </svg>
+          <img src="images/logo-caser.png" alt="Caser Seguros de Salud" class="logo-img">
         </a>
         <div class="header-phones">
           <a href="tel:910052270" class="phone-cta">
@@ -55,14 +50,33 @@
   </nav>
 
   <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="container">
-      <h1>Seguro de Salud para Particulares</h1>
-      <p>Protege tu salud con las coberturas más completas del mercado. Atención médica de calidad desde el primer día, con acceso a más de 45.000 profesionales en toda España.</p>
-      <div class="badges">
-        <span class="badge badge-cta">30% Descuento Directo</span>
-        <span class="badge">+ 1 mes gratis</span>
-        <span class="badge">Desde 15€/mes</span>
+  <section class="hero hero-particulares">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">SEGURO DE SALUD CASER</p>
+        <h1>Seguro de Salud para Particulares</h1>
+        <div class="hero-badge">30% Dto. Directo</div>
+        <br><br>
+        <span class="hero-descuento">✦ 30% de descuento directo + 1 mes gratis en tu nueva contratación</span>
+      </div>
+      <div class="hero-form-card">
+        <h3>Solicita más información</h3>
+        <form action="calcular.html" method="get" onsubmit="return false;">
+          <div class="form-group">
+            <div class="phone-input-wrap">
+              <div class="phone-prefix">
+                <span class="flag">🇪🇸</span>
+                <span>+34</span>
+              </div>
+              <input type="tel" name="telefono" placeholder="Escribe tu teléfono" aria-label="Teléfono">
+            </div>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="terminos-particulares" checked>
+            <label for="terminos-particulares">Acepto <a href="#">términos y condiciones</a></label>
+          </div>
+          <button type="submit" class="btn btn-cta">Solicitar llamada</button>
+        </form>
       </div>
     </div>
   </section>
@@ -335,12 +349,7 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <div class="logo-wrap">
-            <svg width="140" height="46" viewBox="0 0 140 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 8C11 8 6 13.5 6 20.5C6 27.5 11 33 18 33C22.5 33 26.5 30.8 29 27.5L24.5 24.8C23 27 21 28.3 18 28.3C13.5 28.3 10.5 25 10.5 20.5C10.5 16 13.5 12.7 18 12.7C21 12.7 23 14 24.5 16.2L29 13.5C26.5 10.2 22.5 8 18 8Z" fill="#007363"/>
-              <rect x="5" y="4" width="6" height="6" rx="1.5" fill="#EC7A08"/>
-              <text x="36" y="26" font-family="Lato, Arial, sans-serif" font-size="22" font-weight="900" fill="#007363" letter-spacing="-0.5">caser</text>
-              <text x="36" y="40" font-family="Lato, Arial, sans-serif" font-size="9" font-weight="400" fill="#53565A" letter-spacing="1">Grupo Helvetia</text>
-            </svg>
+            <img src="images/logo-caser-blanco.png" alt="Caser Seguros" class="logo-img-footer">
           </div>
           <p>Somos Agente Exclusivo Caser, especialistas en Seguros de Salud.</p>
           <div class="footer-phone">
