@@ -415,40 +415,102 @@ h1, h2, h3, h4, h5 {
   box-shadow: var(--shadow-hover);
 }
 
-/* Hero form — estilo modal "Te llamamos gratis" */
+/* Hero form — estilo idéntico al modal "Te llamamos gratis" */
 .hf-icon {
   width: 64px;
   height: 64px;
+  background: var(--color-primary-light);
   border-radius: 50%;
-  border: 2px solid var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 14px;
+  margin: 0 auto 18px;
   color: var(--color-primary);
 }
+.hf-icon svg { width: 30px; height: 30px; }
 
 .hero-form-card h3 {
-  color: var(--color-primary);
-  font-size: 1.25rem;
-  font-weight: 800;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--color-text);
   margin-bottom: 6px;
   text-align: center;
 }
 
 .hf-sub {
   text-align: center;
+  font-size: 14px;
   color: var(--color-text-medium);
-  font-size: 13.5px;
   margin-bottom: 20px;
 }
+
+/* Input de teléfono unificado (borde alrededor del conjunto) */
+.hf-phone {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.hf-phone .phone-prefix {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  background: #f7f7f7;
+  border-right: 1.5px solid #ddd;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+.hf-phone input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 14px;
+  font-size: 15px;
+  font-family: var(--font-main);
+  background: transparent;
+}
+
+/* Checkbox igual al modal */
+.hf-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+  margin-bottom: 18px;
+}
+.hf-check input { margin-top: 3px; flex-shrink: 0; accent-color: var(--color-primary); }
+.hf-check label { font-size: 12px; color: var(--color-text-medium); line-height: 1.5; }
+.hf-check a { color: var(--color-primary); text-decoration: underline; }
+
+/* Botón igual al modal */
+.hf-submit {
+  display: block;
+  width: 100%;
+  background: var(--color-cta);
+  color: var(--color-white);
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-main);
+  transition: background 0.2s;
+  margin-bottom: 12px;
+}
+.hf-submit:hover { background: var(--color-cta-hover); }
 
 .hf-footer {
   text-align: center;
   font-size: 12px;
   color: var(--color-text-light);
-  margin-top: 12px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 /* Feature icon wrap (reemplaza SVG inline en index) */

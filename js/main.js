@@ -310,7 +310,7 @@ function showCallModalSuccess() {
 function submitHeroForm() {
   var phoneInput = document.getElementById('heroPhone');
   var termsInput = document.getElementById('heroTerms');
-  var submitBtn  = document.querySelector('#heroFormWrap .btn-cta');
+  var submitBtn  = document.querySelector('#heroFormWrap .hf-submit');
   var phone = phoneInput ? phoneInput.value : '';
   var cleanPhone = phone.replace(/\s/g, '');
 
