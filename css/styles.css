@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   inset: 0;
   background: url('../images/seguro-salud-empresas-caser-hero.jpeg') center/cover no-repeat;
-  opacity: 0.18;
+  opacity: 0.35;
 }
 /* Hero backgrounds por página */
 .hero.hero-particulares::before { background-image: url('../images/seguro-salud-autonomos-caser-hero.jpeg'); }
