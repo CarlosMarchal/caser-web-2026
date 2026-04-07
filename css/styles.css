@@ -1498,8 +1498,18 @@ h1, h2, h3, h4, h5 {
   .hero-badge { font-size: 1.1rem; }
   .hero-form-card { margin-top: 20px; }
 
-  .header-inner { flex-wrap: wrap; gap: 10px; }
-  .header-phones { flex-direction: column; gap: 8px; align-items: flex-end; }
+  /* ---- HEADER MOBILE: teléfonos en fila ---- */
+  .site-header { padding: 10px 0; }
+  .site-logo img { height: 40px; }
+  .header-inner { flex-wrap: nowrap; gap: 8px; align-items: center; }
+  .header-phones { flex-direction: row; gap: 8px; align-items: center; }
+  .phone-cta { padding: 7px 10px; gap: 6px; border-radius: 6px; }
+  .phone-cta svg { width: 16px; height: 16px; display: none; }
+  .phone-cta .label { font-size: 9.5px; }
+  .phone-cta .number { font-size: 13.5px; }
+  .phone-secondary { text-align: right; }
+  .phone-secondary .label { font-size: 9.5px; }
+  .phone-secondary .number { font-size: 13.5px; }
 
   .nav-inner {
     display: none;
@@ -1534,8 +1544,12 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (max-width: 480px) {
-  .top-bar { font-size: 12px; }
-  .phone-cta .number { font-size: 15px; }
+  .top-bar { font-size: 11px; }
+  .phone-cta { padding: 6px 8px; }
+  .phone-cta .label { font-size: 8.5px; }
+  .phone-cta .number { font-size: 12.5px; }
+  .phone-secondary .label { font-size: 8.5px; }
+  .phone-secondary .number { font-size: 12.5px; }
   .hero-badge { font-size: 1rem; }
   .hero-text h1 { font-size: 1.6rem; }
 }
