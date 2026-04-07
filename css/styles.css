@@ -293,6 +293,9 @@ h1, h2, h3, h4, h5 {
   align-self: stretch;
   display: flex;
   align-items: center;
+  padding: 0 26px;
+  font-size: 15px;
+  font-family: var(--font-main);
 }
 
 .nav-inner a.nav-cta:hover,
