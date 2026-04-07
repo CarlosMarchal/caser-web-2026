@@ -65,7 +65,7 @@
             <span class="flag">🇪🇸</span>
             <span>+34</span>
           </div>
-          <input type="tel" id="heroPhone" placeholder="600 000 000" onkeydown="if(event.key==='Enter'){submitHeroForm();}">
+          <input type="tel" id="heroPhone" placeholder="600 000 000" maxlength="11" oninput="formatPhone(this)" onkeydown="if(event.key==='Enter'){submitHeroForm();}">
         </div>
         <div class="hf-check">
           <input type="checkbox" id="heroTerms" checked>
@@ -410,7 +410,7 @@
       <div class="call-modal-form-wrap">
         <div class="call-modal-phone">
           <div class="phone-prefix"><span>🇪🇸</span><span>+34</span></div>
-          <input type="tel" placeholder="600 000 000" id="callModalPhone" onkeydown="if(event.key==='Enter'){submitCallModal();}">
+          <input type="tel" placeholder="600 000 000" id="callModalPhone" maxlength="11" oninput="formatPhone(this)" onkeydown="if(event.key==='Enter'){submitCallModal();}">
         </div>
         <div class="call-modal-check">
           <input type="checkbox" id="callModalTerms" checked>

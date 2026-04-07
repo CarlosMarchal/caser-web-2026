@@ -72,7 +72,7 @@
             <span class="flag">🇪🇸</span>
             <span>+34</span>
           </div>
-          <input type="tel" id="heroPhone" placeholder="600 000 000" onkeydown="if(event.key==='Enter'){submitHeroForm();}">
+          <input type="tel" id="heroPhone" placeholder="600 000 000" maxlength="11" oninput="formatPhone(this)" onkeydown="if(event.key==='Enter'){submitHeroForm();}">
         </div>
         <div class="hf-check">
           <input type="checkbox" id="heroTerms" checked>
@@ -159,9 +159,7 @@
 
       <div class="products-grid">
         <div class="product-card">
-          <div class="product-card-img embarazadas" style="display:flex;align-items:center;justify-content:center;">
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="26" r="12" fill="rgba(255,255,255,0.6)"/><ellipse cx="40" cy="54" rx="16" ry="12" fill="rgba(255,255,255,0.6)"/><ellipse cx="40" cy="50" rx="9" ry="10" fill="rgba(255,255,255,0.4)"/></svg>
-          </div>
+          <div class="product-card-img" style="background-image:url('images/seguro-salud-embarazo-caser.jpeg');background-size:cover;background-position:center top;"></div>
           <div class="product-card-header">Para embarazadas</div>
           <div class="product-card-body">
             <ul>
@@ -177,9 +175,7 @@
         </div>
 
         <div class="product-card">
-          <div class="product-card-img familias" style="display:flex;align-items:center;justify-content:center;">
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="30" cy="24" r="9" fill="rgba(255,255,255,0.6)"/><circle cx="50" cy="24" r="9" fill="rgba(255,255,255,0.6)"/><circle cx="40" cy="52" r="7" fill="rgba(255,255,255,0.6)"/><path d="M18 58c2-8 6-12 12-12s10 4 12 12" fill="rgba(255,255,255,0.4)"/><path d="M38 58c2-8 6-10 10-10" stroke="rgba(255,255,255,0.6)" stroke-width="2"/></svg>
-          </div>
+          <div class="product-card-img" style="background-image:url('images/seguro-salud-caser-familias.jpeg');background-size:cover;background-position:center top;"></div>
           <div class="product-card-header">Para familias</div>
           <div class="product-card-body">
             <ul>
@@ -194,9 +190,7 @@
         </div>
 
         <div class="product-card">
-          <div class="product-card-img mayores" style="display:flex;align-items:center;justify-content:center;">
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="28" r="13" fill="rgba(255,255,255,0.6)"/><path d="M24 62c2-10 7-14 16-14s14 4 16 14" fill="rgba(255,255,255,0.5)"/><line x1="35" y1="50" x2="32" y2="62" stroke="rgba(255,255,255,0.7)" stroke-width="2.5"/></svg>
-          </div>
+          <div class="product-card-img" style="background-image:url('images/seguro-salud-mayores-caser.jpg');background-size:cover;background-position:center top;"></div>
           <div class="product-card-header">Para mayores</div>
           <div class="product-card-body">
             <ul>
@@ -212,9 +206,7 @@
         </div>
 
         <div class="product-card">
-          <div class="product-card-img autonomos" style="display:flex;align-items:center;justify-content:center;">
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none"><rect x="22" y="28" width="36" height="26" rx="4" fill="rgba(255,255,255,0.6)"/><path d="M32 28v-6a8 8 0 0116 0v6" stroke="rgba(255,255,255,0.8)" stroke-width="2.5"/><circle cx="40" cy="42" r="5" fill="rgba(255,255,255,0.8)"/></svg>
-          </div>
+          <div class="product-card-img" style="background-image:url('images/seguro-salud-autonomos-caser-hero.jpeg');background-size:cover;background-position:center top;"></div>
           <div class="product-card-header">Para autónomos</div>
           <div class="product-card-body">
             <ul>
@@ -485,7 +477,7 @@
       <div class="call-modal-form-wrap">
         <div class="call-modal-phone">
           <div class="phone-prefix"><span>🇪🇸</span><span>+34</span></div>
-          <input type="tel" placeholder="600 000 000" id="callModalPhone" onkeydown="if(event.key==='Enter'){submitCallModal();}">
+          <input type="tel" placeholder="600 000 000" id="callModalPhone" maxlength="11" oninput="formatPhone(this)" onkeydown="if(event.key==='Enter'){submitCallModal();}">
         </div>
         <div class="call-modal-check">
           <input type="checkbox" id="callModalTerms" checked>

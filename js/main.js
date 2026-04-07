@@ -200,6 +200,38 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// ── UTILIDAD: formato teléfono 3+3+3 y validación 9 dígitos exactos ─────────
+
+/**
+ * Formatea un input de teléfono al vuelo: solo dígitos, máx 9, separados XXX XXX XXX
+ * Uso: <input oninput="formatPhone(this)">
+ */
+function formatPhone(input) {
+  var digits = input.value.replace(/\D/g, '').slice(0, 9);
+  var parts = [];
+  if (digits.length > 0) parts.push(digits.slice(0, 3));
+  if (digits.length > 3) parts.push(digits.slice(3, 6));
+  if (digits.length > 6) parts.push(digits.slice(6, 9));
+  input.value = parts.join(' ');
+}
+
+/**
+ * Valida que haya exactamente 9 dígitos y marca visualmente el campo si no.
+ * Devuelve los 9 dígitos limpios, o null si inválido.
+ */
+function validatePhone(input) {
+  var digits = (input ? input.value : '').replace(/\D/g, '');
+  if (digits.length !== 9) {
+    if (input) {
+      input.style.borderColor = '#c9474a';
+      input.focus();
+      setTimeout(function () { input.style.borderColor = ''; }, 2500);
+    }
+    return null;
+  }
+  return digits;
+}
+
 // ---- MODAL DE LLAMADA ----
 
 // ── HUBSPOT ──────────────────────────────────────────────────────────────────
@@ -242,17 +274,13 @@ function closeCallModal() {
 }
 
 function submitCallModal() {
-  var phone     = (document.getElementById('callModalPhone') || {}).value || '';
-  var terms     = document.getElementById('callModalTerms');
-  var submitBtn = document.querySelector('.call-modal-submit');
+  var phoneInput = document.getElementById('callModalPhone');
+  var terms      = document.getElementById('callModalTerms');
+  var submitBtn  = document.querySelector('.call-modal-submit');
 
-  // Validación
-  var cleanPhone = phone.replace(/\s/g, '');
-  if (!cleanPhone || cleanPhone.length < 9) {
-    var inp = document.getElementById('callModalPhone');
-    if (inp) { inp.style.border = '2px solid #e53e3e'; inp.focus(); }
-    return;
-  }
+  // Validación: exactamente 9 dígitos
+  var cleanPhone = validatePhone(phoneInput);
+  if (!cleanPhone) return;
   if (terms && !terms.checked) {
     alert('Debes aceptar los términos y condiciones para continuar.');
     return;
@@ -311,17 +339,10 @@ function submitHeroForm() {
   var phoneInput = document.getElementById('heroPhone');
   var termsInput = document.getElementById('heroTerms');
   var submitBtn  = document.querySelector('#heroFormWrap .hf-submit');
-  var phone = phoneInput ? phoneInput.value : '';
-  var cleanPhone = phone.replace(/\s/g, '');
 
-  if (!cleanPhone || cleanPhone.length < 9) {
-    if (phoneInput) {
-      phoneInput.style.borderColor = '#c9474a';
-      phoneInput.focus();
-      setTimeout(function () { phoneInput.style.borderColor = ''; }, 2000);
-    }
-    return;
-  }
+  // Validación: exactamente 9 dígitos
+  var cleanPhone = validatePhone(phoneInput);
+  if (!cleanPhone) return;
   if (termsInput && !termsInput.checked) {
     alert('Por favor, acepta los términos y condiciones para continuar.');
     return;
