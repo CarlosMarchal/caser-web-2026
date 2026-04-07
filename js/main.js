@@ -401,3 +401,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// ============================================================
+// MODAL AVISO LEGAL / POLÍTICA DE PRIVACIDAD
+// ============================================================
+function openLegalModal() {
+  var overlay = document.getElementById('legalModal');
+  if (!overlay) return;
+  overlay.classList.add('active');
+  overlay.scrollTop = 0;
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLegalModal() {
+  var overlay = document.getElementById('legalModal');
+  if (!overlay) return;
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  var legalOverlay = document.getElementById('legalModal');
+  if (legalOverlay) {
+    legalOverlay.addEventListener('click', function (e) {
+      if (e.target === legalOverlay) closeLegalModal();
+    });
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLegalModal();
+  });
+});

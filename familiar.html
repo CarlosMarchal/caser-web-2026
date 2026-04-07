@@ -69,7 +69,7 @@
         </div>
         <div class="hf-check">
           <input type="checkbox" id="heroTerms" checked>
-          <label for="heroTerms">Acepto los <a href="#">términos y condiciones</a> y la política de privacidad</label>
+          <label for="heroTerms">Acepto los <a href="#" onclick="openLegalModal();return false;">términos y condiciones</a> y la <a href="#" onclick="openLegalModal();return false;">política de privacidad</a></label>
         </div>
         <button type="button" class="hf-submit" onclick="submitHeroForm()">Te llamamos ahora</button>
         <p class="hf-footer">Sin compromiso · Datos protegidos</p>
@@ -388,8 +388,8 @@
       <div class="footer-bottom">
         <p>Copyright © Insursalud 2025.</p>
         <div class="footer-legal">
-          <a href="#">Política de privacidad</a>
-          <a href="#">Términos y condiciones</a>
+          <a href="#" onclick="openLegalModal();return false;">Política de privacidad</a>
+          <a href="#" onclick="openLegalModal();return false;">Términos y condiciones</a>
         </div>
       </div>
     </div>
@@ -414,7 +414,7 @@
         </div>
         <div class="call-modal-check">
           <input type="checkbox" id="callModalTerms" checked>
-          <label for="callModalTerms">Acepto los <a href="#">términos y condiciones</a> y la política de privacidad</label>
+          <label for="callModalTerms">Acepto los <a href="#" onclick="openLegalModal();return false;">términos y condiciones</a> y la <a href="#" onclick="openLegalModal();return false;">política de privacidad</a></label>
         </div>
         <!-- Campo oculto tarificador para HubSpot -->
         <input type="hidden" id="callModalTarificador" value="400">
@@ -445,6 +445,95 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.31 9.9 19.79 19.79 0 01.22 1.28 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
       91 005 22 70
     </a>
+  </div>
+
+
+  <!-- MODAL AVISO LEGAL / POLÍTICA DE PRIVACIDAD -->
+  <div class="legal-modal-overlay" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="legal-modal">
+      <button class="legal-modal-close" onclick="closeLegalModal()" aria-label="Cerrar">&times;</button>
+
+      <h2 id="legalModalTitle">Aviso Legal y Política de Privacidad</h2>
+
+      <div class="legal-block">
+        <p><strong>INSURSALUD, S.L.</strong> inscrita en la Dirección General de Seguros y Fondos de Pensiones (DGSFP) con la clave AJ0374, autorizada para realizar la actividad de mediación de seguros con contrato de agencia vinculada con <strong>CASER SEGUROS</strong>.</p>
+        <p>CIF: B-21975222</p>
+        <p>INSURSALUD tiene concertado un seguro de Responsabilidad Civil y cubiertas las garantías financieras conforme a la normativa vigente.</p>
+      </div>
+
+      <h3>Finalidad</h3>
+      <p>Directorio de contactos, gestión administrativa y comercial de INSURSALUD, S.L. para la celebración, como mediador, de contratos de seguros con la entidad CASER SEGUROS Y REASEGUROS, S.A. y, en su caso, con otras aseguradoras con las que mantenga contrato de agencia vinculada debidamente inscrito en la DGSFP.</p>
+
+      <h3>Legitimación</h3>
+      <p>Celebración y ejecución de contrato y consentimiento del interesado.</p>
+
+      <h3>Destinatarios</h3>
+      <p>No se cederán datos a terceros, salvo obligación legal. No tendrán la consideración de terceros las entidades aseguradoras con las que INSURSALUD, S.L. mantenga contrato de agencia vinculada, así como las entidades con las que exista relación contractual necesaria para la prestación del servicio, y los proveedores que actúen como encargados del tratamiento conforme al artículo 28 del RGPD.</p>
+
+      <h3>Derechos</h3>
+      <p>De acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición, tal como se detalla en la información adicional.</p>
+
+      <h3>Información adicional</h3>
+      <p>Puede consultar la información adicional y detallada sobre protección de datos personales contactando con nosotros en el teléfono <strong>91 005 22 70</strong>.</p>
+
+      <hr class="legal-modal-divider">
+
+      <h3>¿Quién es el responsable del tratamiento de tus datos?</h3>
+      <div class="legal-block">
+        <p><strong>INSURSALUD, S.L.</strong></p>
+        <p>CIF: B-21975222</p>
+        <p>Carril de los Caleros, 8 G 2-B, 28023 Madrid</p>
+        <p>Teléfono: <a href="tel:910052270" style="color:var(--color-primary);">91 005 22 70</a></p>
+      </div>
+
+      <h3>¿Con qué finalidad tratamos tus datos personales?</h3>
+      <p>Los datos personales que nos facilites serán tratados con las siguientes finalidades:</p>
+      <ul>
+        <li>Facilitarte la información solicitada sobre los productos y servicios de seguros que comercializamos.</li>
+        <li>Gestionar las solicitudes y actividades propias de mediación de seguros, conforme a los contratos de agencia vinculada que INSURSALUD, S.L. mantiene con CASER SEGUROS y otras entidades debidamente autorizadas.</li>
+        <li>Cumplir las obligaciones legales derivadas de la normativa de distribución de seguros, prevención del blanqueo de capitales y normativa fiscal.</li>
+      </ul>
+      <p>INSURSALUD, S.L. no utilizará tus datos personales para fines distintos de los anteriores sin tu consentimiento previo y expreso, y se compromete a mantener el secreto profesional y adoptar las medidas técnicas y organizativas adecuadas para garantizar su confidencialidad.</p>
+      <p>En caso de que facilites datos de terceros, garantizas haberles informado y obtenido su consentimiento previo.</p>
+
+      <h3>¿Por cuánto tiempo conservaremos tus datos?</h3>
+      <p>Si el seguro no llega a formalizarse, los datos se conservarán durante un plazo máximo de dos años desde la última manifestación de interés.</p>
+      <p>En caso de celebrarse el contrato de seguro, los datos se conservarán mientras dure la relación contractual y, posteriormente, durante el tiempo en que puedan exigirse responsabilidades legales o derivadas de la mediación (máximo cinco años).</p>
+
+      <h3>¿Cuál es la base legal del tratamiento?</h3>
+      <ul>
+        <li><strong>Ejecución del contrato o medidas precontractuales</strong> (art. 6.1.b RGPD): para la gestión de solicitudes, elaboración de presupuestos y contratación de seguros.</li>
+        <li><strong>Cumplimiento de obligaciones legales</strong> (art. 6.1.c RGPD): normativa de distribución de seguros, prevención del blanqueo de capitales, obligaciones contables y fiscales.</li>
+        <li><strong>Consentimiento del interesado</strong> (art. 6.1.a RGPD): para el envío de comunicaciones comerciales y para la cesión de datos a las entidades aseguradoras con las que INSURSALUD mantiene contratos de agencia vinculada.</li>
+      </ul>
+
+      <h3>¿A qué destinatarios se comunicarán tus datos?</h3>
+      <p>Tus datos podrán ser comunicados a:</p>
+      <ul>
+        <li>CASER SEGUROS Y REASEGUROS, S.A., y otras aseguradoras con las que INSURSALUD mantenga contrato de agencia vinculada.</li>
+        <li>Administraciones públicas y autoridades competentes cuando sea legalmente exigible.</li>
+        <li>Proveedores de servicios tecnológicos, informáticos o de soporte que actúen como encargados del tratamiento, bajo contrato conforme al artículo 28 del RGPD.</li>
+      </ul>
+
+      <h3>¿INSURSALUD te enviará comunicaciones comerciales?</h3>
+      <p>Con tu consentimiento expreso, INSURSALUD, S.L. podrá contactarte por correo postal, electrónico, SMS u otros medios equivalentes para remitirte comunicaciones comerciales sobre productos y servicios aseguradores de CASER SEGUROS o de otras entidades con las que tenga contrato de agencia vinculada.</p>
+      <p>Podrás revocar este consentimiento en cualquier momento llamando al <a href="tel:910052270" style="color:var(--color-primary);">91 005 22 70</a> o mediante comunicación escrita a la dirección postal de la empresa.</p>
+
+      <h3>¿Cuáles son tus derechos cuando nos facilitas tus datos?</h3>
+      <p>Puedes ejercitar tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad de tus datos personales dirigiéndote a:</p>
+      <div class="legal-block">
+        <p><strong>INSURSALUD, S.L.</strong></p>
+        <p>Teléfono: <a href="tel:910052270" style="color:var(--color-primary);">91 005 22 70</a></p>
+      </div>
+      <p>Asimismo, puedes presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong> en <a href="https://www.aepd.es" target="_blank" rel="noopener" style="color:var(--color-primary);">www.aepd.es</a> si consideras que tus derechos no han sido atendidos adecuadamente.</p>
+
+      <h3>Modificación de la política de privacidad</h3>
+      <p>INSURSALUD, S.L. podrá modificar su política de privacidad en cualquier momento para adaptarla a cambios legislativos o de su actividad. Cualquier modificación relevante será comunicada de forma visible y, cuando proceda, se solicitará nuevamente tu consentimiento.</p>
+
+      <h3>Sistema de exclusión publicitaria</h3>
+      <p>Para evitar recibir publicidad no deseada de entidades con las que no mantengas relación, puedes inscribirte gratuitamente en el servicio de exclusión publicitaria <a href="https://www.listarobinson.es" target="_blank" rel="noopener" style="color:var(--color-primary);">www.listarobinson.es</a>. Los menores de 14 años deberán hacerlo a través de sus representantes legales.</p>
+
+    </div>
   </div>
 
 </body>
