@@ -120,20 +120,22 @@ function updateDescuentoMsg() {
 // ---- FORMULARIO CALCULAR (submit) ----
 function submitForm(e) {
   e.preventDefault();
-  var form = document.getElementById('calcularForm');
+  var form    = document.getElementById('calcularForm');
   var success = document.getElementById('successCard');
 
   // Validación básica
-  var nombre = document.getElementById('nombre');
-  var telefono = document.getElementById('telefono');
+  var nombreEl    = document.getElementById('nombre');
+  var apellidosEl = document.getElementById('apellidos');
+  var emailEl     = document.getElementById('email');
+  var telefonoEl  = document.getElementById('telefono');
   var aceptoTerminos = document.getElementById('aceptoTerminos');
 
-  if (!nombre || !nombre.value.trim()) {
-    showFieldError(nombre, 'Por favor, introduce tu nombre.');
+  if (!nombreEl || !nombreEl.value.trim()) {
+    showFieldError(nombreEl, 'Por favor, introduce tu nombre.');
     return;
   }
-  if (!telefono || !telefono.value.trim()) {
-    showFieldError(telefono, 'Por favor, introduce tu teléfono.');
+  if (!telefonoEl || !telefonoEl.value.trim()) {
+    showFieldError(telefonoEl, 'Por favor, introduce tu teléfono.');
     return;
   }
   if (!aceptoTerminos || !aceptoTerminos.checked) {
@@ -141,20 +143,53 @@ function submitForm(e) {
     return;
   }
 
-  // Simular envío
   var submitBtn = form.querySelector('button[type="submit"]');
-  if (submitBtn) {
-    submitBtn.textContent = 'Enviando...';
-    submitBtn.disabled = true;
+  if (submitBtn) { submitBtn.textContent = 'Enviando...'; submitBtn.disabled = true; }
+
+  // Limpiar teléfono (eliminar espacios)
+  var cleanTel = telefonoEl.value.replace(/\s/g, '');
+  if (!cleanTel.startsWith('+')) cleanTel = '+34' + cleanTel.replace(/\D/g, '');
+
+  // Construir campos para HubSpot
+  var fields = [
+    { name: 'firstname',    value: nombreEl.value.trim() },
+    { name: 'phone',        value: cleanTel },
+    { name: 'tarificador',  value: '402' },
+    { name: 'casilla_rgpd', value: 'true' }
+  ];
+  if (apellidosEl && apellidosEl.value.trim()) {
+    fields.push({ name: 'lastname', value: apellidosEl.value.trim() });
+  }
+  if (emailEl && emailEl.value.trim()) {
+    fields.push({ name: 'email', value: emailEl.value.trim() });
   }
 
-  setTimeout(function () {
-    if (form) form.style.display = 'none';
+  var payload = {
+    fields: fields,
+    context: { pageUri: window.location.href, pageName: document.title }
+  };
+
+  function showCalcSuccess() {
+    if (form)    form.style.display = 'none';
     if (success) {
       success.style.display = 'block';
       success.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
-  }, 1200);
+  }
+
+  // Envío a HubSpot
+  if (HS_PORTAL_ID && HS_FORM_ID) {
+    var url = 'https://api.hsforms.com/submissions/v3/integration/submit/' + HS_PORTAL_ID + '/' + HS_FORM_ID;
+    fetch(url, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify(payload)
+    })
+    .then(function () { showCalcSuccess(); })
+    .catch(function () { showCalcSuccess(); }); // Mostrar éxito aunque falle la red
+  } else {
+    setTimeout(showCalcSuccess, 800);
+  }
 }
 
 function showFieldError(field, msg) {
@@ -235,9 +270,13 @@ function validatePhone(input) {
 // ---- MODAL DE LLAMADA ----
 
 // ── HUBSPOT ──────────────────────────────────────────────────────────────────
-var HS_PORTAL_ID   = '6596944';
-var HS_FORM_ID     = '33de33c5-5d4e-48b6-bef8-24d2daf2c8dc';
-var HS_TARIFICADOR = '400';
+var HS_PORTAL_ID = '6596944';
+var HS_FORM_ID   = '33de33c5-5d4e-48b6-bef8-24d2daf2c8dc';
+
+// Tarificadores por origen:
+//   400 → Modal "Te llamamos" (planes index.html)
+//   401 → Hero form (index.html)
+//   402 → Formulario calcular.html
 
 var _currentPlanName = '';
 
@@ -291,9 +330,9 @@ function submitCallModal() {
 
   // Construir datos para HubSpot
   var fields = [
-    { name: 'phone',         value: '+34' + cleanPhone },
-    { name: 'tarificador',   value: HS_TARIFICADOR },
-    { name: 'casilla_rgpd',  value: 'true' }
+    { name: 'phone',        value: '+34' + cleanPhone },
+    { name: 'tarificador',  value: '400' },
+    { name: 'casilla_rgpd', value: 'true' }
   ];
   if (_currentPlanName) {
     fields.push({ name: 'plan_de_interes', value: _currentPlanName });
@@ -351,7 +390,7 @@ function submitHeroForm() {
 
   var fields = [
     { name: 'phone',        value: '+34' + cleanPhone },
-    { name: 'tarificador',  value: HS_TARIFICADOR },
+    { name: 'tarificador',  value: '401' },
     { name: 'casilla_rgpd', value: 'true' }
   ];
   var payload = {
