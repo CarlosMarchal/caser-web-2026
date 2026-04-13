@@ -346,7 +346,7 @@ function submitCallModal() {
     }
   };
 
-  // Envío a HubSpot (si están configurados los IDs)
+  // Envío a HubSpot
   if (HS_PORTAL_ID && HS_FORM_ID) {
     var url = 'https://api.hsforms.com/submissions/v3/integration/submit/' + HS_PORTAL_ID + '/' + HS_FORM_ID;
     fetch(url, {
