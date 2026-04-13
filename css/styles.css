@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5 {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('../images/seguro-salud-individual-caser.jpeg') center/cover no-repeat;
+  background: url('../images/seguro-salud-empresas-caser-hero.jpeg') center/cover no-repeat;
   opacity: 0.52;
 }
 /* Gradiente de protección para legibilidad del texto (izquierda más oscura) */
@@ -368,13 +368,11 @@ h1, h2, h3, h4, h5 {
   z-index: 1;
 }
 /* Hero backgrounds por página */
-.hero.hero-home::before         { background-position: 72% top; opacity: 0.65; }
 .hero.hero-particulares::before { background-image: url('../images/seguro-salud-autonomos-caser-hero.jpeg'); }
 .hero.hero-familiar::before     { background-image: url('../images/seguro-salud-caser-familias.jpeg'); }
 .hero.hero-embarazo::before     { background-image: url('../images/seguro-salud-embarazo-caser.jpeg'); }
 .hero.hero-mayores::before      { background-image: url('../images/seguro-salud-mayores-caser.jpg'); }
-.hero.hero-autonomos::before    { background-image: url('../images/seguro-salud-empresas-caser-hero.jpeg'); }
-.hero.hero-empresas::before     { background-image: url('../images/seguro-salud-empresas-caser-hero.jpeg'); }
+.hero.hero-autonomos::before    { background-image: url('../images/seguro-salud-individual-caser.jpeg'); }
 
 .hero-inner {
   position: relative;
