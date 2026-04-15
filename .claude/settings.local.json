@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn \"tel:\\\\|click_to_call\\\\|917105000\\\\|91 005\\\\|910052270\" /mnt/c/DEV/caser-web-2026/*.html)",
+      "Bash(grep -n \"main.js\\\\|</head>\\\\|<body>\" /mnt/c/DEV/caser-web-2026/*.html /mnt/c/DEV/caser-web-2026/avisolegal-poliiticadeprivacidad/index.html)",
+      "Bash(node --check /mnt/c/DEV/caser-web-2026/js/main.js)"
+    ]
+  }
+}

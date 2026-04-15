@@ -177,6 +177,11 @@ function submitForm(e) {
     }
   }
 
+  function trackAndShow() {
+    return caserTrack.generateLead(cleanTel, 'tarificador_402_calcular')
+      .then(showCalcSuccess, showCalcSuccess);
+  }
+
   // Envío a HubSpot
   if (HS_PORTAL_ID && HS_FORM_ID) {
     var url = 'https://api.hsforms.com/submissions/v3/integration/submit/' + HS_PORTAL_ID + '/' + HS_FORM_ID;
@@ -185,10 +190,9 @@ function submitForm(e) {
       headers: { 'Content-Type': 'application/json' },
       body:    JSON.stringify(payload)
     })
-    .then(function () { showCalcSuccess(); })
-    .catch(function () { showCalcSuccess(); }); // Mostrar éxito aunque falle la red
+    .then(trackAndShow, trackAndShow); // Mostrar éxito aunque falle la red
   } else {
-    setTimeout(showCalcSuccess, 800);
+    setTimeout(trackAndShow, 800);
   }
 }
 
@@ -346,6 +350,11 @@ function submitCallModal() {
     }
   };
 
+  function trackAndShow() {
+    return caserTrack.generateLead('+34' + cleanPhone, 'tarificador_400_modal_planes')
+      .then(showCallModalSuccess, showCallModalSuccess);
+  }
+
   // Envío a HubSpot
   if (HS_PORTAL_ID && HS_FORM_ID) {
     var url = 'https://api.hsforms.com/submissions/v3/integration/submit/' + HS_PORTAL_ID + '/' + HS_FORM_ID;
@@ -354,14 +363,10 @@ function submitCallModal() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
     })
-    .then(function (res) {
-      if (res.ok) { showCallModalSuccess(); }
-      else         { showCallModalSuccess(); } // Mostrar éxito aunque haya error (no bloqueamos al usuario)
-    })
-    .catch(function () { showCallModalSuccess(); });
+    .then(trackAndShow, trackAndShow);
   } else {
     // Sin HubSpot configurado → mostrar éxito igualmente
-    setTimeout(showCallModalSuccess, 800);
+    setTimeout(trackAndShow, 800);
   }
 }
 
@@ -405,13 +410,17 @@ function submitHeroForm() {
     if (success) success.style.display = 'block';
   }
 
+  function trackAndShow() {
+    return caserTrack.generateLead('+34' + cleanPhone, 'tarificador_401_hero')
+      .then(showHeroSuccess, showHeroSuccess);
+  }
+
   if (HS_PORTAL_ID && HS_FORM_ID) {
     var url = 'https://api.hsforms.com/submissions/v3/integration/submit/' + HS_PORTAL_ID + '/' + HS_FORM_ID;
     fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
-      .then(function () { showHeroSuccess(); })
-      .catch(function () { showHeroSuccess(); });
+      .then(trackAndShow, trackAndShow);
   } else {
-    setTimeout(showHeroSuccess, 800);
+    setTimeout(trackAndShow, 800);
   }
 }
 
@@ -469,4 +478,85 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeLegalModal();
   });
+});
+
+// ============================================================
+// GTM / DATALAYER TRACKING — caserTrack
+// Replica del patrón Adeslas/Asisa (src/lib/tracking.ts)
+// Consent gestionado externamente vía GTM (Consentiam.eu).
+// ============================================================
+window.caserTrack = (function () {
+  function pushEvent(event, params) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(Object.assign({ event: event }, params || {}));
+  }
+
+  async function sha256(value) {
+    var normalized = String(value).replace(/\s/g, '').toLowerCase();
+    var encoded = new TextEncoder().encode(normalized);
+    var buffer = await crypto.subtle.digest('SHA-256', encoded);
+    return Array.from(new Uint8Array(buffer))
+      .map(function (b) { return b.toString(16).padStart(2, '0'); })
+      .join('');
+  }
+
+  async function generateLead(phone, source) {
+    try {
+      var hashedPhone = await sha256(phone);
+      pushEvent('generate_lead', {
+        lead_source: source,
+        user_data: { sha256_phone_number: hashedPhone }
+      });
+    } catch (err) {
+      console.warn('[caserTrack] SHA-256 no disponible:', err);
+      pushEvent('generate_lead', { lead_source: source });
+    }
+  }
+
+  function clickToCallContratacion(location) {
+    pushEvent('click_to_call_contratacion', {
+      phone_number: '910052270',
+      click_location: location
+    });
+  }
+
+  function clickToCallAsistencia(location) {
+    pushEvent('click_to_call_asistencia', {
+      phone_number: '911553472',
+      click_location: location
+    });
+  }
+
+  return {
+    generateLead: generateLead,
+    clickToCallContratacion: clickToCallContratacion,
+    clickToCallAsistencia: clickToCallAsistencia
+  };
+})();
+
+// ============================================================
+// CLICK-TO-CALL TRACKING — delegación global en a[href^="tel:"]
+// ============================================================
+document.addEventListener('DOMContentLoaded', function () {
+  function detectLocation(anchor) {
+    if (anchor.closest('.site-header'))   return 'header';
+    if (anchor.closest('.main-nav'))      return 'nav';
+    if (anchor.closest('.mobile-cta'))    return 'mobile_cta';
+    if (anchor.closest('.site-footer'))   return 'footer';
+    if (anchor.closest('.legal-page'))    return 'legal';
+    if (anchor.closest('.success-card'))  return 'success';
+    return 'body';
+  }
+
+  document.addEventListener('click', function (e) {
+    var anchor = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (!anchor) return;
+    var digits = anchor.getAttribute('href').replace(/^tel:/, '').replace(/\D/g, '');
+    var location = detectLocation(anchor);
+    if (digits === '910052270') {
+      caserTrack.clickToCallContratacion(location);
+    } else if (digits === '911553472') {
+      caserTrack.clickToCallAsistencia(location);
+    }
+  }, true);
 });
