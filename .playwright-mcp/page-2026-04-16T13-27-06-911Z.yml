@@ -1,0 +1,379 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]: Agente vinculado Insursalud S.L.
+  - banner [ref=e3]:
+    - generic [ref=e5]:
+      - link "Caser Seguros de Salud" [ref=e6] [cursor=pointer]:
+        - /url: index.html
+        - img "Caser Seguros de Salud" [ref=e7]
+      - generic [ref=e8]:
+        - link "Nuevas contrataciones 91 005 22 70" [ref=e9] [cursor=pointer]:
+          - /url: tel:910052270
+          - generic [ref=e10]:
+            - generic [ref=e11]: Nuevas contrataciones
+            - generic [ref=e12]: 91 005 22 70
+        - generic [ref=e13]:
+          - generic [ref=e14]: Atención al cliente
+          - link "91 155 34 72" [ref=e15] [cursor=pointer]:
+            - /url: tel:911553472
+  - navigation "Navegación principal" [ref=e16]:
+    - generic [ref=e18]:
+      - link "Particulares" [ref=e19] [cursor=pointer]:
+        - /url: particulares.html
+      - link "Familiar" [ref=e20] [cursor=pointer]:
+        - /url: familiar.html
+      - link "Embarazo" [ref=e21] [cursor=pointer]:
+        - /url: embarazo.html
+      - link "Mayores" [ref=e22] [cursor=pointer]:
+        - /url: mayores.html
+      - link "Autónomos" [ref=e23] [cursor=pointer]:
+        - /url: autonomos.html
+      - button "Calcula tu seguro" [ref=e24] [cursor=pointer]
+  - generic [ref=e26]:
+    - generic [ref=e27]:
+      - paragraph [ref=e28]: SEGURO DE SALUD CASER
+      - heading "Coberturas flexibles y atención médica 24/7 para cuidarte en cada momento." [level=1] [ref=e29]
+      - generic [ref=e30]: 30% Dto. Directo
+      - generic [ref=e31]: ✦ Hasta 10% de descuento adicional por nº de asegurados
+    - generic [ref=e32]:
+      - img [ref=e34]
+      - heading "Te llamamos gratis" [level=3] [ref=e36]
+      - paragraph [ref=e37]: Un asesor Caser te contactará en minutos
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: 🇪🇸
+            - generic [ref=e42]: "+34"
+          - textbox "600 000 000" [ref=e43]
+        - generic [ref=e44]:
+          - checkbox "Acepto los términos y condiciones y la política de privacidad" [checked] [ref=e45]
+          - generic [ref=e46]:
+            - text: Acepto los
+            - link "términos y condiciones" [ref=e47] [cursor=pointer]:
+              - /url: "#"
+            - text: y la
+            - link "política de privacidad" [ref=e48] [cursor=pointer]:
+              - /url: "#"
+        - button "Te llamamos ahora" [ref=e49] [cursor=pointer]
+        - paragraph [ref=e50]: Sin compromiso · Datos protegidos
+  - generic [ref=e51]: "OFERTA: 30% de DESCUENTO en nuestros seguros médicos"
+  - generic [ref=e53]:
+    - heading "¿Por qué elegir un seguro de salud Caser?" [level=2] [ref=e54]
+    - paragraph [ref=e55]: Con Caser podrás tener un seguro médico pensado para tu día a día, con servicios digitales, amplias coberturas y un cuadro médico de referencia en toda España.
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - heading "Extenso Cuadro Médico" [level=3] [ref=e59]
+        - paragraph [ref=e60]: Más de 45.000 profesionales y 13.000 centros concertados en toda España. Atención presencial u online con la máxima comodidad.
+      - generic [ref=e61]:
+        - img [ref=e62]
+        - heading "Coberturas flexibles" [level=3] [ref=e66]
+        - paragraph [ref=e67]: Accede a especialistas, pruebas diagnósticas, consultas programadas y servicios complementarios incluidos según tu modalidad.
+      - generic [ref=e68]:
+        - img [ref=e69]
+        - heading "Confianza y ahorro" [level=3] [ref=e74]
+        - paragraph [ref=e75]: Los seguros privados de Caser están especialmente diseñados para adaptarse a tus necesidades, para que solo pagues por lo que necesitas.
+      - generic [ref=e76]:
+        - img [ref=e77]:
+          - generic [ref=e81]: "24"
+        - heading "Seguro médico 24h" [level=3] [ref=e82]
+        - paragraph [ref=e83]: Todas nuestras pólizas incluyen asistencia telefónica y online 24 horas todos los días de la semana, para resolver consultas médicas estés donde estés.
+    - button "Solicitar llamada" [ref=e85] [cursor=pointer]
+  - generic [ref=e87]:
+    - heading "¿Cuánto cuesta un seguro de salud de Caser?" [level=2] [ref=e88]
+    - paragraph [ref=e89]: Cuéntanos tus necesidades y te mostraremos el seguro de salud Caser que mejor encaja con tu presupuesto.
+    - button "Calcular mi tarifa" [ref=e90] [cursor=pointer]
+  - generic [ref=e92]:
+    - heading "Encuentra tu seguro de salud Caser a medida" [level=2] [ref=e93]
+    - paragraph [ref=e94]: Caser te ofrece soluciones flexibles para cada etapa y situación personal. Elige la opción que mejor se adapte a tus necesidades.
+    - generic [ref=e95]:
+      - generic [ref=e96]:
+        - generic [ref=e98]: Para embarazadas
+        - generic [ref=e99]:
+          - list [ref=e100]:
+            - listitem [ref=e101]: › Consultas obstetricia y ginecología
+            - listitem [ref=e102]: › Ecografías incluidas según modalidad
+            - listitem [ref=e103]: › Preparación al parto
+            - listitem [ref=e104]: › Rehabilitación suelo pélvico
+            - listitem [ref=e105]: › Test prenatales no invasivos
+            - listitem [ref=e106]: › Hospitalización individual para el parto
+          - link "Más información" [ref=e107] [cursor=pointer]:
+            - /url: embarazo.html
+      - generic [ref=e108]:
+        - generic [ref=e110]: Para familias
+        - generic [ref=e111]:
+          - list [ref=e112]:
+            - listitem [ref=e113]: › Urgencias generales y pediátricas 24 horas
+            - listitem [ref=e114]: › Acceso a especialistas
+            - listitem [ref=e115]: › Psicología con sesiones incluidas
+            - listitem [ref=e116]: › Descuentos por múltiples asegurados
+            - listitem [ref=e117]: › Condiciones ventajosas para familias
+          - link "Más información" [ref=e118] [cursor=pointer]:
+            - /url: familiar.html
+      - generic [ref=e119]:
+        - generic [ref=e121]: Para mayores
+        - generic [ref=e122]:
+          - list [ref=e123]:
+            - listitem [ref=e124]: › Urgencias 24 horas
+            - listitem [ref=e125]: › Revisiones con especialistas
+            - listitem [ref=e126]: › Rehabilitación y fisioterapia
+            - listitem [ref=e127]: › Chequeo médico anual
+            - listitem [ref=e128]: › Sin límite de edad ni cuestionario previo
+            - listitem [ref=e129]: › Ingresos hospitalarios según póliza
+          - link "Más información" [ref=e130] [cursor=pointer]:
+            - /url: mayores.html
+      - generic [ref=e131]:
+        - generic [ref=e133]: Para autónomos
+        - generic [ref=e134]:
+          - list [ref=e135]:
+            - listitem [ref=e136]: › Acceso a especialistas desde el primer día
+            - listitem [ref=e137]: › Urgencias ambulatorias y hospitalarias
+            - listitem [ref=e138]: › Pruebas diagnósticas
+            - listitem [ref=e139]: › Revisiones médicas y seguimiento
+            - listitem [ref=e140]: › Intervenciones ambulatorias u hospitalarias
+          - link "Más información" [ref=e141] [cursor=pointer]:
+            - /url: autonomos.html
+  - generic [ref=e143]:
+    - heading "Lo que opinan nuestros asegurados" [level=2] [ref=e144]
+    - paragraph [ref=e145]: La opinión de quienes ya confían en Caser es la mejor referencia. Conoce cómo valoran su experiencia, el proceso de contratación y la atención recibida.
+    - generic [ref=e146]:
+      - generic [ref=e147]:
+        - paragraph [ref=e148]: «El proceso fue muy sencillo. Me explicaron todas las opciones y contraté en pocos minutos. Estoy tranquila sabiendo que tengo un buen respaldo.»
+        - generic [ref=e149]:
+          - strong [ref=e150]: María L.
+          - text: 42 años – Zaragoza
+      - generic [ref=e151]:
+        - paragraph [ref=e152]: «Necesitaba un seguro flexible y con atención digital. La app me permite resolver consultas rápido y sin desplazamientos. Muy cómodo.»
+        - generic [ref=e153]:
+          - strong [ref=e154]: Javier M.
+          - text: 36 años – Valencia
+      - generic [ref=e155]:
+        - paragraph [ref=e156]: «Buscábamos una opción familiar y nos ayudaron a elegir la modalidad adecuada. El trato fue claro, cercano y sin complicaciones.»
+        - generic [ref=e157]:
+          - strong [ref=e158]: Carmen y Luis
+          - text: Padres de 2 niños – Sevilla
+  - generic [ref=e160]:
+    - heading "Elige el seguro de salud Caser que mejor se adapta a ti" [level=2] [ref=e161]
+    - paragraph [ref=e162]: Descubre las modalidades de salud Caser pensadas para ofrecerte diferentes niveles de cobertura, para que puedas contratar exactamente lo que necesitas.
+    - generic [ref=e163]:
+      - generic [ref=e164]:
+        - generic [ref=e166]: 30%
+        - generic [ref=e167]:
+          - img "MÉDICA" [ref=e169]
+          - generic [ref=e170]: MÉDICA
+          - generic [ref=e171]:
+            - generic [ref=e172]: desde
+            - generic [ref=e173]: "15"
+            - generic [ref=e174]: €
+            - generic [ref=e175]: /mes
+          - generic [ref=e176]:
+            - generic [ref=e177]: Ambulatorio
+            - generic [ref=e178]: Con o Sin copago
+        - list [ref=e179]:
+          - listitem [ref=e180]:
+            - img [ref=e181]
+            - text: CON y SIN Copago
+          - listitem [ref=e183]:
+            - img [ref=e184]
+            - text: Medicina general
+          - listitem [ref=e187]:
+            - img [ref=e188]
+            - text: Especialistas
+          - listitem [ref=e191]:
+            - img [ref=e192]
+            - text: Pruebas diagnósticas y análisis clínicos
+          - listitem [ref=e195]:
+            - img [ref=e196]
+            - text: Urgencias hospitalarias
+          - listitem [ref=e200]:
+            - img [ref=e201]
+            - text: Hospitalización médica y quirúrgica
+          - listitem [ref=e205]:
+            - img [ref=e206]
+            - text: Intervenciones quirúrgicas
+          - listitem [ref=e210]:
+            - img [ref=e211]
+            - text: Rehabilitación y fisioterapia
+          - listitem [ref=e214]:
+            - img [ref=e215]
+            - text: Videoconsultas y chat médico
+          - listitem [ref=e218]:
+            - img [ref=e219]
+            - text: Asistencia sanitaria en viaje
+          - listitem [ref=e223]:
+            - img [ref=e224]
+            - text: Dental
+        - generic [ref=e228]:
+          - button "Más información" [ref=e229] [cursor=pointer]
+          - paragraph [ref=e230]: Hasta 10% de DESCUENTO por nº asegurados.
+      - generic [ref=e231]:
+        - generic [ref=e233]: 30%
+        - generic [ref=e234]:
+          - img "ADAPTA" [ref=e236]
+          - generic [ref=e237]: ADAPTA
+          - generic [ref=e238]:
+            - generic [ref=e239]: desde
+            - generic [ref=e240]: "56"
+            - generic [ref=e241]: €
+            - generic [ref=e242]: /mes
+          - generic [ref=e243]:
+            - generic [ref=e244]: Completo + Dental
+            - generic [ref=e245]: Sin copago
+        - list [ref=e246]:
+          - listitem [ref=e247]:
+            - img [ref=e248]
+            - text: Sin copago
+          - listitem [ref=e250]:
+            - img [ref=e251]
+            - text: Medicina general
+          - listitem [ref=e254]:
+            - img [ref=e255]
+            - text: Especialistas
+          - listitem [ref=e258]:
+            - img [ref=e259]
+            - text: Pruebas diagnósticas y análisis clínicos
+          - listitem [ref=e262]:
+            - img [ref=e263]
+            - text: Urgencias hospitalarias
+          - listitem [ref=e266]:
+            - img [ref=e267]
+            - text: Hospitalización médica y quirúrgica
+          - listitem [ref=e270]:
+            - img [ref=e271]
+            - text: Intervenciones quirúrgicas
+          - listitem [ref=e274]:
+            - img [ref=e275]
+            - text: Rehabilitación y fisioterapia
+          - listitem [ref=e278]:
+            - img [ref=e279]
+            - text: Videoconsultas y chat médico
+          - listitem [ref=e282]:
+            - img [ref=e283]
+            - text: Asistencia sanitaria en viaje
+          - listitem [ref=e286]:
+            - img [ref=e287]
+            - text: Dental
+        - button "Más información" [ref=e291] [cursor=pointer]
+      - generic [ref=e292]:
+        - generic [ref=e294]: 30%
+        - generic [ref=e295]:
+          - img "PRESTIGIO" [ref=e297]
+          - generic [ref=e298]: PRESTIGIO
+          - generic [ref=e299]:
+            - generic [ref=e300]: desde
+            - generic [ref=e301]: "108"
+            - generic [ref=e302]: €
+            - generic [ref=e303]: /mes
+          - generic [ref=e304]:
+            - generic [ref=e305]: Completo + Reembolso
+            - generic [ref=e306]: Sin copago
+        - list [ref=e307]:
+          - listitem [ref=e308]:
+            - img [ref=e309]
+            - text: SIN Copago + Reembolso de gastos
+          - listitem [ref=e311]:
+            - img [ref=e312]
+            - text: Medicina general
+          - listitem [ref=e315]:
+            - img [ref=e316]
+            - text: Especialistas
+          - listitem [ref=e319]:
+            - img [ref=e320]
+            - text: Pruebas diagnósticas y análisis clínicos
+          - listitem [ref=e323]:
+            - img [ref=e324]
+            - text: Urgencias hospitalarias
+          - listitem [ref=e327]:
+            - img [ref=e328]
+            - text: Hospitalización médica y quirúrgica
+          - listitem [ref=e331]:
+            - img [ref=e332]
+            - text: Intervenciones quirúrgicas
+          - listitem [ref=e335]:
+            - img [ref=e336]
+            - text: Rehabilitación y fisioterapia
+          - listitem [ref=e339]:
+            - img [ref=e340]
+            - text: Videoconsultas y chat médico
+          - listitem [ref=e343]:
+            - img [ref=e344]
+            - text: Asistencia sanitaria en viaje
+          - listitem [ref=e347]:
+            - img [ref=e348]
+            - text: Dental
+          - listitem [ref=e352]:
+            - img [ref=e353]
+            - text: Reembolso de gastos médicos (España y extranjero)
+          - listitem [ref=e356]:
+            - img [ref=e357]
+            - text: Reembolsos extra (farmacia, óptica, criopreservación, DIU)
+        - button "Más información" [ref=e361] [cursor=pointer]
+  - generic [ref=e363]:
+    - heading "Preguntas frecuentes" [level=2] [ref=e364]
+    - paragraph [ref=e365]: Resolvemos las dudas más frecuentes sobre los seguros de salud Caser.
+    - generic [ref=e366]:
+      - generic [ref=e368] [cursor=pointer]:
+        - text: ¿Qué seguros de salud ofrece Caser?
+        - generic [ref=e369]: ▼
+      - generic [ref=e371] [cursor=pointer]:
+        - text: ¿Puedo elegir el médico que yo quiera?
+        - generic [ref=e372]: ▼
+      - generic [ref=e374] [cursor=pointer]:
+        - text: ¿Qué centros incluye el cuadro médico de Caser?
+        - generic [ref=e375]: ▼
+      - generic [ref=e377] [cursor=pointer]:
+        - text: ¿Existen descuentos por contratar seguros con Caser?
+        - generic [ref=e378]: ▼
+      - generic [ref=e380] [cursor=pointer]:
+        - text: Tengo un seguro con otra compañía, ¿puedo cambiarme a Caser?
+        - generic [ref=e381]: ▼
+      - generic [ref=e383] [cursor=pointer]:
+        - text: ¿Cuántos beneficiarios puedo incluir en un seguro Caser?
+        - generic [ref=e384]: ▼
+      - generic [ref=e386] [cursor=pointer]:
+        - text: ¿Incluyen asistencia en el extranjero los seguros de Caser?
+        - generic [ref=e387]: ▼
+      - generic [ref=e389] [cursor=pointer]:
+        - text: ¿Puedo añadir cobertura dental a mi seguro de salud Caser?
+        - generic [ref=e390]: ▼
+      - generic [ref=e392] [cursor=pointer]:
+        - text: ¿Cómo puedo solicitar más información o contratar un seguro de salud Caser?
+        - generic [ref=e393]: ▼
+  - contentinfo [ref=e394]:
+    - generic [ref=e395]:
+      - generic [ref=e396]:
+        - generic [ref=e397]:
+          - img "Caser Seguros" [ref=e399]
+          - paragraph [ref=e400]: Somos Agente Exclusivo Caser, especialistas en Seguros de Salud.
+          - generic [ref=e401]:
+            - img [ref=e402]
+            - generic [ref=e404]:
+              - text: "Llámanos:"
+              - link "91 005 22 70" [ref=e405] [cursor=pointer]:
+                - /url: tel:910052270
+        - generic [ref=e406]:
+          - heading "Seguros Médicos" [level=4] [ref=e407]
+          - list [ref=e408]:
+            - listitem [ref=e409]:
+              - link "› Particulares" [ref=e410] [cursor=pointer]:
+                - /url: particulares.html
+            - listitem [ref=e411]:
+              - link "› Familias" [ref=e412] [cursor=pointer]:
+                - /url: familiar.html
+            - listitem [ref=e413]:
+              - link "› Embarazadas" [ref=e414] [cursor=pointer]:
+                - /url: embarazo.html
+            - listitem [ref=e415]:
+              - link "› Mayores" [ref=e416] [cursor=pointer]:
+                - /url: mayores.html
+            - listitem [ref=e417]:
+              - link "› Autónomos" [ref=e418] [cursor=pointer]:
+                - /url: autonomos.html
+            - listitem [ref=e419]:
+              - link "› Calcula tu seguro" [ref=e420] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e421]:
+        - paragraph [ref=e422]: Copyright © Insursalud 2026.
+        - generic [ref=e423]:
+          - link "Política de privacidad" [ref=e424] [cursor=pointer]:
+            - /url: "#"
+          - link "Términos y condiciones" [ref=e425] [cursor=pointer]:
+            - /url: "#"

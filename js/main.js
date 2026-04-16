@@ -177,10 +177,8 @@ function submitForm(e) {
     }
   }
 
-  function trackAndShow() {
-    return caserTrack.generateLead(cleanTel, 'tarificador_402_calcular')
-      .then(showCalcSuccess, showCalcSuccess);
-  }
+  // Tracking ANTES del fetch para garantizar que el dataLayer recibe el evento
+  caserTrack.generateLead(cleanTel, 'tarificador_402_calcular');
 
   // Envío a HubSpot
   if (HS_PORTAL_ID && HS_FORM_ID) {
@@ -190,9 +188,9 @@ function submitForm(e) {
       headers: { 'Content-Type': 'application/json' },
       body:    JSON.stringify(payload)
     })
-    .then(trackAndShow, trackAndShow); // Mostrar éxito aunque falle la red
+    .then(showCalcSuccess, showCalcSuccess);
   } else {
-    setTimeout(trackAndShow, 800);
+    setTimeout(showCalcSuccess, 800);
   }
 }
 
@@ -350,10 +348,8 @@ function submitCallModal() {
     }
   };
 
-  function trackAndShow() {
-    return caserTrack.generateLead('+34' + cleanPhone, 'tarificador_400_modal_planes')
-      .then(showCallModalSuccess, showCallModalSuccess);
-  }
+  // Tracking ANTES del fetch
+  caserTrack.generateLead('+34' + cleanPhone, 'tarificador_400_modal_planes');
 
   // Envío a HubSpot
   if (HS_PORTAL_ID && HS_FORM_ID) {
@@ -363,10 +359,9 @@ function submitCallModal() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
     })
-    .then(trackAndShow, trackAndShow);
+    .then(showCallModalSuccess, showCallModalSuccess);
   } else {
-    // Sin HubSpot configurado → mostrar éxito igualmente
-    setTimeout(trackAndShow, 800);
+    setTimeout(showCallModalSuccess, 800);
   }
 }
 
@@ -410,17 +405,15 @@ function submitHeroForm() {
     if (success) success.style.display = 'block';
   }
 
-  function trackAndShow() {
-    return caserTrack.generateLead('+34' + cleanPhone, 'tarificador_401_hero')
-      .then(showHeroSuccess, showHeroSuccess);
-  }
+  // Tracking ANTES del fetch
+  caserTrack.generateLead('+34' + cleanPhone, 'tarificador_401_hero');
 
   if (HS_PORTAL_ID && HS_FORM_ID) {
     var url = 'https://api.hsforms.com/submissions/v3/integration/submit/' + HS_PORTAL_ID + '/' + HS_FORM_ID;
     fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
-      .then(trackAndShow, trackAndShow);
+      .then(showHeroSuccess, showHeroSuccess);
   } else {
-    setTimeout(trackAndShow, 800);
+    setTimeout(showHeroSuccess, 800);
   }
 }
 
@@ -536,8 +529,10 @@ window.caserTrack = (function () {
 
 // ============================================================
 // CLICK-TO-CALL TRACKING — delegación global en a[href^="tel:"]
+// Usa mousedown (se dispara antes de que el navegador abra el
+// dialer) + click como fallback para máxima fiabilidad.
 // ============================================================
-document.addEventListener('DOMContentLoaded', function () {
+(function () {
   function detectLocation(anchor) {
     if (anchor.closest('.site-header'))   return 'header';
     if (anchor.closest('.main-nav'))      return 'nav';
@@ -548,9 +543,15 @@ document.addEventListener('DOMContentLoaded', function () {
     return 'body';
   }
 
-  document.addEventListener('click', function (e) {
+  function handleTelEvent(e) {
     var anchor = e.target.closest && e.target.closest('a[href^="tel:"]');
     if (!anchor) return;
+    // Evitar doble disparo (mousedown + click)
+    var now = Date.now();
+    var last = anchor._lastTrack || 0;
+    if (now - last < 2000) return;
+    anchor._lastTrack = now;
+
     var digits = anchor.getAttribute('href').replace(/^tel:/, '').replace(/\D/g, '');
     var location = detectLocation(anchor);
     if (digits === '910052270') {
@@ -558,5 +559,8 @@ document.addEventListener('DOMContentLoaded', function () {
     } else if (digits === '911553472') {
       caserTrack.clickToCallAsistencia(location);
     }
-  }, true);
-});
+  }
+
+  document.addEventListener('mousedown', handleTelEvent, true);
+  document.addEventListener('click', handleTelEvent, true);
+})();
