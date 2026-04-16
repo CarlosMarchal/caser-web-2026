@@ -1,0 +1,68 @@
+name: Deploy a Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar clave SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p 65002 91.108.101.64 >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Subir archivos HTML y CSS a Hostinger
+        run: |
+          scp -i ~/.ssh/deploy_key -P 65002 \
+            index.html \
+            particulares.html \
+            familiar.html \
+            embarazo.html \
+            mayores.html \
+            autonomos.html \
+            calcular.html \
+            legal.html \
+            u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
+
+      - name: Subir carpeta CSS
+        run: |
+          scp -i ~/.ssh/deploy_key -P 65002 -r \
+            css/ \
+            u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
+
+      - name: Subir carpeta JS
+        run: |
+          scp -i ~/.ssh/deploy_key -P 65002 -r \
+            js/ \
+            u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
+
+      - name: Subir carpeta images
+        run: |
+          scp -i ~/.ssh/deploy_key -P 65002 -r \
+            images/ \
+            u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
+
+      - name: Subir carpeta avisolegal
+        run: |
+          scp -i ~/.ssh/deploy_key -P 65002 -r \
+            avisolegal-poliiticadeprivacidad/ \
+            u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
+
+      - name: Corregir permisos en producción
+        run: |
+          ssh -i ~/.ssh/deploy_key -p 65002 \
+            u623716999@91.108.101.64 \
+            "find domains/caser.ofertaseguromedico.es/public_html -type d -exec chmod 755 {} \; && \
+             find domains/caser.ofertaseguromedico.es/public_html -type f -exec chmod 644 {} \;"
+
+      - name: Deploy completado
+        run: echo "✅ Deploy a caser.ofertaseguromedico.es completado correctamente"
