@@ -14,15 +14,17 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Configurar clave SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/deploy_key
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -p 65002 91.108.101.64 >> ~/.ssh/known_hosts 2>/dev/null
+          ssh-keyscan -p 65002 -H 91.108.101.64 >> ~/.ssh/known_hosts 2>/dev/null || true
 
-      - name: Subir archivos HTML y CSS a Hostinger
+      - name: Subir archivos HTML
         run: |
-          scp -i ~/.ssh/deploy_key -P 65002 \
+          scp -i ~/.ssh/deploy_key -P 65002 -o StrictHostKeyChecking=no \
             index.html \
             particulares.html \
             familiar.html \
@@ -33,36 +35,42 @@ jobs:
             legal.html \
             u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
 
+      - name: Subir .htaccess
+        run: |
+          scp -i ~/.ssh/deploy_key -P 65002 -o StrictHostKeyChecking=no \
+            .htaccess \
+            u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
+
       - name: Subir carpeta CSS
         run: |
-          scp -i ~/.ssh/deploy_key -P 65002 -r \
+          scp -i ~/.ssh/deploy_key -P 65002 -o StrictHostKeyChecking=no -r \
             css/ \
             u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
 
       - name: Subir carpeta JS
         run: |
-          scp -i ~/.ssh/deploy_key -P 65002 -r \
+          scp -i ~/.ssh/deploy_key -P 65002 -o StrictHostKeyChecking=no -r \
             js/ \
             u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
 
       - name: Subir carpeta images
         run: |
-          scp -i ~/.ssh/deploy_key -P 65002 -r \
+          scp -i ~/.ssh/deploy_key -P 65002 -o StrictHostKeyChecking=no -r \
             images/ \
             u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
 
       - name: Subir carpeta avisolegal
         run: |
-          scp -i ~/.ssh/deploy_key -P 65002 -r \
+          scp -i ~/.ssh/deploy_key -P 65002 -o StrictHostKeyChecking=no -r \
             avisolegal-poliiticadeprivacidad/ \
             u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
 
       - name: Corregir permisos en producción
         run: |
-          ssh -i ~/.ssh/deploy_key -p 65002 \
+          ssh -i ~/.ssh/deploy_key -p 65002 -o StrictHostKeyChecking=no \
             u623716999@91.108.101.64 \
             "find domains/caser.ofertaseguromedico.es/public_html -type d -exec chmod 755 {} \; && \
              find domains/caser.ofertaseguromedico.es/public_html -type f -exec chmod 644 {} \;"
 
       - name: Deploy completado
-        run: echo "✅ Deploy a caser.ofertaseguromedico.es completado correctamente"
+        run: echo "✅ Deploy a caser.ofertaseguromedico.es completado"
