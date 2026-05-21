@@ -135,7 +135,12 @@ function submitForm(e) {
     return;
   }
   if (!telefonoEl || !telefonoEl.value.trim()) {
-    showFieldError(telefonoEl, 'Por favor, introduce tu teléfono.');
+    showFieldError(telefonoEl, 'Por favor, introduce tu teléfono móvil.');
+    return;
+  }
+  var telDigits = telefonoEl.value.replace(/\D/g, '');
+  if (telDigits.length !== 9 || !/^[67]/.test(telDigits)) {
+    showFieldError(telefonoEl, 'Introduce un móvil español válido (9 dígitos, empieza por 6 o 7).');
     return;
   }
   if (!aceptoTerminos || !aceptoTerminos.checked) {
@@ -253,16 +258,32 @@ function formatPhone(input) {
 }
 
 /**
- * Valida que haya exactamente 9 dígitos y marca visualmente el campo si no.
+ * Valida que haya exactamente 9 dígitos y que empiece por 6 o 7 (móvil español).
+ * Marca visualmente el campo si no es válido.
  * Devuelve los 9 dígitos limpios, o null si inválido.
  */
 function validatePhone(input) {
   var digits = (input ? input.value : '').replace(/\D/g, '');
-  if (digits.length !== 9) {
+  var isValid = digits.length === 9 && /^[67]/.test(digits);
+  if (!isValid) {
     if (input) {
       input.style.borderColor = '#c9474a';
       input.focus();
-      setTimeout(function () { input.style.borderColor = ''; }, 2500);
+      // Mostrar mensaje de error descriptivo
+      var errMsg = input.parentElement && input.parentElement.querySelector('.phone-error-msg');
+      if (!errMsg) {
+        errMsg = document.createElement('span');
+        errMsg.className = 'phone-error-msg';
+        errMsg.style.cssText = 'color:#c9474a;font-size:0.78rem;display:block;margin-top:4px;';
+        if (input.parentElement) input.parentElement.appendChild(errMsg);
+      }
+      errMsg.textContent = digits.length !== 9
+        ? 'Introduce un teléfono móvil de 9 dígitos.'
+        : 'El teléfono debe ser un móvil español (empieza por 6 o 7).';
+      setTimeout(function () {
+        input.style.borderColor = '';
+        if (errMsg && errMsg.parentElement) errMsg.parentElement.removeChild(errMsg);
+      }, 3000);
     }
     return null;
   }
