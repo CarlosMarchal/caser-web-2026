@@ -602,3 +602,118 @@ window.caserTrack = (function () {
   document.addEventListener('mousedown', handleTelEvent, true);
   document.addEventListener('click', handleTelEvent, true);
 })();
+
+/* ============================================================
+   STICKY SCROLL BANNER — Lógica scroll y formulario
+   ============================================================ */
+(function () {
+  'use strict';
+
+  var banner = document.getElementById('sticky-banner');
+  if (!banner) return;
+
+  var SCROLL_THRESHOLD = 300; // px to scroll before showing
+  var dismissed = false;
+  var ticking = false;
+
+  function updateBanner() {
+    if (dismissed) return;
+    var scrollY = window.scrollY || window.pageYOffset;
+    if (scrollY > SCROLL_THRESHOLD) {
+      banner.classList.add('sb-visible');
+      banner.classList.remove('sb-hidden');
+    } else {
+      banner.classList.remove('sb-visible');
+      banner.classList.add('sb-hidden');
+    }
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      window.requestAnimationFrame(updateBanner);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Close button
+  var closeBtn = document.getElementById('sb-close-btn');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function () {
+      dismissed = true;
+      banner.classList.remove('sb-visible');
+      banner.classList.add('sb-hidden');
+      // Remember dismissal for session
+      try { sessionStorage.setItem('sb_dismissed', '1'); } catch(e) {}
+    });
+  }
+
+  // Check if already dismissed this session
+  try {
+    if (sessionStorage.getItem('sb_dismissed') === '1') {
+      dismissed = true;
+    }
+  } catch(e) {}
+
+  // Form submission
+  var sbForm = document.getElementById('sb-form');
+  if (sbForm) {
+    sbForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var phoneInput = document.getElementById('sb-phone');
+      var termsCheck = document.getElementById('sb-terms');
+      var errorEl = document.getElementById('sb-error');
+      var phone = phoneInput ? phoneInput.value.replace(/\s/g, '') : '';
+
+      // Validate phone
+      if (!phone || phone.length < 9) {
+        if (errorEl) { errorEl.style.display = 'block'; errorEl.textContent = 'Introduce un teléfono válido.'; }
+        return;
+      }
+      if (!termsCheck || !termsCheck.checked) {
+        if (errorEl) { errorEl.style.display = 'block'; errorEl.textContent = 'Debes aceptar los términos y la política de privacidad.'; }
+        return;
+      }
+      if (errorEl) errorEl.style.display = 'none';
+
+      // Track event
+      if (window.dataLayer) {
+        window.dataLayer.push({
+          event: 'sticky_banner_lead',
+          phone_partial: phone.slice(-4),
+          campaign: '30pct_descuento'
+        });
+      }
+
+      // Redirect to thank-you / open modal
+      if (typeof openCallModal === 'function') {
+        openCallModal('BANNER');
+      } else {
+        // Fallback: scroll to hero form
+        var heroForm = document.getElementById('heroPhone');
+        if (heroForm) {
+          heroForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          heroForm.focus();
+        }
+      }
+
+      // Hide banner after successful submit
+      dismissed = true;
+      banner.classList.remove('sb-visible');
+      banner.classList.add('sb-hidden');
+    });
+  }
+
+  // Phone formatting in banner
+  var sbPhoneInput = document.getElementById('sb-phone');
+  if (sbPhoneInput) {
+    sbPhoneInput.addEventListener('input', function () {
+      var val = this.value.replace(/\D/g, '').slice(0, 9);
+      // Format: 600 000 000
+      if (val.length > 6) val = val.slice(0,3) + ' ' + val.slice(3,6) + ' ' + val.slice(6);
+      else if (val.length > 3) val = val.slice(0,3) + ' ' + val.slice(3);
+      this.value = val;
+    });
+  }
+
+})();
