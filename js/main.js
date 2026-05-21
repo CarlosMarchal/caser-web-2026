@@ -278,14 +278,28 @@ function validatePhone(input) {
       var errMsg = document.getElementById(errId);
       if (errMsg) {
         errMsg.textContent = digits.length !== 9
-          ? 'Introduce un teléfono móvil de 9 dígitos.'
-          : 'El teléfono debe ser un móvil español (empieza por 6 o 7).';
-        errMsg.style.display = 'block';
+          ? '⚠️ Introduce un teléfono móvil de 9 dígitos.'
+          : '⚠️ El teléfono debe ser un móvil español (empieza por 6 o 7).';
+        errMsg.style.cssText = [
+          'display:block',
+          'color:#c9474a',
+          'font-size:13px',
+          'font-weight:600',
+          'line-height:1.5',
+          'margin-top:8px',
+          'margin-bottom:4px',
+          'padding:7px 10px',
+          'background:#fff0f0',
+          'border-left:3px solid #c9474a',
+          'border-radius:4px',
+          'width:100%',
+          'box-sizing:border-box'
+        ].join(';');
       }
 
       setTimeout(function () {
         if (container) container.style.borderColor = '';
-        if (errMsg) { errMsg.textContent = ''; errMsg.style.display = 'none'; }
+        if (errMsg) { errMsg.textContent = ''; errMsg.style.cssText = 'display:none'; }
       }, 3500);
     }
     return null;
