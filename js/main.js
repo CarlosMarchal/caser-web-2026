@@ -267,30 +267,25 @@ function validatePhone(input) {
   var isValid = digits.length === 9 && /^[67]/.test(digits);
   if (!isValid) {
     if (input) {
-      // Marcar el contenedor del input (padre con borde visible)
+      // Marcar el contenedor del input (el div con borde visible)
       var container = input.closest('.hf-phone, .call-modal-phone') || input.parentElement;
       if (container) container.style.borderColor = '#c9474a';
 
       input.focus();
 
-      // Insertar el error DESPUÉS del contenedor (no dentro), como hermano
-      var anchor = container || input;
-      var parent  = anchor.parentElement;
-      var errMsg  = parent && parent.querySelector('.phone-error-msg');
-      if (!errMsg && parent) {
-        errMsg = document.createElement('span');
-        errMsg.className = 'phone-error-msg';
-        parent.insertBefore(errMsg, anchor.nextSibling);
-      }
+      // Buscar el span de error fijo en el HTML (hermano del contenedor)
+      var errId = (input.id === 'heroPhone') ? 'heroPhoneError' : 'callModalPhoneError';
+      var errMsg = document.getElementById(errId);
       if (errMsg) {
         errMsg.textContent = digits.length !== 9
           ? 'Introduce un teléfono móvil de 9 dígitos.'
           : 'El teléfono debe ser un móvil español (empieza por 6 o 7).';
+        errMsg.style.display = 'block';
       }
 
       setTimeout(function () {
         if (container) container.style.borderColor = '';
-        if (errMsg && errMsg.parentElement) errMsg.parentElement.removeChild(errMsg);
+        if (errMsg) { errMsg.textContent = ''; errMsg.style.display = 'none'; }
       }, 3500);
     }
     return null;

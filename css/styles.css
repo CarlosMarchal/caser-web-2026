@@ -533,13 +533,13 @@ h1, h2, h3, h4, h5 {
 
 /* Mensaje de error validación teléfono */
 .phone-error-msg {
-  display: block;
+  display: none;
   color: #c9474a;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   line-height: 1.4;
   margin-top: 6px;
-  margin-bottom: 6px;
-  padding: 6px 10px;
+  margin-bottom: 4px;
+  padding: 7px 10px;
   background: #fff0f0;
   border-left: 3px solid #c9474a;
   border-radius: 4px;
