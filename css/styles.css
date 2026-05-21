@@ -531,6 +531,22 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+/* Mensaje de error validación teléfono */
+.phone-error-msg {
+  display: block;
+  color: #c9474a;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  background: #fff0f0;
+  border-left: 3px solid #c9474a;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 /* Feature icon wrap (reemplaza SVG inline en index) */
 .feature-icon-wrap {
   width: 52px;

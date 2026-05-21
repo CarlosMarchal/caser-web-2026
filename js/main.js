@@ -267,23 +267,31 @@ function validatePhone(input) {
   var isValid = digits.length === 9 && /^[67]/.test(digits);
   if (!isValid) {
     if (input) {
-      input.style.borderColor = '#c9474a';
+      // Marcar el contenedor del input (padre con borde visible)
+      var container = input.closest('.hf-phone, .call-modal-phone') || input.parentElement;
+      if (container) container.style.borderColor = '#c9474a';
+
       input.focus();
-      // Mostrar mensaje de error descriptivo
-      var errMsg = input.parentElement && input.parentElement.querySelector('.phone-error-msg');
-      if (!errMsg) {
+
+      // Insertar el error DESPUÉS del contenedor (no dentro), como hermano
+      var anchor = container || input;
+      var parent  = anchor.parentElement;
+      var errMsg  = parent && parent.querySelector('.phone-error-msg');
+      if (!errMsg && parent) {
         errMsg = document.createElement('span');
         errMsg.className = 'phone-error-msg';
-        errMsg.style.cssText = 'color:#c9474a;font-size:0.78rem;display:block;margin-top:4px;';
-        if (input.parentElement) input.parentElement.appendChild(errMsg);
+        parent.insertBefore(errMsg, anchor.nextSibling);
       }
-      errMsg.textContent = digits.length !== 9
-        ? 'Introduce un teléfono móvil de 9 dígitos.'
-        : 'El teléfono debe ser un móvil español (empieza por 6 o 7).';
+      if (errMsg) {
+        errMsg.textContent = digits.length !== 9
+          ? 'Introduce un teléfono móvil de 9 dígitos.'
+          : 'El teléfono debe ser un móvil español (empieza por 6 o 7).';
+      }
+
       setTimeout(function () {
-        input.style.borderColor = '';
+        if (container) container.style.borderColor = '';
         if (errMsg && errMsg.parentElement) errMsg.parentElement.removeChild(errMsg);
-      }, 3000);
+      }, 3500);
     }
     return null;
   }
