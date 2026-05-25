@@ -609,32 +609,32 @@ window.caserTrack = (function () {
 (function () {
   'use strict';
 
-  var banner = document.getElementById('sticky-banner');
-  if (!banner) return;
+  function initBanner() {
+    var banner = document.getElementById('sticky-banner');
+    if (!banner) return;
 
-  var SCROLL_THRESHOLD = 300; // px to scroll before showing
-  var dismissed = false;
-  var ticking = false;
+    var SCROLL_THRESHOLD = 300;
+    var dismissed = false;
 
-  function updateBanner() {
-    if (dismissed) return;
-    var scrollY = window.scrollY || window.pageYOffset;
-    if (scrollY > SCROLL_THRESHOLD) {
-      banner.classList.add('sb-visible');
-      banner.classList.remove('sb-hidden');
-    } else {
-      banner.classList.remove('sb-visible');
-      banner.classList.add('sb-hidden');
+    function updateBanner() {
+      if (dismissed) return;
+      var scrollY = window.scrollY || window.pageYOffset || 0;
+      var footer = document.querySelector('.site-footer');
+      var nearFooter = false;
+      if (footer) {
+        nearFooter = footer.getBoundingClientRect().top <= window.innerHeight;
+      }
+      if (scrollY > SCROLL_THRESHOLD && !nearFooter) {
+        banner.classList.add('sb-visible');
+      } else {
+        banner.classList.remove('sb-visible');
+      }
     }
-    ticking = false;
-  }
 
-  window.addEventListener('scroll', function () {
-    if (!ticking) {
-      window.requestAnimationFrame(updateBanner);
-      ticking = true;
-    }
-  }, { passive: true });
+    window.addEventListener('scroll', updateBanner, { passive: true });
+    document.addEventListener('scroll', updateBanner, { passive: true });
+    setInterval(updateBanner, 200);
+    updateBanner();
 
   // Close button
   var closeBtn = document.getElementById('sb-close-btn');
@@ -662,12 +662,17 @@ window.caserTrack = (function () {
       e.preventDefault();
       var phoneInput = document.getElementById('sb-phone');
       var termsCheck = document.getElementById('sb-terms');
-      var errorEl = document.getElementById('sb-error');
-      var phone = phoneInput ? phoneInput.value.replace(/\s/g, '') : '';
+      var errorEl    = document.getElementById('sb-error');
+      var submitBtn  = sbForm.querySelector('.sb-cta-btn');
 
-      // Validate phone
-      if (!phone || phone.length < 9) {
-        if (errorEl) { errorEl.style.display = 'block'; errorEl.textContent = 'Introduce un teléfono válido.'; }
+      // Limpiar teléfono y validar (9 dígitos, móvil español: empieza por 6 o 7)
+      var cleanPhone = phoneInput ? phoneInput.value.replace(/\D/g, '').slice(0, 9) : '';
+      if (!cleanPhone || cleanPhone.length < 9) {
+        if (errorEl) { errorEl.style.display = 'block'; errorEl.textContent = 'Introduce un móvil de 9 dígitos.'; }
+        return;
+      }
+      if (!/^[67]/.test(cleanPhone)) {
+        if (errorEl) { errorEl.style.display = 'block'; errorEl.textContent = 'El teléfono debe ser un móvil español (empieza por 6 o 7).'; }
         return;
       }
       if (!termsCheck || !termsCheck.checked) {
@@ -675,33 +680,44 @@ window.caserTrack = (function () {
         return;
       }
       if (errorEl) errorEl.style.display = 'none';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Enviando...'; }
 
-      // Track event
+      // Tracking GTM
       if (window.dataLayer) {
-        window.dataLayer.push({
-          event: 'sticky_banner_lead',
-          phone_partial: phone.slice(-4),
-          campaign: '30pct_descuento'
+        window.dataLayer.push({ event: 'sticky_banner_lead', phone_partial: cleanPhone.slice(-4), campaign: '30pct_descuento' });
+      }
+
+      // Envío a HubSpot (mismo endpoint que los demás formularios)
+      var hsPayload = {
+        fields: [
+          { name: 'phone',        value: '+34' + cleanPhone },
+          { name: 'casilla_rgpd', value: 'true' },
+          { name: 'tarificador',  value: 'banner_sticky' }
+        ],
+        context: { pageUri: window.location.href, pageName: document.title }
+      };
+      var hsUrl = 'https://api.hsforms.com/submissions/v3/integration/submit/' + HS_PORTAL_ID + '/' + HS_FORM_ID;
+
+      fetch(hsUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(hsPayload) })
+        .then(function () { showBannerSuccess(); })
+        .catch(function () {
+          // Error de red: resetear botón pero no bloquear al usuario
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Quiero que me llamen'; }
+          if (errorEl) { errorEl.style.display = 'block'; errorEl.textContent = 'Error al enviar. Inténtalo de nuevo.'; }
         });
-      }
+    });
+  }
 
-      // Redirect to thank-you / open modal
-      if (typeof openCallModal === 'function') {
-        openCallModal('BANNER');
-      } else {
-        // Fallback: scroll to hero form
-        var heroForm = document.getElementById('heroPhone');
-        if (heroForm) {
-          heroForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          heroForm.focus();
-        }
-      }
-
-      // Hide banner after successful submit
+  function showBannerSuccess() {
+    var inner = banner.querySelector('.sb-inner');
+    if (inner) {
+      inner.innerHTML = '<p style="color:#fff;font-weight:800;font-size:1.05rem;text-align:center;width:100%;letter-spacing:0.01em;">✅ ¡Gracias! Te llamamos en breve.</p>';
+    }
+    setTimeout(function () {
       dismissed = true;
       banner.classList.remove('sb-visible');
       banner.classList.add('sb-hidden');
-    });
+    }, 3500);
   }
 
   // Phone formatting in banner
@@ -716,4 +732,38 @@ window.caserTrack = (function () {
     });
   }
 
+  // Terms modal
+  var sbTermsLinks = document.querySelectorAll('.sb-terms-link');
+  var sbModal = document.getElementById('sb-modal');
+  var sbModalClose = document.getElementById('sb-modal-close');
+  var sbModalOverlay = document.querySelector('.sb-modal-overlay');
+
+  function openTermsModal(e) {
+    if (e) e.preventDefault();
+    if (sbModal) {
+      sbModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+      if (sbModalClose) sbModalClose.focus();
+    }
+  }
+  function closeTermsModal() {
+    if (sbModal) {
+      sbModal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+  }
+
+  sbTermsLinks.forEach(function(link) {
+    link.addEventListener('click', openTermsModal);
+  });
+  if (sbModalClose) sbModalClose.addEventListener('click', closeTermsModal);
+  if (sbModalOverlay) sbModalOverlay.addEventListener('click', closeTermsModal);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && sbModal && sbModal.style.display === 'flex') closeTermsModal();
+  });
+
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBanner);
+  } else { initBanner(); }
 })();

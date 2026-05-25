@@ -7,7 +7,7 @@
   <title>Seguro de Salud Familiar | Caser Seguros</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=20260522">
+  <link rel="stylesheet" href="/css/styles.css?v=20260550">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -464,7 +464,7 @@
           <div class="logo-wrap">
             <img src="/images/logo-caser-blanco.png" alt="Caser Seguros" class="logo-img-footer">
           </div>
-          <p>Somos Agente Exclusivo Caser, especialistas en Seguros de Salud.</p>
+          <p>Somos Agente Vinculado Caser, especialistas en Seguros de Salud.</p>
           <div class="footer-phone">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#007363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.31 9.9 19.79 19.79 0 01.22 1.28 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             <span>Llámanos: <a href="tel:910052270">91 005 22 70</a></span>
@@ -492,188 +492,70 @@
     </div>
   </footer>
 
-  <!-- MODAL TE LLAMAMOS -->
-  <div class="call-modal-overlay" id="callModal">
-    <div class="call-modal">
-      <button class="call-modal-close" onclick="closeCallModal()">&times;</button>
-      <div class="call-modal-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.31 9.9 19.79 19.79 0 01.22 1.28 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-      </div>
-      <h3>Te llamamos gratis</h3>
-      <p class="call-modal-sub">Un asesor Caser te contactará en minutos</p>
-      <span class="call-modal-plan-name" id="callModalPlanName"></span>
-
-      <!-- Formulario -->
-      <div class="call-modal-form-wrap">
-        <div class="call-modal-phone">
-          <div class="phone-prefix"><span>🇪🇸</span><span>+34</span></div>
-          <input type="tel" placeholder="600 000 000" id="callModalPhone" maxlength="11" oninput="formatPhone(this)" onkeydown="if(event.key==='Enter'){submitCallModal();}">
-        </div>
-        <span class="phone-error-msg" id="callModalPhoneError"></span>
-        <div class="call-modal-check">
-          <input type="checkbox" id="callModalTerms" checked>
-          <label for="callModalTerms">Acepto los <a href="#" onclick="openLegalModal();return false;">términos y condiciones</a> y la <a href="#" onclick="openLegalModal();return false;">política de privacidad</a></label>
-        </div>
-        <!-- Campo oculto tarificador para HubSpot -->
-        <input type="hidden" id="callModalTarificador" value="400">
-        <button type="button" class="call-modal-submit" onclick="submitCallModal()">Te llamamos ahora</button>
-      </div>
-
-      <!-- Estado de éxito -->
-      <div id="callModalSuccess" style="display:none; text-align:center; padding: 10px 0 20px;">
-        <div style="font-size:48px; margin-bottom:12px;">✅</div>
-        <p style="font-size:17px; font-weight:700; color:var(--color-primary); margin-bottom:8px;">¡Recibido!</p>
-        <p style="font-size:14px; color:var(--color-text-medium);">Te llamaremos en los próximos minutos.</p>
-        <button onclick="closeCallModal()" style="margin-top:18px; background:var(--color-primary); color:#fff; border:none; border-radius:8px; padding:10px 28px; font-size:14px; font-weight:700; cursor:pointer;">Cerrar</button>
-      </div>
-
-      <p class="call-modal-footer-note">Sin compromiso · Datos protegidos</p>
-    </div>
-  </div>
-
-
-  <script src="/js/main.js?v=20260522c"></script>
-  <!-- ── BARRA FLOTANTE MOBILE ── -->
-  <div class="mobile-cta-bar">
-    <button type="button" class="mcta-btn mcta-modal" onclick="openCallModal('')">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.31 9.9 19.79 19.79 0 01.22 1.28 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-      Te llamamos
-    </button>
-    <a class="mcta-btn mcta-tel" href="tel:910052270">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.31 9.9 19.79 19.79 0 01.22 1.28 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-      91 005 22 70
-    </a>
-  </div>
-
-
-  <!-- MODAL AVISO LEGAL / POLÍTICA DE PRIVACIDAD -->
-  <div class="legal-modal-overlay" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
-    <div class="legal-modal">
-      <button class="legal-modal-close" onclick="closeLegalModal()" aria-label="Cerrar">&times;</button>
-
-      <h2 id="legalModalTitle">Aviso Legal y Política de Privacidad</h2>
-
-      <div class="legal-block">
-        <p><strong>INSURSALUD, S.L.</strong> inscrita en la Dirección General de Seguros y Fondos de Pensiones (DGSFP) con la clave AJ0374, autorizada para realizar la actividad de mediación de seguros con contrato de agencia vinculada con <strong>CASER SEGUROS</strong>.</p>
-        <p>CIF: B-21975222</p>
-        <p>INSURSALUD tiene concertado un seguro de Responsabilidad Civil y cubiertas las garantías financieras conforme a la normativa vigente.</p>
-      </div>
-
-      <h3>Finalidad</h3>
-      <p>Directorio de contactos, gestión administrativa y comercial de INSURSALUD, S.L. para la celebración, como mediador, de contratos de seguros con la entidad CASER SEGUROS Y REASEGUROS, S.A. y, en su caso, con otras aseguradoras con las que mantenga contrato de agencia vinculada debidamente inscrito en la DGSFP.</p>
-
-      <h3>Legitimación</h3>
-      <p>Celebración y ejecución de contrato y consentimiento del interesado.</p>
-
-      <h3>Destinatarios</h3>
-      <p>No se cederán datos a terceros, salvo obligación legal. No tendrán la consideración de terceros las entidades aseguradoras con las que INSURSALUD, S.L. mantenga contrato de agencia vinculada, así como las entidades con las que exista relación contractual necesaria para la prestación del servicio, y los proveedores que actúen como encargados del tratamiento conforme al artículo 28 del RGPD.</p>
-
-      <h3>Derechos</h3>
-      <p>De acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición, tal como se detalla en la información adicional.</p>
-
-      <h3>Información adicional</h3>
-      <p>Puede consultar la información adicional y detallada sobre protección de datos personales contactando con nosotros en el teléfono <strong>91 005 22 70</strong>.</p>
-
-      <hr class="legal-modal-divider">
-
-      <h3>¿Quién es el responsable del tratamiento de tus datos?</h3>
-      <div class="legal-block">
-        <p><strong>INSURSALUD, S.L.</strong></p>
-        <p>CIF: B-21975222</p>
-        <p>Carril de los Caleros, 8 G 2-B, 28023 Madrid</p>
-        <p>Teléfono: <a href="tel:910052270" style="color:var(--color-primary);">91 005 22 70</a></p>
-      </div>
-
-      <h3>¿Con qué finalidad tratamos tus datos personales?</h3>
-      <p>Los datos personales que nos facilites serán tratados con las siguientes finalidades:</p>
-      <ul>
-        <li>Facilitarte la información solicitada sobre los productos y servicios de seguros que comercializamos.</li>
-        <li>Gestionar las solicitudes y actividades propias de mediación de seguros, conforme a los contratos de agencia vinculada que INSURSALUD, S.L. mantiene con CASER SEGUROS y otras entidades debidamente autorizadas.</li>
-        <li>Cumplir las obligaciones legales derivadas de la normativa de distribución de seguros, prevención del blanqueo de capitales y normativa fiscal.</li>
-      </ul>
-      <p>INSURSALUD, S.L. no utilizará tus datos personales para fines distintos de los anteriores sin tu consentimiento previo y expreso, y se compromete a mantener el secreto profesional y adoptar las medidas técnicas y organizativas adecuadas para garantizar su confidencialidad.</p>
-      <p>En caso de que facilites datos de terceros, garantizas haberles informado y obtenido su consentimiento previo.</p>
-
-      <h3>¿Por cuánto tiempo conservaremos tus datos?</h3>
-      <p>Si el seguro no llega a formalizarse, los datos se conservarán durante un plazo máximo de dos años desde la última manifestación de interés.</p>
-      <p>En caso de celebrarse el contrato de seguro, los datos se conservarán mientras dure la relación contractual y, posteriormente, durante el tiempo en que puedan exigirse responsabilidades legales o derivadas de la mediación (máximo cinco años).</p>
-
-      <h3>¿Cuál es la base legal del tratamiento?</h3>
-      <ul>
-        <li><strong>Ejecución del contrato o medidas precontractuales</strong> (art. 6.1.b RGPD): para la gestión de solicitudes, elaboración de presupuestos y contratación de seguros.</li>
-        <li><strong>Cumplimiento de obligaciones legales</strong> (art. 6.1.c RGPD): normativa de distribución de seguros, prevención del blanqueo de capitales, obligaciones contables y fiscales.</li>
-        <li><strong>Consentimiento del interesado</strong> (art. 6.1.a RGPD): para el envío de comunicaciones comerciales y para la cesión de datos a las entidades aseguradoras con las que INSURSALUD mantiene contratos de agencia vinculada.</li>
-      </ul>
-
-      <h3>¿A qué destinatarios se comunicarán tus datos?</h3>
-      <p>Tus datos podrán ser comunicados a:</p>
-      <ul>
-        <li>CASER SEGUROS Y REASEGUROS, S.A., y otras aseguradoras con las que INSURSALUD mantenga contrato de agencia vinculada.</li>
-        <li>Administraciones públicas y autoridades competentes cuando sea legalmente exigible.</li>
-        <li>Proveedores de servicios tecnológicos, informáticos o de soporte que actúen como encargados del tratamiento, bajo contrato conforme al artículo 28 del RGPD.</li>
-      </ul>
-
-      <h3>¿INSURSALUD te enviará comunicaciones comerciales?</h3>
-      <p>Con tu consentimiento expreso, INSURSALUD, S.L. podrá contactarte por correo postal, electrónico, SMS u otros medios equivalentes para remitirte comunicaciones comerciales sobre productos y servicios aseguradores de CASER SEGUROS o de otras entidades con las que tenga contrato de agencia vinculada.</p>
-      <p>Podrás revocar este consentimiento en cualquier momento llamando al <a href="tel:910052270" style="color:var(--color-primary);">91 005 22 70</a> o mediante comunicación escrita a la dirección postal de la empresa.</p>
-
-      <h3>¿Cuáles son tus derechos cuando nos facilitas tus datos?</h3>
-      <p>Puedes ejercitar tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad de tus datos personales dirigiéndote a:</p>
-      <div class="legal-block">
-        <p><strong>INSURSALUD, S.L.</strong></p>
-        <p>Teléfono: <a href="tel:910052270" style="color:var(--color-primary);">91 005 22 70</a></p>
-      </div>
-      <p>Asimismo, puedes presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong> en <a href="https://www.aepd.es" target="_blank" rel="noopener" style="color:var(--color-primary);">www.aepd.es</a> si consideras que tus derechos no han sido atendidos adecuadamente.</p>
-
-      <h3>Modificación de la política de privacidad</h3>
-      <p>INSURSALUD, S.L. podrá modificar su política de privacidad en cualquier momento para adaptarla a cambios legislativos o de su actividad. Cualquier modificación relevante será comunicada de forma visible y, cuando proceda, se solicitará nuevamente tu consentimiento.</p>
-
-      <h3>Sistema de exclusión publicitaria</h3>
-      <p>Para evitar recibir publicidad no deseada de entidades con las que no mantengas relación, puedes inscribirte gratuitamente en el servicio de exclusión publicitaria <a href="https://www.listarobinson.es" target="_blank" rel="noopener" style="color:var(--color-primary);">www.listarobinson.es</a>. Los menores de 14 años deberán hacerlo a través de sus representantes legales.</p>
-
-    </div>
-  </div>
-
-
-  <!-- STICKY SCROLL BANNER -->
-  <div id="sticky-banner" role="complementary" aria-label="Oferta especial Caser">
+  <div id="sticky-banner" role="complementary" aria-label="Oferta Caser">
+    <div class="sb-pill-row"><div class="sb-pill">Ahora 30% de descuento</div></div>
     <div class="sb-inner">
+
+      <!-- LEFT -->
       <div class="sb-left">
-        <div class="sb-badge">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          Hasta 30% DESCUENTO
-        </div>
         <div class="sb-headline">
-          <strong>Te informamos</strong>
-          <span>Sin compromiso</span>
+          <strong>¿Quieres contratar?</strong>
+          <span>Hasta 30% de descuento</span>
         </div>
       </div>
-      <div class="sb-copy">
-        Campaña especial <strong>hasta el 30 de junio</strong>.<br>
-        Consigue hasta <strong>30% de descuento</strong> en tu seguro de salud Caser.
-      </div>
-      <form class="sb-form" id="sb-form" novalidate>
-        <div class="sb-right-col">
-          <div class="sb-phone-wrap">
-            <div class="sb-prefix"><span class="sb-flag">🇪🇸</span><span>+34</span></div>
-            <input type="tel" id="sb-phone" placeholder="600 000 000" maxlength="11" autocomplete="tel" aria-label="Tu número de teléfono">
-          </div>
-          <label class="sb-terms">
-            <input type="checkbox" id="sb-terms" required>
-            Acepto los <a href="/legal.html" target="_blank">términos y condiciones</a> y la política de privacidad
-          </label>
-          <span class="sb-trust">Sin compromiso · Datos protegidos · Atención personalizada</span>
+
+      <div class="sb-divider"></div>
+
+      <!-- PHONE -->
+      <div class="sb-phone-col">
+        <div class="sb-phone-wrap">
+          <div class="sb-prefix"><span class="sb-flag">🇪🇸</span><span>+34</span></div>
+          <input type="tel" id="sb-phone" placeholder="Tu teléfono" maxlength="11" autocomplete="tel" aria-label="Tu número de teléfono">
         </div>
-        <button type="submit" class="sb-cta-btn" aria-label="Solicitar que me llamen">
+        <span class="sb-subtxt">Sin compromiso · Datos protegidos · Atención personalizada</span>
+      </div>
+
+      <!-- TERMS -->
+      <label class="sb-terms">
+        <input type="checkbox" id="sb-terms" required>
+        <span>Acepto los <a href="#" class="sb-terms-link">términos y condiciones</a> y la política de privacidad</span>
+      </label>
+
+      <!-- CTA -->
+      <form id="sb-form" novalidate style="display:contents">
+        <button type="submit" class="sb-cta-btn" aria-label="Solicitar llamada">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
           Quiero que me llamen
         </button>
       </form>
-      <button class="sb-close" id="sb-close-btn" aria-label="Cerrar banner">✕</button>
+
+      <button class="sb-close" id="sb-close-btn" aria-label="Cerrar">✕</button>
       <span class="sb-error" id="sb-error" role="alert"></span>
     </div>
   </div>
   <!-- END STICKY BANNER -->
 
+  <!-- MODAL TÉRMINOS Y CONDICIONES -->
+  <div id="sb-modal" role="dialog" aria-modal="true" aria-labelledby="sb-modal-title" style="display:none">
+    <div class="sb-modal-overlay"></div>
+    <div class="sb-modal-box">
+      <button class="sb-modal-close" id="sb-modal-close" aria-label="Cerrar">✕</button>
+      <h2 id="sb-modal-title">Términos, Condiciones y Política de Privacidad</h2>
+      <p>Información básica sobre protección de datos personales</p>
+      <h3>Información del Responsable</h3>
+      <table class="sb-modal-table">
+        <tr><th>Responsable</th><td>INSURSALUD, S.L. — Agente Vinculado de Caser Seguros (DGSFP: AJ0374)</td></tr>
+        <tr><th>Finalidad</th><td>Gestión de solicitudes de información y contratación de seguros de salud. Atención personalizada y elaboración de presupuestos.</td></tr>
+        <tr><th>Legitimación</th><td>Consentimiento del interesado (art. 6.1.a RGPD) y ejecución de medidas precontractuales (art. 6.1.b RGPD).</td></tr>
+        <tr><th>Destinatarios</th><td>CASER Seguros y Reaseguros, S.A. No se cederán datos a terceros salvo obligación legal.</td></tr>
+        <tr><th>Derechos</th><td>Puedes ejercitar tus derechos de acceso, rectificación, supresión, oposición y portabilidad escribiendo a <strong>cmarchal@marchalconsultores.com</strong> o llamando al <strong>91 005 22 70</strong>.</td></tr>
+        <tr><th>Información adicional</th><td>Puede reclamar ante la AEPD en <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a> si considera que sus derechos no han sido atendidos.</td></tr>
+      </table>
+      <div class="sb-modal-footer">
+        Puedes consultar la información completa en nuestra <a href="/legal.html" target="_blank">Política de Privacidad completa</a>.
+      </div>
+    </div>
+  </div>
+  <script src="/js/main.js?v=20260541"></script>
 </body>
 </html>

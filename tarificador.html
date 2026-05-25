@@ -802,45 +802,71 @@ function calcDental(edades) {
 }
 </script>
 
-  <!-- STICKY SCROLL BANNER -->
-  <div id="sticky-banner" role="complementary" aria-label="Oferta especial Caser">
+  <!-- STICKY SCROLL BANNER — Desktop only -->
+  <div id="sticky-banner" role="complementary" aria-label="Oferta Caser">
+    <div class="sb-pill-row"><div class="sb-pill">Ahora 30% de descuento</div></div>
     <div class="sb-inner">
+
+      <!-- LEFT -->
       <div class="sb-left">
-        <div class="sb-badge">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          Hasta 30% DESCUENTO
-        </div>
         <div class="sb-headline">
-          <strong>Te informamos</strong>
-          <span>Sin compromiso</span>
+          <strong>¿Quieres contratar?</strong>
+          <span>Hasta 30% de descuento</span>
         </div>
       </div>
-      <div class="sb-copy">
-        Campaña especial <strong>hasta el 30 de junio</strong>.<br>
-        Consigue hasta <strong>30% de descuento</strong> en tu seguro de salud Caser.
-      </div>
-      <form class="sb-form" id="sb-form" novalidate>
-        <div class="sb-right-col">
-          <div class="sb-phone-wrap">
-            <div class="sb-prefix"><span class="sb-flag">🇪🇸</span><span>+34</span></div>
-            <input type="tel" id="sb-phone" placeholder="600 000 000" maxlength="11" autocomplete="tel" aria-label="Tu número de teléfono">
-          </div>
-          <label class="sb-terms">
-            <input type="checkbox" id="sb-terms" required>
-            Acepto los <a href="/legal.html" target="_blank">términos y condiciones</a> y la política de privacidad
-          </label>
-          <span class="sb-trust">Sin compromiso · Datos protegidos · Atención personalizada</span>
+
+      <div class="sb-divider"></div>
+
+      <!-- PHONE -->
+      <div class="sb-phone-col">
+        <div class="sb-phone-wrap">
+          <div class="sb-prefix"><span class="sb-flag">🇪🇸</span><span>+34</span></div>
+          <input type="tel" id="sb-phone" placeholder="Tu teléfono" maxlength="11" autocomplete="tel" aria-label="Tu número de teléfono">
         </div>
-        <button type="submit" class="sb-cta-btn" aria-label="Solicitar que me llamen">
+        <span class="sb-subtxt">Sin compromiso · Datos protegidos · Atención personalizada</span>
+      </div>
+
+      <!-- TERMS -->
+      <label class="sb-terms">
+        <input type="checkbox" id="sb-terms" required>
+        <span>Acepto los <a href="#" class="sb-terms-link">términos y condiciones</a> y la política de privacidad</span>
+      </label>
+
+      <!-- CTA -->
+      <form id="sb-form" novalidate style="display:contents">
+        <button type="submit" class="sb-cta-btn" aria-label="Solicitar llamada">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
           Quiero que me llamen
         </button>
       </form>
-      <button class="sb-close" id="sb-close-btn" aria-label="Cerrar banner">✕</button>
+
+      <button class="sb-close" id="sb-close-btn" aria-label="Cerrar">✕</button>
       <span class="sb-error" id="sb-error" role="alert"></span>
     </div>
   </div>
   <!-- END STICKY BANNER -->
 
+  <!-- MODAL TÉRMINOS Y CONDICIONES -->
+  <div id="sb-modal" role="dialog" aria-modal="true" aria-labelledby="sb-modal-title" style="display:none">
+    <div class="sb-modal-overlay"></div>
+    <div class="sb-modal-box">
+      <button class="sb-modal-close" id="sb-modal-close" aria-label="Cerrar">✕</button>
+      <h2 id="sb-modal-title">Términos, Condiciones y Política de Privacidad</h2>
+      <p>Información básica sobre protección de datos personales</p>
+      <h3>Información del Responsable</h3>
+      <table class="sb-modal-table">
+        <tr><th>Responsable</th><td>INSURSALUD, S.L. — Agente Vinculado de Caser Seguros (DGSFP: AJ0374)</td></tr>
+        <tr><th>Finalidad</th><td>Gestión de solicitudes de información y contratación de seguros de salud. Atención personalizada y elaboración de presupuestos.</td></tr>
+        <tr><th>Legitimación</th><td>Consentimiento del interesado (art. 6.1.a RGPD) y ejecución de medidas precontractuales (art. 6.1.b RGPD).</td></tr>
+        <tr><th>Destinatarios</th><td>CASER Seguros y Reaseguros, S.A. No se cederán datos a terceros salvo obligación legal.</td></tr>
+        <tr><th>Derechos</th><td>Puedes ejercitar tus derechos de acceso, rectificación, supresión, oposición y portabilidad escribiendo a <strong>cmarchal@marchalconsultores.com</strong> o llamando al <strong>91 005 22 70</strong>.</td></tr>
+        <tr><th>Información adicional</th><td>Puede reclamar ante la AEPD en <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a> si considera que sus derechos no han sido atendidos.</td></tr>
+      </table>
+      <div class="sb-modal-footer">
+        Puedes consultar la información completa en nuestra <a href="/legal.html" target="_blank">Política de Privacidad completa</a>.
+      </div>
+    </div>
+  </div>
+  <script src="/js/main.js?v=20260541"></script>
 </body>
 </html>

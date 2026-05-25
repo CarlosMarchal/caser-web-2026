@@ -7,7 +7,7 @@
   <title>SEGURO DE SALUD CASER | Hasta 30% dto. y 1 mes gratis</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css?v=20260522">
+  <link rel="stylesheet" href="/css/styles.css?v=20260550">
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -41,10 +41,13 @@
       "url": "https://caser.ofertaseguromedico.es/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://caser.ofertaseguromedico.es/images/logo-caser.png"
+        "url": "https://caser.ofertaseguromedico.es/images/logo-caser.png",
+        "width": 200,
+        "height": 60
       },
-      "description": "Agente exclusivo de Caser Seguros especializado en seguros de salud. Inscrito en la DGSFP con clave AJ0374.",
+      "description": "Agente vinculado de Caser Seguros especializado en seguros de salud. Inscrito en la DGSFP con clave AJ0374. Más de 45.000 profesionales y 13.000 centros en toda España.",
       "telephone": "+34910052270",
+      "email": "info@insursalud.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Carril de los Caleros, 8 G 2-B",
@@ -52,18 +55,111 @@
         "postalCode": "28023",
         "addressCountry": "ES"
       },
-      "areaServed": "ES",
-      "priceRange": "€€"
+      "areaServed": {
+        "@type": "Country",
+        "name": "España"
+      },
+      "priceRange": "€€",
+      "sameAs": [
+        "https://www.caser.es/",
+        "https://www.dgsfp.mineco.es/"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Seguros de Salud Caser",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "FinancialProduct",
+              "name": "Caser Médica",
+              "description": "Seguro de salud ambulatorio con o sin copago. Incluye medicina general, especialistas, pruebas diagnósticas, urgencias hospitalarias, hospitalización e intervenciones quirúrgicas.",
+              "url": "https://caser.ofertaseguromedico.es/particulares",
+              "category": "Seguro de Salud"
+            },
+            "price": "12.38",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "12.38",
+              "priceCurrency": "EUR",
+              "unitText": "mes"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "FinancialProduct",
+              "name": "Caser Adapta",
+              "description": "Seguro de salud completo sin copago con cobertura dental incluida. Incluye todas las prestaciones de Médica más dental y asistencia sanitaria en viaje.",
+              "url": "https://caser.ofertaseguromedico.es/particulares",
+              "category": "Seguro de Salud"
+            },
+            "price": "47.05",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "47.05",
+              "priceCurrency": "EUR",
+              "unitText": "mes"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "FinancialProduct",
+              "name": "Caser Prestigio",
+              "description": "Seguro de salud completo sin copago con reembolso de gastos médicos en España y extranjero. Incluye farmacia, óptica, criopreservación y DIU.",
+              "url": "https://caser.ofertaseguromedico.es/particulares",
+              "category": "Seguro de Salud Premium"
+            },
+            "price": "82.45",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "82.45",
+              "priceCurrency": "EUR",
+              "unitText": "mes"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "WebSite",
       "@id": "https://caser.ofertaseguromedico.es/#website",
       "url": "https://caser.ofertaseguromedico.es/",
-      "name": "Caser Seguros de Salud",
-      "description": "Seguros de salud Caser: particulares, familiar, embarazo, mayores y autónomos.",
+      "name": "Caser Seguros de Salud — Insursalud",
+      "description": "Seguros de salud Caser: particulares, familiar, embarazo, mayores y autónomos. Hasta 30% de descuento.",
       "inLanguage": "es-ES",
-      "publisher": {"@id": "https://caser.ofertaseguromedico.es/#organization"}
-    },,
+      "publisher": {"@id": "https://caser.ofertaseguromedico.es/#organization"},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://caser.ofertaseguromedico.es/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://caser.ofertaseguromedico.es/#webpage",
+      "url": "https://caser.ofertaseguromedico.es/",
+      "name": "Seguro de Salud Caser | Hasta 30% de descuento",
+      "description": "Seguro de Salud Caser - Coberturas flexibles y atención médica 24/7. Hasta 30% de descuento + 1 mes gratis. Más de 45.000 profesionales y 13.000 centros.",
+      "inLanguage": "es-ES",
+      "isPartOf": {"@id": "https://caser.ofertaseguromedico.es/#website"},
+      "about": {"@id": "https://caser.ofertaseguromedico.es/#organization"},
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".why-choose", ".faq-item"]
+      }
+    },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
@@ -83,7 +179,7 @@
         "name": "¿Qué seguros de salud ofrece Caser?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Caser ofrece tres modalidades principales: Médica (ambulatorio con o sin copago), Adapta (completo + dental, sin copago) y Prestigio (completo + reembolso de gastos, sin copago). También dispone de coberturas especiales para embarazadas, familias, mayores y autónomos."
+          "text": "Caser ofrece tres modalidades principales: Médica (ambulatorio con o sin copago, desde 12,38€/mes), Adapta (completo + dental sin copago, desde 47,05€/mes) y Prestigio (completo + reembolso de gastos sin copago, desde 82,45€/mes). También dispone de coberturas especiales para embarazadas, familias, mayores y autónomos."
         }
       },
       {
@@ -99,7 +195,7 @@
         "name": "¿Qué centros incluye el cuadro médico de Caser?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "El cuadro médico de Caser incluye más de 13.000 centros concertados en toda España, entre clínicas, hospitales y consultas especializadas."
+          "text": "El cuadro médico de Caser incluye más de 13.000 centros concertados en toda España, entre clínicas, hospitales y consultas especializadas. Puedes consultar el cuadro médico completo en la web oficial de Caser."
         }
       },
       {
@@ -115,7 +211,23 @@
         "name": "¿Cuánto cuesta un seguro de salud Caser?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Los seguros de salud Caser comienzan desde 12,38€/mes para la modalidad Médica, desde 47,05€/mes para Adapta y desde 82,45€/mes para Prestigio. El precio final depende de la edad y número de asegurados."
+          "text": "Los seguros de salud Caser comienzan desde 12,38€/mes para la modalidad Médica, desde 47,05€/mes para Adapta y desde 82,45€/mes para Prestigio. El precio final depende de la edad y número de asegurados incluidos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tengo que esperar para usar el seguro médico Caser?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Las urgencias están cubiertas desde el primer día. Algunas coberturas como la hospitalización programada o el parto pueden tener periodos de carencia según la modalidad contratada. Consulta con nuestros asesores las condiciones concretas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo cambiarme a Caser desde otra compañía de seguros?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, puedes cambiar tu seguro médico a Caser en cualquier momento. Nuestros asesores te guiarán en el proceso para que el cambio sea sencillo y sin interrupciones en tu cobertura médica."
         }
       }
       ]
@@ -556,7 +668,7 @@
           <div class="logo-wrap">
             <img src="/images/logo-caser-blanco.png" alt="Caser Seguros" class="logo-img-footer">
           </div>
-          <p>Somos Agente Exclusivo Caser, especialistas en Seguros de Salud.</p>
+          <p>Somos Agente Vinculado Caser, especialistas en Seguros de Salud.</p>
           <div class="footer-phone">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#007363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.31 9.9 19.79 19.79 0 01.22 1.28 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             <span>Llámanos: <a href="tel:910052270">91 005 22 70</a></span>
@@ -624,7 +736,7 @@
   </div>
 
 
-  <script src="/js/main.js?v=20260522c"></script>
+  <script src="/js/main.js?v=20260541"></script>
   <!-- ── BARRA FLOTANTE MOBILE ── -->
   <div class="mobile-cta-bar">
     <button type="button" class="mcta-btn mcta-modal" onclick="openCallModal('')">
@@ -726,61 +838,70 @@
     </div>
   </div>
 
-  <!-- ============================================================
-       STICKY SCROLL BANNER — Desktop only — Campaña 30% descuento
-       ============================================================ -->
-  <div id="sticky-banner" role="complementary" aria-label="Oferta especial Caser">
+  <!-- STICKY SCROLL BANNER — Desktop only -->
+  <div id="sticky-banner" role="complementary" aria-label="Oferta Caser">
+    <div class="sb-pill-row"><div class="sb-pill">Ahora 30% de descuento</div></div>
     <div class="sb-inner">
 
-      <!-- LEFT: Badge + headline -->
+      <!-- LEFT -->
       <div class="sb-left">
-        <div class="sb-badge">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          Hasta 30% DESCUENTO
-        </div>
         <div class="sb-headline">
-          <strong>Te informamos</strong>
-          <span>Sin compromiso</span>
+          <strong>¿Quieres contratar?</strong>
+          <span>Hasta 30% de descuento</span>
         </div>
       </div>
 
-      <!-- CENTER: Campaign copy -->
-      <div class="sb-copy">
-        Campaña especial <strong>hasta el 30 de junio</strong>.<br>
-        Consigue hasta <strong>30% de descuento</strong> en tu seguro de salud Caser.
+      <div class="sb-divider"></div>
+
+      <!-- PHONE -->
+      <div class="sb-phone-col">
+        <div class="sb-phone-wrap">
+          <div class="sb-prefix"><span class="sb-flag">🇪🇸</span><span>+34</span></div>
+          <input type="tel" id="sb-phone" placeholder="Tu teléfono" maxlength="11" autocomplete="tel" aria-label="Tu número de teléfono">
+        </div>
+        <span class="sb-subtxt">Sin compromiso · Datos protegidos · Atención personalizada</span>
       </div>
 
-      <!-- RIGHT: Phone form -->
-      <form class="sb-form" id="sb-form" novalidate>
-        <div class="sb-right-col">
-          <div class="sb-phone-wrap">
-            <div class="sb-prefix">
-              <span class="sb-flag">🇪🇸</span>
-              <span>+34</span>
-            </div>
-            <input type="tel" id="sb-phone" placeholder="600 000 000" maxlength="11" autocomplete="tel" aria-label="Tu número de teléfono">
-          </div>
-          <label class="sb-terms">
-            <input type="checkbox" id="sb-terms" required>
-            Acepto los <a href="/legal.html" target="_blank">términos y condiciones</a> y la política de privacidad
-          </label>
-          <span class="sb-trust">Sin compromiso · Datos protegidos · Atención personalizada</span>
-        </div>
+      <!-- TERMS -->
+      <label class="sb-terms">
+        <input type="checkbox" id="sb-terms" required>
+        <span>Acepto los <a href="#" class="sb-terms-link">términos y condiciones</a> y la política de privacidad</span>
+      </label>
 
-        <button type="submit" class="sb-cta-btn" aria-label="Solicitar que me llamen">
+      <!-- CTA -->
+      <form id="sb-form" novalidate style="display:contents">
+        <button type="submit" class="sb-cta-btn" aria-label="Solicitar llamada">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
           Quiero que me llamen
         </button>
       </form>
 
-      <!-- Close button -->
-      <button class="sb-close" id="sb-close-btn" aria-label="Cerrar banner">✕</button>
-
-      <!-- Error message -->
+      <button class="sb-close" id="sb-close-btn" aria-label="Cerrar">✕</button>
       <span class="sb-error" id="sb-error" role="alert"></span>
     </div>
   </div>
   <!-- END STICKY BANNER -->
 
+  <!-- MODAL TÉRMINOS Y CONDICIONES -->
+  <div id="sb-modal" role="dialog" aria-modal="true" aria-labelledby="sb-modal-title" style="display:none">
+    <div class="sb-modal-overlay"></div>
+    <div class="sb-modal-box">
+      <button class="sb-modal-close" id="sb-modal-close" aria-label="Cerrar">✕</button>
+      <h2 id="sb-modal-title">Términos, Condiciones y Política de Privacidad</h2>
+      <p>Información básica sobre protección de datos personales</p>
+      <h3>Información del Responsable</h3>
+      <table class="sb-modal-table">
+        <tr><th>Responsable</th><td>INSURSALUD, S.L. — Agente Vinculado de Caser Seguros (DGSFP: AJ0374)</td></tr>
+        <tr><th>Finalidad</th><td>Gestión de solicitudes de información y contratación de seguros de salud. Atención personalizada y elaboración de presupuestos.</td></tr>
+        <tr><th>Legitimación</th><td>Consentimiento del interesado (art. 6.1.a RGPD) y ejecución de medidas precontractuales (art. 6.1.b RGPD).</td></tr>
+        <tr><th>Destinatarios</th><td>CASER Seguros y Reaseguros, S.A. No se cederán datos a terceros salvo obligación legal.</td></tr>
+        <tr><th>Derechos</th><td>Puedes ejercitar tus derechos de acceso, rectificación, supresión, oposición y portabilidad escribiendo a <strong>cmarchal@marchalconsultores.com</strong> o llamando al <strong>91 005 22 70</strong>.</td></tr>
+        <tr><th>Información adicional</th><td>Puede reclamar ante la AEPD en <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a> si considera que sus derechos no han sido atendidos.</td></tr>
+      </table>
+      <div class="sb-modal-footer">
+        Puedes consultar la información completa en nuestra <a href="/legal.html" target="_blank">Política de Privacidad completa</a>.
+      </div>
+    </div>
+  </div>
 </body>
 </html>
