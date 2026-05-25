@@ -99,6 +99,8 @@
     ]
   }
   </script>
+  <!-- LCP Preload -->
+  <link rel="preload" as="image" href="/images/seguro-salud-mayores-caser.jpg" fetchpriority="high" type="image/jpeg">
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -112,7 +114,7 @@
     <div class="container">
       <div class="header-inner">
         <a href="/" class="site-logo">
-          <img src="/images/logo-caser.png" alt="Caser Seguros de Salud" class="logo-img">
+          <img src="/images/logo-caser.png" alt="Caser Seguros de Salud" class="logo-img" width="160" height="48" loading="eager">
         </a>
         <div class="header-phones">
           <a href="tel:910052270" class="phone-cta">
@@ -188,42 +190,42 @@
 
       <div class="coberturas-grid">
         <div class="cobertura-card">
-          <div class="cobertura-icon"><img src="/images/ambulance.svg" alt="" width="22" height="22" class="svg-icon"></div>
+          <div class="cobertura-icon"><img src="/images/ambulance.svg" alt="Urgencias hospitalarias 24 horas" width="22" height="22" class="svg-icon" loading="lazy"></div>
           <div>
             <h4>Urgencias 24 horas</h4>
             <p>Atención de urgencias inmediata en cualquier momento del día o de la noche, sin esperas.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon"><img src="/images/nurse.svg" alt="" width="22" height="22" class="svg-icon"></div>
+          <div class="cobertura-icon"><img src="/images/nurse.svg" alt="Medicina general y especialistas" width="22" height="22" class="svg-icon" loading="lazy"></div>
           <div>
             <h4>Consultas y revisiones con especialistas</h4>
             <p>Acceso a más de 50 especialidades médicas para el seguimiento y control de tu salud.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon"><img src="/images/trekking.svg" alt="" width="22" height="22" class="svg-icon"></div>
+          <div class="cobertura-icon"><img src="/images/trekking.svg" alt="Rehabilitación y fisioterapia para mayores" width="22" height="22" class="svg-icon" loading="lazy"></div>
           <div>
             <h4>Rehabilitación y fisioterapia</h4>
             <p>Sesiones de rehabilitación física y fisioterapia para mantener tu movilidad y calidad de vida.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon"><img src="/images/healthy-check.svg" alt="" width="22" height="22" class="svg-icon"></div>
+          <div class="cobertura-icon"><img src="/images/healthy-check.svg" alt="Coberturas de salud sin copago" width="22" height="22" class="svg-icon" loading="lazy"></div>
           <div>
             <h4>Chequeo médico anual</h4>
             <p>Revisión médica completa una vez al año para la prevención y detección temprana de enfermedades.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon"><img src="/images/hospital.svg" alt="" width="22" height="22" class="svg-icon"></div>
+          <div class="cobertura-icon"><img src="/images/hospital.svg" alt="Hospitalización médica y quirúrgica" width="22" height="22" class="svg-icon" loading="lazy"></div>
           <div>
             <h4>Ingresos hospitalarios</h4>
             <p>Hospitalización médica y quirúrgica cubierta en las pólizas con cobertura completa.</p>
           </div>
         </div>
         <div class="cobertura-card">
-          <div class="cobertura-icon"><img src="/images/phone.svg" alt="" width="22" height="22" class="svg-icon"></div>
+          <div class="cobertura-icon"><img src="/images/phone.svg" alt="Videoconsultas y chat médico" width="22" height="22" class="svg-icon" loading="lazy"></div>
           <div>
             <h4>Teleconsulta médica</h4>
             <p>Consulta con tu médico desde casa por videollamada o teléfono, sin necesidad de desplazarte.</p>
@@ -243,7 +245,7 @@
         <div class="pc">
           <div class="pc-badge"><span>Oferta PV</span></div>
           <div class="pc-top">
-            <div class="pc-icon-box"><img src="/images/walking.svg" alt="SALUD +60" width="28" height="28" class="svg-icon"></div>
+            <div class="pc-icon-box"><img src="/images/walking.svg" alt="SALUD +60" width="28" height="28" class="svg-icon" loading="lazy"></div>
             <div class="pc-name">SALUD +60</div>
             <div class="pc-price"><span class="pc-price-from">desde</span><span class="pc-price-num">43,00</span><span class="pc-price-currency">€</span><span class="pc-price-period">/mes</span></div>
             <div class="pc-tags"><span class="pc-tag">Ambulatorio</span><span class="pc-tag">Con copago</span></div>
@@ -387,7 +389,7 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <div class="logo-wrap">
-            <img src="/images/logo-caser-blanco.png" alt="Caser Seguros" class="logo-img-footer">
+            <img src="/images/logo-caser-blanco.png" alt="Caser Seguros" class="logo-img-footer" width="140" height="42" loading="lazy">
           </div>
           <p>Somos Agente Vinculado Caser, especialistas en Seguros de Salud.</p>
           <div class="footer-phone">
@@ -481,6 +483,6 @@
       </div>
     </div>
   </div>
-  <script src="/js/main.js?v=20260541"></script>
+  <script src="/js/main.js?v=20260541" defer></script>
 </body>
 </html>
