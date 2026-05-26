@@ -2,6 +2,10 @@ Options -Indexes
 
 RewriteEngine On
 
+# Forzar HTTPS (301 permanente)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 # Redirigir /pagina o /pagina/ a pagina.html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
