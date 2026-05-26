@@ -530,6 +530,39 @@
       </div>
     </div>
   </div>
+  <!-- MODAL TE LLAMAMOS -->
+  <div class="call-modal-overlay" id="callModal">
+    <div class="call-modal">
+      <button class="call-modal-close" onclick="closeCallModal()">&times;</button>
+      <div class="call-modal-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.31 9.9 19.79 19.79 0 01.22 1.28 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      </div>
+      <h3>Te llamamos gratis</h3>
+      <p class="call-modal-sub">Un asesor Caser te contactará en minutos</p>
+      <span class="call-modal-plan-name" id="callModalPlanName"></span>
+      <div class="call-modal-form-wrap">
+        <div class="call-modal-phone">
+          <div class="phone-prefix"><span>🇪🇸</span><span>+34</span></div>
+          <input type="tel" placeholder="600 000 000" id="callModalPhone" maxlength="11" oninput="formatPhone(this)" onkeydown="if(event.key==='Enter'){submitCallModal();}">
+        </div>
+        <span class="phone-error-msg" id="callModalPhoneError"></span>
+        <div class="call-modal-check">
+          <input type="checkbox" id="callModalTerms" checked>
+          <label for="callModalTerms">Acepto los <a href="#" onclick="openLegalModal();return false;">términos y condiciones</a> y la <a href="#" onclick="openLegalModal();return false;">política de privacidad</a></label>
+        </div>
+        <input type="hidden" id="callModalTarificador" value="400">
+        <button type="button" class="call-modal-submit" onclick="submitCallModal()">Te llamamos ahora</button>
+      </div>
+      <div id="callModalSuccess" style="display:none; text-align:center; padding: 10px 0 20px;">
+        <div style="font-size:48px; margin-bottom:12px;">✅</div>
+        <p style="font-size:17px; font-weight:700; color:var(--color-primary); margin-bottom:8px;">¡Recibido!</p>
+        <p style="font-size:14px; color:var(--color-text-medium);">Te llamaremos en los próximos minutos.</p>
+        <button onclick="closeCallModal()" style="margin-top:18px; background:var(--color-primary); color:#fff; border:none; border-radius:8px; padding:10px 28px; font-size:14px; font-weight:700; cursor:pointer;">Cerrar</button>
+      </div>
+      <p class="call-modal-footer-note">Sin compromiso · Datos protegidos</p>
+    </div>
+  </div>
+
   <script src="/js/main.js?v=20260541" defer></script>
 </body>
 </html>
