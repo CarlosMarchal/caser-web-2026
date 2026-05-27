@@ -352,8 +352,15 @@ h1, h2, h3, h4, h5 {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('../images/seguro-salud-empresas-caser-hero.jpeg') center/cover no-repeat;
+  background: url('../images/familia-feliz-seguro-salud-caser.jpeg') center/cover no-repeat;
   opacity: 0.52;
+}
+/* Imagen hero home versión mobile */
+@media (max-width: 767px) {
+  .hero:not(.hero-particulares):not(.hero-familiar):not(.hero-embarazo):not(.hero-mayores):not(.hero-autonomos)::before {
+    background-image: url('../images/familia-feliz-seguro-salud-caser-mobile.jpeg');
+    background-position: center top;
+  }
 }
 /* Gradiente de protección para legibilidad del texto (izquierda más oscura) */
 .hero::after {

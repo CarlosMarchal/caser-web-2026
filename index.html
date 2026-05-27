@@ -21,7 +21,7 @@
   <link rel="apple-touch-icon" href="/images/favicon.svg">
   <meta property="og:title" content="Seguro de Salud Caser | Hasta 30% de descuento">
   <meta property="og:description" content="Seguro de Salud Caser con coberturas flexibles y atención médica 24/7. Hasta 30% de descuento. Más de 45.000 profesionales y 13.000 centros en toda España.">
-  <meta property="og:image" content="https://caser.ofertaseguromedico.es/images/hero-home.webp">
+  <meta property="og:image" content="https://caser.ofertaseguromedico.es/images/familia-feliz-seguro-salud-caser.jpeg">
   <meta property="og:url" content="https://caser.ofertaseguromedico.es/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
@@ -29,7 +29,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Seguro de Salud Caser | Hasta 30% de descuento">
   <meta name="twitter:description" content="Coberturas flexibles y atención médica 24/7. Hasta 30% de descuento. Solicita tu precio personalizado.">
-  <meta name="twitter:image" content="https://caser.ofertaseguromedico.es/images/hero-home.webp">
+  <meta name="twitter:image" content="https://caser.ofertaseguromedico.es/images/familia-feliz-seguro-salud-caser.jpeg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -235,8 +235,9 @@
     ]
   }
   </script>
-  <!-- LCP Preload -->
-  <link rel="preload" as="image" href="/images/seguro-salud-empresas-caser-hero.jpeg" fetchpriority="high" type="image/jpeg">
+  <!-- LCP Preload — hero home (desktop y mobile) -->
+  <link rel="preload" as="image" href="/images/familia-feliz-seguro-salud-caser.jpeg" fetchpriority="high" type="image/jpeg" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="/images/familia-feliz-seguro-salud-caser-mobile.jpeg" fetchpriority="high" type="image/jpeg" media="(max-width: 767px)">
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -286,7 +287,14 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" aria-label="Seguro de salud Caser para familias felices">
+    <!-- Imagen SEO del hero (visualmente oculta, accesible para buscadores) -->
+    <img src="/images/familia-feliz-seguro-salud-caser.jpeg"
+         alt="Familia feliz con seguro de salud Caser — coberturas completas para todos sus miembros"
+         width="1312" height="736"
+         loading="eager" fetchpriority="high"
+         style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;overflow:hidden;"
+         aria-hidden="true">
     <div class="hero-inner">
       <div class="hero-text">
         <p class="eyebrow">SEGURO DE SALUD CASER</p>
