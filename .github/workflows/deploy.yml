@@ -67,6 +67,12 @@ jobs:
             avisolegal-poliiticadeprivacidad/ \
             u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
 
+      - name: Subir carpeta docs (PDFs)
+        run: |
+          scp -i ~/.ssh/deploy_key -P 65002 -o StrictHostKeyChecking=no -r \
+            docs/ \
+            u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
+
       - name: Corregir permisos en producción
         run: |
           ssh -i ~/.ssh/deploy_key -p 65002 -o StrictHostKeyChecking=no \
