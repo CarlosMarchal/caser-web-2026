@@ -868,5 +868,18 @@ function calcDental(edades) {
     </div>
   </div>
   <script src="/js/main.js?v=20260541"></script>
+  <script>
+  // main.js redefine addAsegurado/removeAsegurado para calcular.html.
+  // Las restauramos aquí para que el tarificador funcione correctamente.
+  addAsegurado = function() {
+    var id = ++idCounter;
+    asegurados.push({ id: id, nombre: '', edad: '' });
+    renderAsegurados();
+  };
+  removeAsegurado = function(id) {
+    asegurados = asegurados.filter(function(a) { return a.id !== id; });
+    renderAsegurados();
+  };
+  </script>
 </body>
 </html>
