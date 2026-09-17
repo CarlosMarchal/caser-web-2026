@@ -111,6 +111,8 @@
     .field-row { grid-template-columns: 1fr; }
     .price-cell { font-size: 14px; }
   }
+  .tarifa-base{display:block;text-decoration:line-through;color:#9aa0a6;font-size:12px;font-weight:600;line-height:1.3;}
+  .tarifa-save{display:block;color:#1a8a3a;font-size:11px;font-weight:700;margin-top:2px;}
 </style>
 </head>
 <body>
@@ -524,6 +526,12 @@ function calcular() {
   document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
 }
 
+function tarifaCell(total, vol) {
+  const base = total / (0.60 * (1 - (vol || 0)));
+  const ahorro = base - total;
+  return `<td class="right"><span class="tarifa-base">${fmt(base)}</span><span class="price-cell">${fmt(total)}<small>/mes</small></span><span class="tarifa-save">Ahorras ${fmt(ahorro)}/mes</span></td>`;
+}
+
 function calcParticular(edades, edadesNormales, edadesMayores, z, n) {
   let html = '';
   const nN = edadesNormales.length;
@@ -541,7 +549,7 @@ function calcParticular(edades, edadesNormales, edadesMayores, z, n) {
       <thead><tr>
         <th>Producto</th>
         <th class="right">Prima/mes por persona</th>
-        <th class="right">Total mensual</th>
+        <th class="right">Tarifa general → con 40% dto</th>
       </tr></thead><tbody>`;
 
     // PRESTIGIO P1870
@@ -554,7 +562,7 @@ function calcParticular(edades, edadesNormales, edadesMayores, z, n) {
         <td><span class="product-name">Salud Prestigio</span><span class="product-code">P1870 · 40% dto PVP</span>
           <span class="product-tag tag-sin-copago">Sin copago</span></td>
         <td class="right">${nN===1?fmt(precios[0]):`<small>${desc}</small>`}</td>
-        <td class="right"><span class="price-cell">${fmt(total)}<small>/mes</small></span></td>
+        ${tarifaCell(total, 0)}
       </tr>`;
     }
 
@@ -562,13 +570,14 @@ function calcParticular(edades, edadesNormales, edadesMayores, z, n) {
     {
       const iz = z.integralZone;
       const col = nN === 1 ? 'p1' : (nN === 2 ? 'p2' : 'p3');
+      const vol = nN === 1 ? 0.04 : (nN === 2 ? 0.07 : 0.10);
       const precios = edadesNormales.map(e => I2030[iz][col][e]);
       const total = precios.reduce((s,v)=>s+v,0);
       html += `<tr>
         <td><span class="product-name">Salud Integral Sin Copago</span><span class="product-code">I2030 · dto. adicional ${nN===1?'4%':(nN===2?'7%':'10%')}</span>
           <span class="product-tag tag-sin-copago">Sin copago</span></td>
         <td class="right">${nN===1?fmt(precios[0]):`<small>${precios.map(p=>fmt(p)).join(' + ')}</small>`}</td>
-        <td class="right"><span class="price-cell">${fmt(total)}<small>/mes</small></span></td>
+        ${tarifaCell(total, vol)}
       </tr>`;
     }
 
@@ -576,16 +585,16 @@ function calcParticular(edades, edadesNormales, edadesMayores, z, n) {
     if (nN <= 2) {
       const iz = z.integralZone;
       const col = nN === 1 ? 'p1' : 'p2';
+      const vol = nN === 1 ? 0.04 : 0.07;
       const precios = edadesNormales.map(e => I2010[iz][col][e]);
       const total = precios.reduce((s,v)=>s+v,0);
       html += `<tr>
         <td><span class="product-name">Salud Integral 10SIN Copago</span><span class="product-code">I2010 · 10 actos gratuitos, copago mín. resto · 🎁 1 mes gratis</span>
           <span class="product-tag tag-10sin">10 actos gratis</span></td>
         <td class="right">${nN===1?fmt(precios[0]):`<small>${precios.map(p=>fmt(p)).join(' + ')}</small>`}</td>
-        <td class="right"><span class="price-cell">${fmt(total)}<small>/mes</small></span></td>
+        ${tarifaCell(total, vol)}
       </tr>`;
     } else {
-      // Pack Familiar 3+
       const pz = z.packZone;
       const precios = edadesNormales.map(e => getPackPrice(I2020[pz], e));
       const validos = precios.filter(p => p !== null);
@@ -594,20 +603,21 @@ function calcParticular(edades, edadesNormales, edadesMayores, z, n) {
         <td><span class="product-name">Salud Integral 10SIN Pack Familiar</span><span class="product-code">I2020 · 3 o más asegurados · 10 actos gratuitos · 🎁 1 mes gratis</span>
           <span class="product-tag tag-10sin">Pack Familiar</span></td>
         <td class="right"><small>${precios.map((p,i)=>p!==null?fmt(p):'—').join(' + ')}</small></td>
-        <td class="right"><span class="price-cell">${fmt(total)}<small>/mes</small></span></td>
+        ${tarifaCell(total, 0)}
       </tr>`;
     }
 
     // INTEGRAL CON COPAGO I2000
     {
       const col = nN === 1 ? 'p1' : (nN === 2 ? 'p2' : 'p3');
+      const vol = nN === 1 ? 0.04 : (nN === 2 ? 0.07 : 0.10);
       const precios = edadesNormales.map(e => I2000[col][e]);
       const total = precios.reduce((s,v)=>s+v,0);
       html += `<tr>
         <td><span class="product-name">Salud Integral Con Copago</span><span class="product-code">I2000 · Copago desde 1er acto · Límite 395€/año · 🎁 1 mes gratis</span>
           <span class="product-tag tag-con-copago">Con copago</span></td>
         <td class="right">${nN===1?fmt(precios[0]):`<small>${precios.map(p=>fmt(p)).join(' + ')}</small>`}</td>
-        <td class="right"><span class="price-cell">${fmt(total)}<small>/mes</small></span></td>
+        ${tarifaCell(total, vol)}
       </tr>`;
     }
 
@@ -620,7 +630,7 @@ function calcParticular(edades, edadesNormales, edadesMayores, z, n) {
         <td><span class="product-name">Salud Adapta + Sonrisa Esencial</span><span class="product-code">A1900 · Incluye cobertura dental básica</span>
           <span class="product-tag tag-sin-copago">Sin copago médico</span></td>
         <td class="right">${nN===1?fmt(precios[0]):`<small>${precios.map(p=>fmt(p)).join(' + ')}</small>`}</td>
-        <td class="right"><span class="price-cell">${fmt(total)}<small>/mes</small></span></td>
+        ${tarifaCell(total, 0)}
       </tr>`;
     }
 
@@ -628,13 +638,14 @@ function calcParticular(edades, edadesNormales, edadesMayores, z, n) {
     if (nN <= 2) {
       const iz = z.integralZone;
       const col = nN === 1 ? 'p1' : 'p2';
+      const vol = nN === 1 ? 0 : 0.07;
       const precios = edadesNormales.map(e => M1920[iz][col][e]);
       const total = precios.reduce((s,v)=>s+v,0);
       html += `<tr>
         <td><span class="product-name">Salud Médica 10SIN Copago</span><span class="product-code">M1920 · 10 actos gratuitos, copago mín. resto · 🎁 1 mes gratis</span>
           <span class="product-tag tag-10sin">10 actos gratis</span></td>
         <td class="right">${nN===1?fmt(precios[0]):`<small>${precios.map(p=>fmt(p)).join(' + ')}</small>`}</td>
-        <td class="right"><span class="price-cell">${fmt(total)}<small>/mes</small></span></td>
+        ${tarifaCell(total, vol)}
       </tr>`;
     } else {
       const pz = z.packZone;
@@ -645,27 +656,27 @@ function calcParticular(edades, edadesNormales, edadesMayores, z, n) {
         <td><span class="product-name">Salud Médica 10SIN Pack Familiar</span><span class="product-code">M1930 · 3 o más asegurados · 10 actos gratuitos · 🎁 1 mes gratis</span>
           <span class="product-tag tag-10sin">Pack Familiar</span></td>
         <td class="right"><small>${precios.map((p,i)=>p!==null?fmt(p):'—').join(' + ')}</small></td>
-        <td class="right"><span class="price-cell">${fmt(total)}<small>/mes</small></span></td>
+        ${tarifaCell(total, 0)}
       </tr>`;
     }
 
     // MÉDICA CON COPAGO M1910
     {
       const col = nN === 1 ? 'p1' : (nN === 2 ? 'p2' : 'p3');
+      const vol = nN === 1 ? 0 : (nN === 2 ? 0.07 : 0.10);
       const precios = edadesNormales.map(e => M1910[col][e]);
       const total = precios.reduce((s,v)=>s+v,0);
       html += `<tr>
         <td><span class="product-name">Salud Médica Con Copago</span><span class="product-code">M1910 · Copago desde 1er acto · Límite 395€/año · 🎁 1 mes gratis</span>
           <span class="product-tag tag-con-copago">Con copago</span></td>
         <td class="right">${nN===1?fmt(precios[0]):`<small>${precios.map(p=>fmt(p)).join(' + ')}</small>`}</td>
-        <td class="right"><span class="price-cell">${fmt(total)}<small>/mes</small></span></td>
+        ${tarifaCell(total, vol)}
       </tr>`;
     }
 
     html += `</tbody></table></div>`;
   }
 
-  // Salud +60
   if (edadesMayores.length > 0) {
     html += calcSalud60(edadesMayores, z);
   }
@@ -700,7 +711,6 @@ function calcSalud60(edades, z) {
 
 function calcAutonomo(edades, z, n) {
   const pz = z.packZone; // A o B (cat/bal)
-  // Descuento por volumen
   const dto = n >= 3 ? 0.07 : (n >= 2 ? 0.05 : 0);
   const dtoLabel = dto === 0 ? '' : ` (dto. ${dto*100}% por ${n}+ asegurados)`;
 
@@ -716,7 +726,7 @@ function calcAutonomo(edades, z, n) {
   let html = `<div class="product-section">`;
   html += `<div class="product-section-title">Autónomo/Pyme Unifamiliar · ${n} asegurado${n>1?'s':''}${dtoLabel}</div>`;
   html += `<table class="result-table"><thead><tr>
-    <th>Producto</th><th class="right">Prima/mes por persona</th><th class="right">Total mensual</th>
+    <th>Producto</th><th class="right">Prima/mes por persona</th><th class="right">Tarifa general → con 40% dto</th>
   </tr></thead><tbody>`;
 
   productos.forEach(prod => {
@@ -730,12 +740,12 @@ function calcAutonomo(edades, z, n) {
       <td><span class="product-name">${prod.name}</span><span class="product-code">${prod.code}${prod.mesGratis?' · 🎁 1 mes gratis':''}</span>
         <span class="product-tag tag-${prod.tag}">${prod.tagLabel}</span></td>
       <td class="right">${n===1?fmt(precios[0]):`<small>${precios.map(p=>fmt(p)).join(' + ')}</small>`}</td>
-      <td class="right"><span class="price-cell">${fmt(total)}<small>/mes</small></span></td>
+      ${tarifaCell(total, dto)}
     </tr>`;
   });
 
   html += `</tbody></table>`;
-  html += `<div style="font-size:11px;color:#aaa;margin-top:8px;">* Descuento por volumen aplicado: 0%=1 aseg., 5%=2 aseg., 7%=3+ aseg.</div>`;
+  html += `<div style="font-size:11px;color:#aaa;margin-top:8px;">* Tarifa general = precio sin la oferta. El precio final ya incluye el 40% dto + descuento por volumen (0%=1 aseg., 5%=2 aseg., 7%=3+ aseg.).</div>`;
   html += `</div>`;
   return html;
 }
