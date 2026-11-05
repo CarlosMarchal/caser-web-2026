@@ -73,6 +73,18 @@ jobs:
             docs/ \
             u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/
 
+      # ⚠️ /firma/ = logos de las firmas de email de los comerciales.
+      # NO eliminar este paso ni borrar/renombrar los archivos de firma/ (romperían las firmas ya enviadas).
+      - name: Subir carpeta firma (logos firmas email - NO TOCAR)
+        run: |
+          ssh -i ~/.ssh/deploy_key -p 65002 -o StrictHostKeyChecking=no \
+            u623716999@91.108.101.64 "mkdir -p domains/caser.ofertaseguromedico.es/public_html/firma"
+          scp -i ~/.ssh/deploy_key -P 65002 -o StrictHostKeyChecking=no \
+            firma/LOGO_CASER_FIRMA_EMAILS_BLANCO.png \
+            firma/LOGO_CASER_FIRMA_EMAILS_COLOR.png \
+            firma/.htaccess \
+            u623716999@91.108.101.64:domains/caser.ofertaseguromedico.es/public_html/firma/
+
       - name: Corregir permisos en producción
         run: |
           ssh -i ~/.ssh/deploy_key -p 65002 -o StrictHostKeyChecking=no \

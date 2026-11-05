@@ -1,0 +1,13 @@
+# ⚠️ /firma/ — logos enlazados desde las firmas de email. NO BORRAR NI RENOMBRAR.
+# Acceso público directo: sin redirecciones, sin anti-hotlinking.
+RewriteEngine Off
+<IfModule mod_mime.c>
+  AddType image/png .png
+</IfModule>
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+  Header set Cache-Control "public, max-age=604800"
+</IfModule>
+<Files "LEEME-NO-TOCAR.md">
+  Require all denied
+</Files>
